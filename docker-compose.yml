@@ -1,0 +1,120 @@
+version: '3.8'
+
+services:
+  # 前端服务
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - VITE_API_URL=http://backend:5000/api
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    networks:
+      - steam-monitor-network
+
+  # 后端服务
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - MONGODB_URI=mongodb://mongodb:27017/steam-price-monitor
+      - REDIS_URL=redis://redis:6379
+      - PORT=5000
+    depends_on:
+      - mongodb
+      - redis
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+      - ./logs:/app/logs
+    networks:
+      - steam-monitor-network
+    restart: unless-stopped
+
+  # MongoDB数据库
+  mongodb:
+    image: mongo:7.0
+    container_name: steam-mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=password
+      - MONGO_INITDB_DATABASE=steam-price-monitor
+    volumes:
+      - mongodb_data:/data/db
+      - ./scripts/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    networks:
+      - steam-monitor-network
+    restart: unless-stopped
+
+  # Redis缓存
+  redis:
+    image: redis:7.2-alpine
+    container_name: steam-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - steam-monitor-network
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+
+  # Nginx反向代理
+  nginx:
+    image: nginx:alpine
+    container_name: steam-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - steam-monitor-network
+    restart: unless-stopped
+
+  # 价格监控定时任务
+  price-monitor:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.worker
+    environment:
+      - NODE_ENV=production
+      - MONGODB_URI=mongodb://mongodb:27017/steam-price-monitor
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - mongodb
+      - redis
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+      - ./logs:/app/logs
+    networks:
+      - steam-monitor-network
+    restart: unless-stopped
+
+volumes:
+  mongodb_data:
+    driver: local
+  redis_data:
+    driver: local
+
+networks:
+  steam-monitor-network:
+    driver: bridge 
