@@ -1,0 +1,43 @@
+[
+  {
+    "steamId": "10",
+    "name": "Counter-Strike",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "tags": [
+      "动作"
+    ],
+    "nameWords": [
+      "counter-strike"
+    ],
+    "searchText": "counter-strike valve valve"
+  },
+  {
+    "steamId": "70",
+    "name": "Half-Life",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "tags": [
+      "动作"
+    ],
+    "nameWords": [
+      "half-life"
+    ],
+    "searchText": "half-life valve valve"
+  },
+  {
+    "steamId": "100",
+    "name": "Counter-Strike: Condition Zero",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "tags": [
+      "动作"
+    ],
+    "nameWords": [
+      "counter-strike:",
+      "condition",
+      "zero"
+    ],
+    "searchText": "counter-strike: condition zero valve valve"
+  }
+]

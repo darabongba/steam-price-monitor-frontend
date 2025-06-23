@@ -1,0 +1,151 @@
+[
+  {
+    "steamId": "10",
+    "name": "Counter-Strike",
+    "type": "game",
+    "description": "感受世界上至酷超炫的联机对战游戏。 投入紧张刺激的反恐战争，与臭名昭著的恐怖分子展开生死对决。 团结合作，与队友一同完成不可能的任务。 冲锋陷阵，攻城拔塞。 营救人质。 团队成功离不开你的功绩。 团队成功将见证你的功绩。",
+    "fullDescription": "感受世界上至酷超炫的联机对战游戏。 投入紧张刺激的反恐战争，与臭名昭著的恐怖分子展开生死对决。 团结合作，与队友一同完成不可能的任务。 冲锋陷阵，攻城拔塞。 营救人质。 团队成功离不开你的功绩。 团队成功将见证你的功绩。",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "releaseDate": "2000 年 11 月 1 日",
+    "comingSoon": false,
+    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10/header.jpg?t=1745368572",
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10/0000000132.600x338.jpg?t=1745368572",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10/0000000133.600x338.jpg?t=1745368572",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/10/0000000134.600x338.jpg?t=1745368572"
+    ],
+    "movies": [],
+    "genres": [
+      "动作"
+    ],
+    "categories": [
+      "多人",
+      "玩家对战",
+      "线上玩家对战",
+      "同屏/分屏玩家对战",
+      "可选颜色",
+      "自定义音量控制",
+      "可以仅用键盘",
+      "立体声"
+    ],
+    "platforms": {
+      "windows": true,
+      "mac": true,
+      "linux": true
+    },
+    "price": {
+      "currency": "CNY",
+      "initial": 37,
+      "final": 37,
+      "discount_percent": 0,
+      "formatted": "¥ 37.00"
+    },
+    "isFree": false,
+    "dlc": [],
+    "achievements": 0,
+    "metacriticScore": 88,
+    "recommendations": 160486,
+    "lastUpdated": "2025-06-23T09:58:32.157Z"
+  },
+  {
+    "steamId": "70",
+    "name": "Half-Life",
+    "type": "game",
+    "description": "超五十家媒体联合推荐的“年度最佳”，Valve 的开山首作运用了荣获大奖的技术，将动作与冒险巧妙融合，营造出令人胆寒的逼真环境，玩家必须利用智慧才能生存到底。 游戏还提供令人兴奋的多人联机模式，让您与世界各地的好友与敌手一较高下。",
+    "fullDescription": "超五十家媒体联合推荐的“年度最佳”，Valve 的开山首作运用了荣获大奖的技术，将动作与冒险巧妙融合，营造出令人胆寒的逼真环境，玩家必须利用智慧才能生存到底。 游戏还提供令人兴奋的多人联机模式，让您与世界各地的好友与敌手一较高下。",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "releaseDate": "1998 年 11 月 20 日",
+    "comingSoon": false,
+    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/header.jpg?t=1745368462",
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002354.600x338.jpg?t=1745368462",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002343.600x338.jpg?t=1745368462",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/70/0000002342.600x338.jpg?t=1745368462"
+    ],
+    "movies": [],
+    "genres": [
+      "动作"
+    ],
+    "categories": [
+      "单人",
+      "多人",
+      "玩家对战",
+      "线上玩家对战",
+      "完全支持控制器",
+      "可选颜色",
+      "自定义音量控制",
+      "可调整难度"
+    ],
+    "platforms": {
+      "windows": true,
+      "mac": true,
+      "linux": true
+    },
+    "price": {
+      "currency": "CNY",
+      "initial": 37,
+      "final": 37,
+      "discount_percent": 0,
+      "formatted": "¥ 37.00"
+    },
+    "isFree": false,
+    "dlc": [
+      323130
+    ],
+    "achievements": 0,
+    "metacriticScore": 96,
+    "recommendations": 105319,
+    "lastUpdated": "2025-06-23T09:58:37.203Z"
+  },
+  {
+    "steamId": "100",
+    "name": "Counter-Strike: Condition Zero",
+    "type": "game",
+    "description": "除了精心制作的 Tour of Duty 游戏模式，无数大大小小的战斗、变化和新鲜内容让享誉世界的反恐精英多人游戏更加地丰富多彩，更有 12 个额外单人关卡，《反恐精英：零点行动》绝对是单人和多人游戏中的扛鼎之作。",
+    "fullDescription": "除了精心制作的 Tour of Duty 游戏模式，无数大大小小的战斗、变化和新鲜内容让享誉世界的反恐精英多人游戏更加地丰富多彩，更有 12 个额外单人关卡，《反恐精英：零点行动》绝对是单人和多人游戏中的扛鼎之作。",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "releaseDate": "2004 年 3 月 1 日",
+    "comingSoon": false,
+    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/80/header.jpg?t=1745368574",
+    "screenshots": [
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/80/0000002528.600x338.jpg?t=1745368574",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/80/0000002529.600x338.jpg?t=1745368574",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/80/0000002530.600x338.jpg?t=1745368574"
+    ],
+    "movies": [],
+    "genres": [
+      "动作"
+    ],
+    "categories": [
+      "单人",
+      "多人",
+      "可选颜色",
+      "自定义音量控制",
+      "可调整难度",
+      "立体声",
+      "已启用 Valve 反作弊保护",
+      "家庭共享"
+    ],
+    "platforms": {
+      "windows": true,
+      "mac": true,
+      "linux": true
+    },
+    "price": {
+      "currency": "CNY",
+      "initial": 37,
+      "final": 37,
+      "discount_percent": 0,
+      "formatted": "¥ 37.00"
+    },
+    "isFree": false,
+    "dlc": [],
+    "achievements": 0,
+    "metacriticScore": 65,
+    "recommendations": 19837,
+    "lastUpdated": "2025-06-23T09:58:41.448Z"
+  }
+]

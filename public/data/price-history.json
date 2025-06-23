@@ -1,0 +1,566 @@
+{
+  "10": [
+    {
+      "date": "2025-05-24",
+      "price": 34.78,
+      "originalPrice": 34.78,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-25",
+      "price": 35.49,
+      "originalPrice": 35.49,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-26",
+      "price": 64.52,
+      "originalPrice": 64.52,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-27",
+      "price": 35.66,
+      "originalPrice": 35.66,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-28",
+      "price": 108.59,
+      "originalPrice": 108.59,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-29",
+      "price": 49,
+      "originalPrice": 121.35,
+      "discount": 60
+    },
+    {
+      "date": "2025-05-30",
+      "price": 84.06,
+      "originalPrice": 84.06,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-31",
+      "price": 155.04,
+      "originalPrice": 155.04,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-01",
+      "price": 39.02,
+      "originalPrice": 39.02,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-02",
+      "price": 131.56,
+      "originalPrice": 131.56,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-03",
+      "price": 112.7,
+      "originalPrice": 112.7,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-04",
+      "price": 102.72,
+      "originalPrice": 102.72,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-05",
+      "price": 75.22,
+      "originalPrice": 75.22,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-06",
+      "price": 49.49,
+      "originalPrice": 49.49,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-07",
+      "price": 110.85,
+      "originalPrice": 110.85,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-08",
+      "price": 96.51,
+      "originalPrice": 96.51,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-09",
+      "price": 86.53,
+      "originalPrice": 86.53,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-10",
+      "price": 24.11,
+      "originalPrice": 33.47,
+      "discount": 28
+    },
+    {
+      "date": "2025-06-11",
+      "price": 96.67,
+      "originalPrice": 96.67,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-12",
+      "price": 62.52,
+      "originalPrice": 62.52,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-13",
+      "price": 88.73,
+      "originalPrice": 88.73,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-14",
+      "price": 135.5,
+      "originalPrice": 135.5,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-15",
+      "price": 107.52,
+      "originalPrice": 107.52,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-16",
+      "price": 66.26,
+      "originalPrice": 122.27,
+      "discount": 46
+    },
+    {
+      "date": "2025-06-17",
+      "price": 49.26,
+      "originalPrice": 49.26,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-18",
+      "price": 17.35,
+      "originalPrice": 40.69,
+      "discount": 57
+    },
+    {
+      "date": "2025-06-19",
+      "price": 123.94,
+      "originalPrice": 123.94,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-20",
+      "price": 61.85,
+      "originalPrice": 97.69,
+      "discount": 37
+    },
+    {
+      "date": "2025-06-21",
+      "price": 40.55,
+      "originalPrice": 57.44,
+      "discount": 29
+    },
+    {
+      "date": "2025-06-22",
+      "price": 153.35,
+      "originalPrice": 153.35,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-23",
+      "price": 34.24,
+      "originalPrice": 34.24,
+      "discount": 0
+    }
+  ],
+  "70": [
+    {
+      "date": "2025-05-24",
+      "price": 80.37,
+      "originalPrice": 80.37,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-25",
+      "price": 65.56,
+      "originalPrice": 71.42,
+      "discount": 8
+    },
+    {
+      "date": "2025-05-26",
+      "price": 117.68,
+      "originalPrice": 117.68,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-27",
+      "price": 91.09,
+      "originalPrice": 91.09,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-28",
+      "price": 77.08,
+      "originalPrice": 77.08,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-29",
+      "price": 92.13,
+      "originalPrice": 92.13,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-30",
+      "price": 77.65,
+      "originalPrice": 77.65,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-31",
+      "price": 117,
+      "originalPrice": 117,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-01",
+      "price": 93.99,
+      "originalPrice": 93.99,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-02",
+      "price": 22.72,
+      "originalPrice": 22.72,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-03",
+      "price": 125.97,
+      "originalPrice": 125.97,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-04",
+      "price": 17.1,
+      "originalPrice": 17.1,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-05",
+      "price": 91.7,
+      "originalPrice": 91.7,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-06",
+      "price": 113.6,
+      "originalPrice": 113.6,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-07",
+      "price": 55.76,
+      "originalPrice": 55.76,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-08",
+      "price": 49.49,
+      "originalPrice": 49.49,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-09",
+      "price": 155.01,
+      "originalPrice": 155.01,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-10",
+      "price": 28.05,
+      "originalPrice": 28.05,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-11",
+      "price": 26.79,
+      "originalPrice": 26.79,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-12",
+      "price": 60.43,
+      "originalPrice": 60.43,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-13",
+      "price": 62.81,
+      "originalPrice": 62.81,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-14",
+      "price": 125.96,
+      "originalPrice": 125.96,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-15",
+      "price": 88.42,
+      "originalPrice": 88.42,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-16",
+      "price": 106.04,
+      "originalPrice": 106.04,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-17",
+      "price": 80.9,
+      "originalPrice": 153.39,
+      "discount": 47
+    },
+    {
+      "date": "2025-06-18",
+      "price": 95.24,
+      "originalPrice": 95.24,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-19",
+      "price": 34.75,
+      "originalPrice": 34.75,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-20",
+      "price": 22.32,
+      "originalPrice": 22.32,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-21",
+      "price": 104.87,
+      "originalPrice": 104.87,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-22",
+      "price": 33.03,
+      "originalPrice": 33.03,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-23",
+      "price": 73.28,
+      "originalPrice": 73.28,
+      "discount": 0
+    }
+  ],
+  "100": [
+    {
+      "date": "2025-05-24",
+      "price": 77.48,
+      "originalPrice": 77.48,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-25",
+      "price": 49.59,
+      "originalPrice": 49.59,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-26",
+      "price": 35.92,
+      "originalPrice": 35.92,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-27",
+      "price": 119.02,
+      "originalPrice": 119.02,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-28",
+      "price": 42.92,
+      "originalPrice": 42.92,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-29",
+      "price": 89.29,
+      "originalPrice": 89.29,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-30",
+      "price": 98.55,
+      "originalPrice": 98.55,
+      "discount": 0
+    },
+    {
+      "date": "2025-05-31",
+      "price": 18.52,
+      "originalPrice": 18.52,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-01",
+      "price": 93.58,
+      "originalPrice": 119.84,
+      "discount": 22
+    },
+    {
+      "date": "2025-06-02",
+      "price": 37.33,
+      "originalPrice": 52.18,
+      "discount": 28
+    },
+    {
+      "date": "2025-06-03",
+      "price": 79.26,
+      "originalPrice": 79.26,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-04",
+      "price": 102.56,
+      "originalPrice": 102.56,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-05",
+      "price": 10.46,
+      "originalPrice": 10.46,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-06",
+      "price": 125.69,
+      "originalPrice": 125.69,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-07",
+      "price": 137.78,
+      "originalPrice": 137.78,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-08",
+      "price": 68.25,
+      "originalPrice": 99.71,
+      "discount": 32
+    },
+    {
+      "date": "2025-06-09",
+      "price": 13.47,
+      "originalPrice": 13.47,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-10",
+      "price": 11.25,
+      "originalPrice": 11.25,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-11",
+      "price": 60.35,
+      "originalPrice": 60.35,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-12",
+      "price": 112.49,
+      "originalPrice": 123.63,
+      "discount": 9
+    },
+    {
+      "date": "2025-06-13",
+      "price": 89.75,
+      "originalPrice": 89.75,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-14",
+      "price": 20.64,
+      "originalPrice": 20.64,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-15",
+      "price": 67.3,
+      "originalPrice": 155.28,
+      "discount": 57
+    },
+    {
+      "date": "2025-06-16",
+      "price": 95.75,
+      "originalPrice": 95.75,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-17",
+      "price": 72.06,
+      "originalPrice": 108.72,
+      "discount": 34
+    },
+    {
+      "date": "2025-06-18",
+      "price": 108.46,
+      "originalPrice": 108.46,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-19",
+      "price": 67.3,
+      "originalPrice": 67.3,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-20",
+      "price": 65.5,
+      "originalPrice": 153.73,
+      "discount": 57
+    },
+    {
+      "date": "2025-06-21",
+      "price": 57.22,
+      "originalPrice": 57.22,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-22",
+      "price": 82.82,
+      "originalPrice": 82.82,
+      "discount": 0
+    },
+    {
+      "date": "2025-06-23",
+      "price": 142.99,
+      "originalPrice": 142.99,
+      "discount": 0
+    }
+  ]
+}

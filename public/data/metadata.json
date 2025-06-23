@@ -1,0 +1,19 @@
+{
+  "lastUpdated": "2025-06-23T09:58:41.451Z",
+  "gamesCount": 3,
+  "popularGamesCount": 30,
+  "priceHistoryCount": 3,
+  "version": "2.0.0-test",
+  "dataSource": "SteamSpy + Steam Store (Puppeteer + Proxy Test)",
+  "isTestData": true,
+  "testLimited": true,
+  "mode": "puppeteer",
+  "proxyEnabled": true,
+  "requestStats": {
+    "requestCount": 4,
+    "failedRequests": 0,
+    "successRate": 1,
+    "cacheSize": 0,
+    "mode": "Puppeteer + Proxy"
+  }
+}

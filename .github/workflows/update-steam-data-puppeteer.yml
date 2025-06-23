@@ -1,0 +1,240 @@
+name: 🤖 更新Steam数据 (Puppeteer版)
+
+on:
+  schedule:
+    # 每天北京时间上午9点运行 (UTC+8 = UTC+0-8)
+    - cron: '0 1 * * *'
+  
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: '运行模式'
+        required: true
+        default: 'puppeteer'
+        type: choice
+        options:
+          - puppeteer
+          - standard
+      games_limit:
+        description: '游戏数量限制'
+        required: false
+        default: '30'
+        type: string
+
+jobs:
+  update-steam-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    steps:
+    - name: 📥 检出代码
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+    
+    - name: 🟢 设置Node.js环境
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: 📦 安装依赖
+      run: |
+        npm ci
+        npm install puppeteer
+        
+    - name: 🔧 安装Chrome依赖 (Ubuntu)
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          fonts-liberation \
+          libappindicator3-1 \
+          libasound2 \
+          libatk-bridge2.0-0 \
+          libatk1.0-0 \
+          libcups2 \
+          libdbus-1-3 \
+          libgdk-pixbuf2.0-0 \
+          libnspr4 \
+          libnss3 \
+          libx11-xcb1 \
+          libxcomposite1 \
+          libxdamage1 \
+          libxrandr2 \
+          xdg-utils \
+          libxss1 \
+          libgconf-2-4 \
+          libxtst6 \
+          libgtk-3-0 \
+          libdrm2 \
+          libxkbcommon0 \
+          libgbm1
+    
+    - name: 🌍 设置环境变量
+      run: |
+        echo "TZ=Asia/Shanghai" >> $GITHUB_ENV
+        echo "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=false" >> $GITHUB_ENV
+        echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome-stable" >> $GITHUB_ENV
+    
+    - name: 🗂️ 创建必要目录
+      run: |
+        mkdir -p public/data
+        mkdir -p cache
+        mkdir -p logs
+    
+    - name: 📊 运行数据拉取 (Puppeteer模式)
+      id: fetch_data
+      run: |
+        echo "开始时间: $(date)" | tee logs/fetch.log
+        
+        # 根据输入选择运行模式
+        if [ "${{ github.event.inputs.mode }}" = "standard" ]; then
+          echo "使用标准模式..." | tee -a logs/fetch.log
+          timeout 25m node scripts/data-fetcher.cjs 2>&1 | tee -a logs/fetch.log
+        else
+          echo "使用Puppeteer模式..." | tee -a logs/fetch.log
+          # 注意：GitHub Actions环境下不使用代理
+          timeout 25m node scripts/data-fetcher-puppeteer.cjs 2>&1 | tee -a logs/fetch.log
+        fi
+        
+        echo "结束时间: $(date)" | tee -a logs/fetch.log
+        
+        # 检查是否生成了数据文件
+        if [ -f "public/data/metadata.json" ]; then
+          echo "data_generated=true" >> $GITHUB_OUTPUT
+          echo "✅ 数据生成成功" | tee -a logs/fetch.log
+        else
+          echo "data_generated=false" >> $GITHUB_OUTPUT
+          echo "❌ 数据生成失败" | tee -a logs/fetch.log
+          exit 1
+        fi
+      env:
+        NODE_ENV: production
+        # GitHub Actions环境下禁用代理
+        NO_PROXY: true
+      continue-on-error: false
+    
+    - name: 📈 数据统计和验证
+      if: steps.fetch_data.outputs.data_generated == 'true'
+      run: |
+        echo "=== 数据统计报告 ===" | tee -a logs/fetch.log
+        
+        # 检查各个数据文件
+        for file in popular-games.json game-details.json price-history.json search-index.json metadata.json; do
+          if [ -f "public/data/$file" ]; then
+            size=$(stat -f%z "public/data/$file" 2>/dev/null || stat -c%s "public/data/$file" 2>/dev/null || echo "0")
+            echo "📄 $file: ${size} bytes" | tee -a logs/fetch.log
+          else
+            echo "❌ $file: 文件不存在" | tee -a logs/fetch.log
+          fi
+        done
+        
+        # 解析metadata.json获取统计信息
+        if [ -f "public/data/metadata.json" ]; then
+          echo "=== 详细统计 ===" | tee -a logs/fetch.log
+          node -e "
+            const fs = require('fs');
+            const metadata = JSON.parse(fs.readFileSync('public/data/metadata.json', 'utf8'));
+            console.log(\`🎮 游戏总数: \${metadata.gamesCount}\`);
+            console.log(\`🔥 热门游戏: \${metadata.popularGamesCount}\`);
+            console.log(\`📈 价格历史: \${metadata.priceHistoryCount}\`);
+            console.log(\`🔧 数据源: \${metadata.dataSource}\`);
+            console.log(\`⏰ 更新时间: \${metadata.lastUpdated}\`);
+            console.log(\`📊 版本: \${metadata.version}\`);
+            if (metadata.requestStats) {
+              console.log(\`🌐 请求统计: \${JSON.stringify(metadata.requestStats, null, 2)}\`);
+            }
+          " | tee -a logs/fetch.log
+        fi
+        
+        echo "=== 数据质量检查 ===" | tee -a logs/fetch.log
+        node -e "
+          const fs = require('fs');
+          try {
+            const games = JSON.parse(fs.readFileSync('public/data/game-details.json', 'utf8'));
+            const withDesc = games.filter(g => g.description && g.description.length > 10);
+            const withPrice = games.filter(g => g.price);
+            const withImage = games.filter(g => g.headerImage);
+            
+            console.log(\`✅ 数据质量报告:\`);
+            console.log(\`   - 有效描述: \${withDesc.length}/\${games.length} (\${Math.round(withDesc.length/games.length*100)}%)\`);
+            console.log(\`   - 价格信息: \${withPrice.length}/\${games.length} (\${Math.round(withPrice.length/games.length*100)}%)\`);
+            console.log(\`   - 游戏图片: \${withImage.length}/\${games.length} (\${Math.round(withImage.length/games.length*100)}%)\`);
+            
+            if (withDesc.length / games.length < 0.5) {
+              console.log('⚠️ 警告：有效数据比例较低，可能存在质量问题');
+              process.exit(1);
+            }
+          } catch (error) {
+            console.log('❌ 数据质量检查失败:', error.message);
+            process.exit(1);
+          }
+        " | tee -a logs/fetch.log
+    
+    - name: 🔍 检查数据更改
+      id: check_changes
+      run: |
+        git add public/data/
+        if git diff --cached --quiet; then
+          echo "has_changes=false" >> $GITHUB_OUTPUT
+          echo "📝 数据无变化，跳过提交" | tee -a logs/fetch.log
+        else
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+          echo "📝 检测到数据变化，准备提交" | tee -a logs/fetch.log
+          git diff --cached --stat | tee -a logs/fetch.log
+        fi
+    
+    - name: 📤 提交数据更新
+      if: steps.check_changes.outputs.has_changes == 'true'
+      run: |
+        # 配置Git用户信息
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # 获取统计信息用于提交消息
+        GAMES_COUNT=$(node -e "console.log(JSON.parse(require('fs').readFileSync('public/data/metadata.json', 'utf8')).gamesCount)")
+        MODE="${{ github.event.inputs.mode || 'puppeteer' }}"
+        
+        # 提交更改
+        git add public/data/
+        git commit -m "🤖 自动更新Steam数据 (${MODE}模式) - $(date '+%Y-%m-%d %H:%M') - ${GAMES_COUNT}个游戏"
+        
+        echo "📤 推送到远程仓库..." | tee -a logs/fetch.log
+        git push
+        
+        echo "✅ 数据更新完成" | tee -a logs/fetch.log
+    
+    - name: 📋 上传日志文件
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: fetch-logs-${{ github.run_number }}
+        path: logs/
+        retention-days: 7
+    
+    - name: 📊 运行结果总结
+      if: always()
+      run: |
+        echo "=== 🚀 Steam数据更新任务完成 ===" | tee -a logs/fetch.log
+        echo "⏰ 运行时间: $(date)" | tee -a logs/fetch.log
+        echo "🔧 运行模式: ${{ github.event.inputs.mode || 'puppeteer' }}" | tee -a logs/fetch.log
+        echo "📊 任务状态: ${{ job.status }}" | tee -a logs/fetch.log
+        
+        if [ "${{ steps.fetch_data.outputs.data_generated }}" = "true" ]; then
+          echo "✅ 数据生成: 成功" | tee -a logs/fetch.log
+        else
+          echo "❌ 数据生成: 失败" | tee -a logs/fetch.log
+        fi
+        
+        if [ "${{ steps.check_changes.outputs.has_changes }}" = "true" ]; then
+          echo "✅ 数据提交: 成功" | tee -a logs/fetch.log
+        else
+          echo "📝 数据提交: 无变化" | tee -a logs/fetch.log
+        fi
+        
+        echo "📁 日志文件已上传为构建产物" | tee -a logs/fetch.log
+        
+        # 显示最后几行日志
+        echo "=== 最近的日志 ===" 
+        tail -20 logs/fetch.log 

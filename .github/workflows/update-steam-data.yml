@@ -1,0 +1,261 @@
+name: 更新Steam游戏数据
+
+on:
+  # 每天北京时间上午9点运行（UTC时间凌晨1点）
+  schedule:
+    - cron: '0 1 * * *'
+  
+  # 允许手动触发
+  workflow_dispatch:
+    inputs:
+      games_limit:
+        description: '要获取的游戏数量'
+        required: false
+        default: '50'
+        type: string
+      force_update:
+        description: '强制更新所有数据'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      with:
+        # 需要完整的git历史来进行提交
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: 设置Node.js环境
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: 安装依赖
+      run: |
+        npm install
+        # 如果需要额外的依赖，可以在这里安装
+        # npm install axios cheerio
+    
+    - name: 配置Git用户信息
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+    
+    - name: 创建数据目录
+      run: |
+        mkdir -p public/data
+        mkdir -p cache
+        mkdir -p logs
+    
+    - name: 运行数据拉取脚本
+      env:
+        GAMES_LIMIT: ${{ github.event.inputs.games_limit || '50' }}
+        FORCE_UPDATE: ${{ github.event.inputs.force_update || 'false' }}
+        NODE_ENV: production
+      run: |
+        echo "开始拉取Steam数据..."
+        echo "游戏数量限制: $GAMES_LIMIT"
+        echo "强制更新: $FORCE_UPDATE"
+        
+        # 设置脚本权限
+        chmod +x scripts/data-fetcher.js
+        
+        # 运行数据拉取脚本
+        node scripts/data-fetcher.js 2>&1 | tee logs/data-fetch-$(date +%Y%m%d).log
+        
+        echo "数据拉取完成"
+    
+    - name: 检查数据文件
+      run: |
+        echo "检查生成的数据文件..."
+        ls -la public/data/
+        
+        # 检查关键文件是否存在
+        if [ ! -f "public/data/metadata.json" ]; then
+          echo "❌ 元数据文件不存在"
+          exit 1
+        fi
+        
+        if [ ! -f "public/data/game-details.json" ]; then
+          echo "❌ 游戏详情文件不存在"
+          exit 1
+        fi
+        
+        # 检查文件大小
+        metadata_size=$(stat -c%s "public/data/metadata.json")
+        games_size=$(stat -c%s "public/data/game-details.json")
+        
+        echo "元数据文件大小: $metadata_size bytes"
+        echo "游戏详情文件大小: $games_size bytes"
+        
+        if [ $metadata_size -lt 100 ] || [ $games_size -lt 1000 ]; then
+          echo "❌ 数据文件异常小，可能拉取失败"
+          exit 1
+        fi
+        
+        echo "✅ 数据文件检查通过"
+    
+    - name: 生成数据统计报告
+      run: |
+        echo "生成数据统计报告..."
+        node -e "
+        const fs = require('fs');
+        const path = require('path');
+        
+        try {
+          const metadata = JSON.parse(fs.readFileSync('public/data/metadata.json', 'utf-8'));
+          const gameDetails = JSON.parse(fs.readFileSync('public/data/game-details.json', 'utf-8'));
+          
+          console.log('📊 数据统计报告');
+          console.log('================');
+          console.log('更新时间:', metadata.lastUpdated);
+          console.log('游戏总数:', metadata.gamesCount);
+          console.log('热门游戏数:', metadata.popularGamesCount);
+          console.log('价格历史记录数:', metadata.priceHistoryCount);
+          console.log('数据源:', metadata.dataSource);
+          console.log('版本:', metadata.version);
+          console.log('');
+          
+          // 统计游戏类型
+          const gameTypes = {};
+          const developers = {};
+          
+          gameDetails.forEach(game => {
+            gameTypes[game.type] = (gameTypes[game.type] || 0) + 1;
+            developers[game.developer] = (developers[game.developer] || 0) + 1;
+          });
+          
+          console.log('游戏类型分布:');
+          Object.entries(gameTypes)
+            .sort(([,a], [,b]) => b - a)
+            .slice(0, 5)
+            .forEach(([type, count]) => {
+              console.log(' -', type, ':', count);
+            });
+          
+          console.log('');
+          console.log('主要开发商:');
+          Object.entries(developers)
+            .sort(([,a], [,b]) => b - a)
+            .slice(0, 5)
+            .forEach(([dev, count]) => {
+              console.log(' -', dev, ':', count);
+            });
+            
+        } catch (error) {
+          console.error('生成报告失败:', error.message);
+        }
+        "
+    
+    - name: 上传数据文件为构建产物
+      uses: actions/upload-artifact@v4
+      with:
+        name: steam-data-${{ github.run_number }}
+        path: |
+          public/data/
+          logs/
+        retention-days: 7
+    
+    - name: 检查Git状态
+      run: |
+        echo "检查Git状态..."
+        git status
+        
+        # 检查是否有未跟踪的文件
+        if [ -n "$(git ls-files --others --exclude-standard)" ]; then
+          echo "发现新文件，添加到Git..."
+          git add .
+        fi
+        
+        # 检查是否有更改
+        if git diff --staged --quiet; then
+          echo "没有检测到数据更改"
+          echo "SKIP_COMMIT=true" >> $GITHUB_ENV
+        else
+          echo "检测到数据更改，准备提交"
+          echo "SKIP_COMMIT=false" >> $GITHUB_ENV
+        fi
+    
+    - name: 提交和推送更改
+      if: env.SKIP_COMMIT == 'false'
+      run: |
+        echo "提交数据更改..."
+        
+        # 获取当前时间
+        current_date=$(date +'%Y-%m-%d %H:%M')
+        
+        # 获取游戏数量
+        games_count=$(node -e "
+          try {
+            const metadata = JSON.parse(require('fs').readFileSync('public/data/metadata.json', 'utf-8'));
+            console.log(metadata.gamesCount);
+          } catch(e) {
+            console.log('未知');
+          }
+        ")
+        
+        # 创建提交信息
+        commit_message="🎮 自动更新Steam游戏数据
+        📅 更新时间: $current_date
+        🎯 游戏数量: $games_count
+        🤖 自动化任务: GitHub Actions
+        📊 数据来源: SteamSpy + Steam Store API
+        通过GitHub Actions自动拉取并更新Steam游戏数据"
+        
+        git commit -m "$commit_message"
+        git push
+        
+        echo "✅ 数据已成功提交到GitHub"
+        
+        # 输出提交信息供后续步骤使用
+        echo "COMMIT_MESSAGE<<EOF" >> $GITHUB_ENV
+        echo "$commit_message" >> $GITHUB_ENV
+        echo "EOF" >> $GITHUB_ENV
+    
+    - name: 创建发布标签（每周）
+      if: env.SKIP_COMMIT == 'false' && github.event.schedule == '0 1 * * 0'
+      run: |
+        # 每周日创建一个发布标签
+        tag_name="data-$(date +'%Y%m%d')"
+        
+        git tag -a "$tag_name" -m "Steam数据快照 - $(date +'%Y年%m月%d日')"
+        git push origin "$tag_name"
+        
+        echo "创建发布标签: $tag_name"
+    
+    - name: 发送通知（可选）
+      if: env.SKIP_COMMIT == 'false' && failure()
+      run: |
+        echo "数据更新失败，发送通知..."
+        # 这里可以添加通知逻辑，比如发送邮件或Webhook
+        # curl -X POST "your-webhook-url" -d "数据更新失败"
+    
+    - name: 清理临时文件
+      if: always()
+      run: |
+        # 清理缓存和临时文件
+        rm -rf cache/*
+        rm -rf logs/*.tmp
+        
+        echo "清理完成"
+    
+    - name: 任务完成摘要
+      if: always()
+      run: |
+        echo "📋 任务执行摘要"
+        echo "================"
+        echo "执行时间: $(date)"
+        echo "跳过提交: $SKIP_COMMIT"
+        echo "任务状态: ${{ job.status }}"
+        
+        if [ -f "public/data/metadata.json" ]; then
+          echo "最新数据信息:"
+          cat public/data/metadata.json | head -10
+        fi 
