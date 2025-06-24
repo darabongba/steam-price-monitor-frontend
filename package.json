@@ -16,12 +16,9 @@
     "test:coverage": "vitest --coverage",
     "deploy": "npm run build && vercel --prod",
     "clean": "rm -rf dist",
-    "fetch-data": "node scripts/data-fetcher.cjs",
     "fetch-data-puppeteer": "node scripts/data-fetcher-puppeteer.cjs",
-    "test-fetch": "node scripts/run-local.cjs",
     "test-fetch-puppeteer": "node scripts/run-local-puppeteer.cjs",
-    "prepare-data": "npm run test-fetch && echo 'Data preparation complete'",
-    "install-puppeteer": "npm install puppeteer"
+    "prepare-data": "npm run test-fetch && echo 'Data preparation complete'"
   },
   "dependencies": {
     "react": "^18.2.0",
