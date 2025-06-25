@@ -1,5 +1,6 @@
 export interface UserSettings {
   id: string;
+  name: string;
   email: string;
   emailVerified: boolean;
   notifications: {
@@ -29,9 +30,9 @@ export interface UserSettings {
     analytics: boolean;
     marketing: boolean;
   };
-  createdAt: Date;
-  updatedAt: Date;
-  lastLoginAt: Date;
+  createdAt: string;
+  updatedAt: string;
+  lastLoginAt: string;
 }
 
 export interface UserProfile {

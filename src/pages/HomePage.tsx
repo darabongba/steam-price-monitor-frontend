@@ -7,13 +7,12 @@ import GameCard from '@/components/GameSearch/GameCard';
 import AlertCard from '@/components/PriceAlert/AlertCard';
 
 const HomePage: React.FC = () => {
-  const { popularGames, loadPopularGames, loading: gamesLoading } = useGameStore();
+  const { popularGames,loading: gamesLoading } = useGameStore();
   const { alerts, stats, loadAlerts } = useAlertStore();
 
   useEffect(() => {
-    loadPopularGames();
     loadAlerts();
-  }, [loadPopularGames, loadAlerts]);
+  }, [ loadAlerts]);
 
   const recentAlerts = alerts.slice(0, 3);
 
@@ -138,7 +137,7 @@ const HomePage: React.FC = () => {
             ) : popularGames.length > 0 ? (
               <div className="space-y-4">
                 {popularGames.slice(0, 3).map((game) => (
-                  <GameCard key={game.id} game={game} compact />
+                  <GameCard key={game.steamId} game={game} compact />
                 ))}
               </div>
             ) : (
@@ -243,4 +242,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage; 
+export default HomePage;

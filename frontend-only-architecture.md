@@ -90,7 +90,6 @@ steamPriceOffNotification/
 │   │   └── useEmailService.ts # 邮件服务Hook
 │   │
 │   ├── services/             # 服务层
-│   │   ├── steamService.ts   # Steam数据服务
 │   │   ├── storageService.ts # 数据存储服务
 │   │   ├── emailService.ts   # 邮件服务
 │   │   ├── workerService.ts  # Worker通信服务

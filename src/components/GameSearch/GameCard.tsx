@@ -12,16 +12,16 @@ interface GameCardProps {
 
 const GameCard: React.FC<GameCardProps> = ({ game, compact = false }) => {
   const { createAlert, hasAlert } = useAlertStore();
-  const hasExistingAlert = hasAlert(game.id);
+  const hasExistingAlert = hasAlert(game.steamId);
 
   const handleCreateAlert = () => {
     createAlert({
-      gameId: game.id,
+      gameId: game.steamId,
       gameName: game.name,
-      targetPrice: game.price?.current ? game.price.current * 0.8 : 0,
-      currentPrice: game.price?.current || 0,
-      emailEnabled: true,
+      targetPrice: game.price?.final ? game.price.final * 0.8 : 0,
+      currentPrice: game.price?.final || 0,
       pushEnabled: true,
+        ...game,
     });
   };
 
@@ -44,16 +44,8 @@ const GameCard: React.FC<GameCardProps> = ({ game, compact = false }) => {
           <div className="flex items-center space-x-2 mt-1">
             {game.price && (
               <span className="text-sm font-semibold text-green-600 dark:text-green-400">
-                {formatPrice(game.price.current, { currency: 'CNY' })}
+                {formatPrice(game.price.final, { currency: 'CNY' })}
               </span>
-            )}
-            {game.rating && (
-              <div className="flex items-center">
-                <Star className="w-3 h-3 text-yellow-400 fill-current" />
-                <span className="text-xs text-gray-600 dark:text-gray-400 ml-1">
-                  {game.rating}
-                </span>
-              </div>
             )}
           </div>
         </div>
@@ -82,39 +74,39 @@ const GameCard: React.FC<GameCardProps> = ({ game, compact = false }) => {
             target.src = '/placeholder-game.jpg';
           }}
         />
-        {game.price?.discount && game.price.discount > 0 && (
-          <div className="absolute top-2 right-2 bg-red-600 text-white px-2 py-1 rounded-md text-sm font-bold">
-            -{game.price.discount}%
+        {game.price?.discount_percent && game.price.discount_percent > 0 && (
+          <div className="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full font-medium">
+            -{game.price.discount_percent}%
           </div>
         )}
       </div>
-      
+
       <div className="p-4">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 line-clamp-2">
           {game.name}
         </h3>
-        
-        {game.shortDescription && (
-          <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">
-            {game.shortDescription}
+
+        {game.description && (
+          <p className="text-gray-600 text-sm line-clamp-2">
+            {game.description}
           </p>
         )}
-        
+
         <div className="flex items-center justify-between mb-4">
           {game.price ? (
             <div className="flex items-center space-x-2">
-              {game.price.discount && game.price.discount > 0 ? (
-                <>
-                  <span className="text-sm text-gray-500 dark:text-gray-400 line-through">
-                    {formatPrice(game.price.original, { currency: 'CNY' })}
+              {game.price.discount_percent && game.price.discount_percent > 0 ? (
+                <div className="flex items-center space-x-2">
+                  <span className="text-sm text-gray-500 line-through">
+                    {formatPrice(game.price.initial, { currency: 'CNY' })}
                   </span>
                   <span className="text-lg font-bold text-green-600 dark:text-green-400">
-                    {formatPrice(game.price.current, { currency: 'CNY' })}
+                    {formatPrice(game.price.final, { currency: 'CNY' })}
                   </span>
-                </>
+                </div>
               ) : (
                 <span className="text-lg font-bold text-gray-900 dark:text-white">
-                  {formatPrice(game.price.current, { currency: 'CNY' })}
+                  {formatPrice(game.price.final, { currency: 'CNY' })}
                 </span>
               )}
             </div>
@@ -123,17 +115,8 @@ const GameCard: React.FC<GameCardProps> = ({ game, compact = false }) => {
               免费
             </span>
           )}
-          
-          {game.rating && (
-            <div className="flex items-center">
-              <Star className="w-4 h-4 text-yellow-400 fill-current" />
-              <span className="text-sm text-gray-600 dark:text-gray-400 ml-1">
-                {game.rating}
-              </span>
-            </div>
-          )}
         </div>
-        
+
         <div className="flex space-x-2">
           <Button
             className="flex-1"
@@ -145,15 +128,22 @@ const GameCard: React.FC<GameCardProps> = ({ game, compact = false }) => {
             {hasExistingAlert ? '已设置提醒' : '设置提醒'}
           </Button>
         </div>
-        
-        {game.tags && game.tags.length > 0 && (
-          <div className="flex flex-wrap gap-1 mt-3">
-            {game.tags.slice(0, 3).map((tag, index) => (
+
+        {game.metacriticScore && (
+          <div className="flex items-center text-xs text-amber-600">
+            <Star className="w-3 h-3 mr-1" />
+            {game.metacriticScore}
+          </div>
+        )}
+
+        {game.genres && game.genres.length > 0 && (
+          <div className="flex flex-wrap gap-1">
+            {game.genres.slice(0, 3).map((genre: string, index: number) => (
               <span
                 key={index}
-                className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full"
+                className="px-2 py-1 text-xs bg-blue-100 text-blue-700 rounded-full"
               >
-                {tag}
+                {genre}
               </span>
             ))}
           </div>
@@ -163,4 +153,4 @@ const GameCard: React.FC<GameCardProps> = ({ game, compact = false }) => {
   );
 };
 
-export default GameCard; 
+export default GameCard;

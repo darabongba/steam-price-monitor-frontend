@@ -177,16 +177,6 @@ export const useGameSearch = (query: string) => {
 };
 ```
 
-**后端实现**：
-```typescript
-// services/steamService.ts
-export class SteamService {
-  async searchGames(query: string): Promise<Game[]> {
-    // 实现Steam API游戏搜索
-    // 支持缓存和去重
-  }
-}
-```
 
 ### 2. 价格监控功能
 

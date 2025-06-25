@@ -1,46 +1,54 @@
 export interface Game {
-  id: string;
   steamId: string;
   name: string;
-  imageUrl: string;
-  headerImage?: string;
+  type: string;
   description: string;
-  shortDescription?: string;
+  fullDescription: string;
   developer: string;
   publisher: string;
-  tags: string[];
-  categories: string[];
-  genres: string[];
   releaseDate: string;
+  comingSoon: boolean;
+  headerImage: string;
+  screenshots: string[];
+  movies: string[];
+  genres: string[];
+  categories: string[];
   platforms: {
     windows: boolean;
     mac: boolean;
     linux: boolean;
   };
-  price?: {
-    current: number;
-    original: number;
-    discount: number;
+  price: {
     currency: string;
+    initial: number;
+    final: number;
+    discount_percent: number;
     formatted: string;
-    isFree: boolean;
   };
-  rating?: number;
-  lastUpdated: Date;
-  createdAt: Date;
+  isFree: boolean;
+  dlc: number[];
+  achievements: number;
+  metacriticScore?: number;
+  recommendations: number;
+  lastUpdated: string;
+}
+
+export interface LocalGame extends Game {
+  id: string;
+  createdAt: string;
 }
 
 export interface GamePrice {
   steamId: string;
-  price: number;
-  originalPrice: number;
-  discountPercent: number;
   currency: string;
+  initial: number;
+  final: number;
+  discount_percent: number;
   formatted: string;
   isFree: boolean;
   onSale: boolean;
-  saleEndDate?: Date;
-  lastUpdated: Date;
+  saleEndDate?: string;
+  lastUpdated: string;
 }
 
 export interface GameSearchResult {
@@ -51,8 +59,6 @@ export interface GameSearchResult {
 }
 
 export interface GameDetails extends Game {
-  screenshots: string[];
-  movies: string[];
   systemRequirements: {
     minimum?: string;
     recommended?: string;
@@ -63,9 +69,6 @@ export interface GameDetails extends Game {
     total: number;
     score: number;
   };
-  dlc: string[];
-  achievements: number;
-  metacriticScore?: number;
   steamRating: number;
   ageRating: string;
 }
@@ -87,7 +90,7 @@ export interface PriceHistory {
   originalPrice: number;
   discount: number;
   currency: string;
-  recordedAt: Date;
+  recordedAt: string;
   source: 'steam' | 'manual' | 'api';
 }
 
@@ -146,4 +149,4 @@ export interface SteamAppDetails {
       final_formatted: string;
     };
   };
-} 
+}

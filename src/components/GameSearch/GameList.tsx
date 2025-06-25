@@ -10,7 +10,7 @@ const GameList: React.FC<GameListProps> = ({ games }) => {
   return (
     <div className="space-y-4">
       {games.map((game) => (
-        <GameCard key={game.id} game={game} compact />
+        <GameCard key={game.steamId} game={game} compact />
       ))}
     </div>
   );

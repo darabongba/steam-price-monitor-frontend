@@ -1,5 +1,5 @@
 import Dexie, { Table } from 'dexie';
-import { Game, PriceHistory } from '@/types/game';
+import { Game, PriceHistory, LocalGame } from '@/types/game';
 import { PriceAlert, AlertNotification } from '@/types/alert';
 import { UserSettings } from '@/types/user';
 import { CacheEntry, StorageStats, BackupData, ImportResult } from '@/types/storage';
@@ -45,17 +45,19 @@ export class StorageService {
   }
 
   // 游戏相关操作
-  async addGame(game: Omit<Game, 'id'>): Promise<string> {
+  async addGame(game: Game): Promise<string> {
     try {
-      const id = await db.games.add({
+      const localGame: LocalGame = {
         ...game,
         id: crypto.randomUUID(),
-        createdAt: new Date(),
-        lastUpdated: new Date(),
-      });
+        createdAt: new Date().toISOString(),
+        lastUpdated: new Date().toISOString(),
+      };
+      
+      const id = await db.games.add(localGame);
       return String(id);
     } catch (error) {
-      console.error('Failed to add game:', error);
+      console.error('添加游戏失败:', error);
       throw new Error('添加游戏失败');
     }
   }
@@ -82,7 +84,7 @@ export class StorageService {
     try {
       await db.games.update(id, {
         ...updates,
-        lastUpdated: new Date(),
+        lastUpdated: new Date().toISOString(),
       });
     } catch (error) {
       console.error('Failed to update game:', error);
@@ -118,9 +120,9 @@ export class StorageService {
       const id = await db.alerts.add({
         ...alert,
         id: crypto.randomUUID(),
-        createdAt: new Date(),
-        updatedAt: new Date(),
-        nextCheckAt: new Date(),
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+        nextCheckAt: new Date().toISOString(),
         checkCount: 0,
       });
       return String(id);
@@ -143,7 +145,7 @@ export class StorageService {
     try {
       await db.alerts.update(id, {
         ...updates,
-        updatedAt: new Date(),
+        updatedAt: new Date().toISOString(),
       });
     } catch (error) {
       console.error('Failed to update alert:', error);
@@ -182,7 +184,7 @@ export class StorageService {
     try {
       const now = new Date();
       return await db.alerts
-        .filter(alert => alert.isActive && !alert.triggered && alert.nextCheckAt <= now)
+        .filter(alert => alert.isActive && !alert.triggered && new Date(alert.nextCheckAt) <= now)
         .toArray();
     } catch (error) {
       console.error('Failed to get alerts for check:', error);
@@ -213,7 +215,7 @@ export class StorageService {
       
       // 手动排序并限制数量
       return allHistory
-        .sort((a, b) => b.recordedAt.getTime() - a.recordedAt.getTime())
+        .sort((a, b) => new Date(b.recordedAt).getTime() - new Date(a.recordedAt).getTime())
         .slice(0, limit);
     } catch (error) {
       console.error('Failed to get price history:', error);
@@ -288,16 +290,16 @@ export class StorageService {
       if (existing) {
         await db.settings.update(existing.id, {
           ...settings,
-          updatedAt: new Date(),
+          updatedAt: new Date().toISOString(),
         });
         return existing.id;
       } else {
         const id = await db.settings.add({
           ...settings,
           id: crypto.randomUUID(),
-          createdAt: new Date(),
-          updatedAt: new Date(),
-          lastLoginAt: new Date(),
+          createdAt: new Date().toISOString(),
+          updatedAt: new Date().toISOString(),
+          lastLoginAt: new Date().toISOString(),
         });
         return String(id);
       }
@@ -324,8 +326,8 @@ export class StorageService {
         id: crypto.randomUUID(),
         key,
         data,
-        expiresAt,
-        createdAt: new Date(),
+        expiresAt: expiresAt.toISOString(),
+        createdAt: new Date().toISOString(),
         tags,
       });
     } catch (error) {
@@ -336,17 +338,18 @@ export class StorageService {
 
   async getCache<T>(key: string): Promise<T | null> {
     try {
-      const entry = await db.cache.where('key').equals(key).first();
-      if (!entry) return null;
+      const now = new Date();
+      const entry = await db.cache
+        .where('key')
+        .equals(key)
+        .filter(entry => new Date(entry.expiresAt) > now)
+        .first();
       
-      if (new Date() > entry.expiresAt) {
-        await db.cache.delete(entry.id);
-        return null;
-      }
+      if (!entry) return null;
       
       return entry.data as T;
     } catch (error) {
-      console.error('Failed to get cache:', error);
+      console.error('获取缓存失败:', error);
       return null;
     }
   }

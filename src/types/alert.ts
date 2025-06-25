@@ -13,10 +13,10 @@ export interface PriceAlert {
   triggered: boolean;
   notificationSent: boolean;
   userEmail: string;
-  createdAt: Date;
-  updatedAt: Date;
-  triggeredAt?: Date;
-  nextCheckAt: Date;
+  createdAt: string;
+  updatedAt: string;
+  triggeredAt?: string;
+  nextCheckAt: string;
   checkCount: number;
   lastPrice: number;
   checkInterval: number;
@@ -25,10 +25,11 @@ export interface PriceAlert {
 
 export interface AlertFormData {
   gameId: string;
+  steamId: string;
   gameName: string;
+  headerImage: string;
   targetPrice: number;
   currentPrice: number;
-  emailEnabled: boolean;
   pushEnabled: boolean;
 }
 
@@ -44,7 +45,7 @@ export interface AlertNotification {
   discountPercent?: number;
   buyLink?: string;
   data?: any;
-  sentAt: Date;
+  sentAt: string;
   read: boolean;
 }
 
@@ -67,10 +68,10 @@ export interface PriceChange {
   newDiscount: number;
   priceChange: number;
   changePercent: number;
-  timestamp: Date;
+  timestamp: string;
   alertsTriggered: string[];
 }
 
 export type AlertStatus = 'active' | 'inactive' | 'triggered' | 'error';
 export type AlertFrequency = 'hourly' | 'daily' | 'weekly';
-export type NotificationType = 'email' | 'browser' | 'both'; 
+export type NotificationType = 'email' | 'browser' | 'both';

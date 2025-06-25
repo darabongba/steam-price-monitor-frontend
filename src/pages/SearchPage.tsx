@@ -38,7 +38,7 @@ const SearchPage: React.FC = () => {
       case 'name':
         return sorted.sort((a, b) => a.name.localeCompare(b.name));
       case 'price':
-        return sorted.sort((a, b) => (a.price?.current || 0) - (b.price?.current || 0));
+        return sorted.sort((a, b) => (a.price?.final || 0) - (b.price?.final || 0));
       case 'release_date':
         return sorted.sort((a, b) => 
           new Date(b.releaseDate || 0).getTime() - new Date(a.releaseDate || 0).getTime()
@@ -218,7 +218,7 @@ const SearchPage: React.FC = () => {
             viewMode === 'grid' ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {sortedGames.map((game) => (
-                  <GameCard key={game.id} game={game} />
+                  <GameCard key={game.steamId} game={game} />
                 ))}
               </div>
             ) : (

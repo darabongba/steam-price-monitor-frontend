@@ -15,8 +15,8 @@ export interface CacheEntry {
   id: string;
   key: string;
   data: any;
-  expiresAt: Date;
-  createdAt: Date;
+  expiresAt: string;
+  createdAt: string;
   tags: string[];
 }
 

@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { PriceAlert } from '@/types/alert';
 import { GamePrice } from '@/types/game';
 import { useAlertStore } from '@/stores/alertStore';
-import { steamService } from '@/services/steamService';
+import { staticDataService } from '@/services/staticDataService.ts';
 import { PRICE_CHECK_INTERVAL } from '@/utils/constants';
 
 interface UsePriceMonitorOptions {
@@ -43,19 +43,19 @@ export function usePriceMonitor(options: UsePriceMonitorOptions = {}): UsePriceM
     try {
       setError(null);
       setLastCheck(new Date());
-      
+
       const activeAlerts = alerts.filter(alert => alert.isActive && !alert.triggered);
-      
+
       for (const alert of activeAlerts) {
         try {
-          const currentPrice = await steamService.getGamePrice(alert.steamId);
-          
+          const currentPrice = await staticDataService.getGamePrice(alert.steamId);
+
           if (currentPrice) {
             // 调用价格更新回调
             onPriceUpdate?.(alert, currentPrice);
-            
+
             // 检查是否达到目标价格
-            if (currentPrice.price <= alert.targetPrice && !alert.triggered) {
+            if (currentPrice.final <= alert.targetPrice && !alert.triggered) {
               onPriceTarget?.(alert, currentPrice);
             }
           }
@@ -66,7 +66,7 @@ export function usePriceMonitor(options: UsePriceMonitorOptions = {}): UsePriceM
 
       // 使用store的检查方法
       await checkPrices();
-      
+
       // 设置下次检查时间
       setNextCheck(new Date(Date.now() + interval));
     } catch (err) {
@@ -157,4 +157,4 @@ export function usePriceMonitor(options: UsePriceMonitorOptions = {}): UsePriceM
     checkNow,
     error,
   };
-} 
+}

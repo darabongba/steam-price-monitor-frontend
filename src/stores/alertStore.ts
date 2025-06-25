@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import { devtools, persist } from 'zustand/middleware';
 import { PriceAlert, AlertFormData, AlertNotification } from '@/types/alert';
 import { storageService } from '@/services/storageService';
-import { steamService } from '@/services/steamService';
+import { staticDataService } from '@/services/staticDataService.ts';
 
 interface AlertState {
   // 状态
@@ -11,7 +11,7 @@ interface AlertState {
   loading: boolean;
   error: string | null;
   checkingPrices: boolean;
-  
+
   // 统计信息
   stats: {
     total: number;
@@ -19,7 +19,7 @@ interface AlertState {
     triggered: number;
     paused: number;
   };
-  
+
   // 操作
   loadAlerts: () => Promise<void>;
   createAlert: (alertData: AlertFormData) => Promise<void>;
@@ -54,7 +54,7 @@ export const useAlertStore = create<AlertState>()(
         // 加载所有提醒
         loadAlerts: async () => {
           set({ loading: true, error: null });
-          
+
           try {
             const alerts = await storageService.getAllAlerts();
             const stats = {
@@ -63,12 +63,12 @@ export const useAlertStore = create<AlertState>()(
               triggered: alerts.filter(alert => alert.triggered).length,
               paused: alerts.filter(alert => !alert.isActive).length,
             };
-            
+
             set({ alerts, stats, loading: false });
           } catch (error) {
-            set({ 
+            set({
               error: error instanceof Error ? error.message : '加载提醒失败',
-              loading: false 
+              loading: false
             });
           }
         },
@@ -76,28 +76,28 @@ export const useAlertStore = create<AlertState>()(
         // 创建新提醒
         createAlert: async (alertData: AlertFormData) => {
           set({ loading: true, error: null });
-          
+
           try {
             // 验证游戏是否存在
-            const game = await storageService.getGame(alertData.gameId);
-            if (!game) {
-              throw new Error('游戏不存在');
-            }
+            // const game = await storageService.getGame(alertData.gameId);
+            // if (!game) {
+            //   throw new Error('游戏不存在');
+            // }
 
             // 检查是否已有相同的提醒
             const existingAlerts = get().alerts.filter(
               alert => alert.gameId === alertData.gameId && alert.isActive
             );
-            
+
             if (existingAlerts.length > 0) {
               throw new Error('该游戏已有活跃的价格提醒');
             }
 
             const newAlert: Omit<PriceAlert, 'id'> = {
               gameId: alertData.gameId,
-              steamId: game.steamId,
+              steamId: alertData.steamId,
               gameName: alertData.gameName,
-              gameImage: game.imageUrl,
+              gameImage: alertData.headerImage,
               targetPrice: alertData.targetPrice,
               currentPrice: alertData.currentPrice,
               originalPrice: alertData.currentPrice,
@@ -107,17 +107,18 @@ export const useAlertStore = create<AlertState>()(
               triggered: false,
               notificationSent: false,
               userEmail: '', // 从用户设置中获取
-              createdAt: new Date(),
-              updatedAt: new Date(),
-              nextCheckAt: new Date(),
+              createdAt: new Date().toISOString(),
+              updatedAt: new Date().toISOString(),
+              nextCheckAt: new Date().toISOString(),
               checkCount: 0,
               lastPrice: alertData.currentPrice,
               checkInterval: 3600000, // 1小时
             };
 
             const alertId = await storageService.addAlert(newAlert);
+            console.log('Created Alert:', alertId)
             const createdAlert = { ...newAlert, id: alertId };
-            
+
             set(state => {
               const newAlerts = [...state.alerts, createdAlert];
               return {
@@ -132,9 +133,9 @@ export const useAlertStore = create<AlertState>()(
               };
             });
           } catch (error) {
-            set({ 
+            set({
               error: error instanceof Error ? error.message : '创建提醒失败',
-              loading: false 
+              loading: false
             });
           }
         },
@@ -143,12 +144,12 @@ export const useAlertStore = create<AlertState>()(
         updateAlert: async (id: string, updates: Partial<PriceAlert>) => {
           try {
             await storageService.updateAlert(id, updates);
-            
+
             set(state => {
-              const newAlerts = state.alerts.map(alert => 
-                alert.id === id ? { ...alert, ...updates, updatedAt: new Date() } : alert
+              const newAlerts = state.alerts.map(alert =>
+                alert.id === id ? { ...alert, ...updates, updatedAt: new Date().toISOString() } : alert
               );
-              
+
               return {
                 alerts: newAlerts,
                 stats: {
@@ -161,7 +162,7 @@ export const useAlertStore = create<AlertState>()(
               };
             });
           } catch (error) {
-            set({ 
+            set({
               error: error instanceof Error ? error.message : '更新提醒失败'
             });
           }
@@ -171,7 +172,7 @@ export const useAlertStore = create<AlertState>()(
         deleteAlert: async (id: string) => {
           try {
             await storageService.deleteAlert(id);
-            
+
             set(state => {
               const newAlerts = state.alerts.filter(alert => alert.id !== id);
               return {
@@ -186,7 +187,7 @@ export const useAlertStore = create<AlertState>()(
               };
             });
           } catch (error) {
-            set({ 
+            set({
               error: error instanceof Error ? error.message : '删除提醒失败'
             });
           }
@@ -203,20 +204,22 @@ export const useAlertStore = create<AlertState>()(
         // 检查价格
         checkPrices: async () => {
           set({ checkingPrices: true, error: null });
-          
+
           try {
             const alertsToCheck = await storageService.getAlertsForCheck();
-            
+
             for (const alert of alertsToCheck) {
               try {
-                const currentPrice = await steamService.getGamePrice(alert.steamId);
-                
-                if (currentPrice && currentPrice.price <= alert.targetPrice) {
+                const currentPrice = await staticDataService.getGamePrice(alert.steamId);
+
+                if (currentPrice && currentPrice.final <= alert.targetPrice) {
                   // 价格达到目标，触发提醒
-                  await storageService.updateAlert(alert.id, {
+                  await get().updateAlert(alert.id, {
                     triggered: true,
-                    triggeredAt: new Date(),
-                    lastPrice: currentPrice.price,
+                    triggeredAt: new Date().toISOString(),
+                    lastPrice: currentPrice.final,
+                    currentPrice: currentPrice.final,
+                    updatedAt: new Date().toISOString(),
                   });
 
                   // 创建通知
@@ -228,23 +231,25 @@ export const useAlertStore = create<AlertState>()(
                     data: {
                       gameId: alert.gameId,
                       steamId: alert.steamId,
-                      currentPrice: currentPrice.price,
+                      currentPrice: currentPrice.final,
                       targetPrice: alert.targetPrice,
                     },
-                    sentAt: new Date(),
+                    sentAt: new Date().toISOString(),
                     read: false,
                   };
 
                   await storageService.addNotification(notification);
-                  
+
                   // 发送邮件通知（如果配置了）
                   // 这里可以添加邮件发送逻辑
-                } else {
-                  // 更新检查信息
-                  await storageService.updateAlert(alert.id, {
+                } else if (currentPrice) {
+                  // 仅更新价格信息
+                  await get().updateAlert(alert.id, {
+                    lastPrice: currentPrice?.final || alert.lastPrice,
+                    currentPrice: currentPrice.final,
+                                         updatedAt: new Date().toISOString(),
+                     nextCheckAt: new Date(Date.now() + alert.checkInterval).toISOString(),
                     checkCount: alert.checkCount + 1,
-                    lastPrice: currentPrice?.price || alert.lastPrice,
-                    nextCheckAt: new Date(Date.now() + alert.checkInterval),
                   });
                 }
               } catch (error) {
@@ -255,12 +260,12 @@ export const useAlertStore = create<AlertState>()(
             // 重新加载提醒和通知
             await get().loadAlerts();
             await get().loadNotifications();
-            
+
             set({ checkingPrices: false });
           } catch (error) {
-            set({ 
+            set({
               error: error instanceof Error ? error.message : '价格检查失败',
-              checkingPrices: false 
+              checkingPrices: false
             });
           }
         },
@@ -271,7 +276,7 @@ export const useAlertStore = create<AlertState>()(
             const notifications = await storageService.getNotifications();
             set({ notifications, error: null });
           } catch (error) {
-            set({ 
+            set({
               error: error instanceof Error ? error.message : '加载通知失败'
             });
           }
@@ -281,15 +286,15 @@ export const useAlertStore = create<AlertState>()(
         markNotificationAsRead: async (id: string) => {
           try {
             await storageService.markNotificationAsRead(id);
-            
+
             set(state => ({
-              notifications: state.notifications.map(notif => 
+              notifications: state.notifications.map(notif =>
                 notif.id === id ? { ...notif, read: true } : notif
               ),
               error: null,
             }));
           } catch (error) {
-            set({ 
+            set({
               error: error instanceof Error ? error.message : '标记通知失败'
             });
           }
@@ -323,4 +328,4 @@ export const useAlertStore = create<AlertState>()(
       name: 'alert-store',
     }
   )
-); 
+);

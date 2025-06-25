@@ -91,10 +91,6 @@ const AlertCard: React.FC<AlertCardProps> = ({ alert, compact = false }) => {
             
             <div className="flex items-center space-x-2 mt-2">
               <div className="flex items-center space-x-1">
-                <Bell className="w-3 h-3 text-blue-500" />
-                <span className="text-xs text-gray-600 dark:text-gray-400">邮件通知</span>
-              </div>
-              <div className="flex items-center space-x-1">
                 <Bell className="w-3 h-3 text-green-500" />
                 <span className="text-xs text-gray-600 dark:text-gray-400">推送通知</span>
               </div>

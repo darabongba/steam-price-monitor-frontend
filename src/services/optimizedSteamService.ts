@@ -224,7 +224,7 @@ export class OptimizedSteamService {
         mac: item.platforms?.mac || false,
         linux: item.platforms?.linux || false,
       },
-      lastUpdated: new Date(),
+      lastUpdated: new Date().toISOString(),
       createdAt: new Date(),
     }));
   }
@@ -275,14 +275,14 @@ export class OptimizedSteamService {
           const priceData = response[steamId].data.price_overview;
           return {
             steamId,
-            price: priceData.final / 100,
-            originalPrice: priceData.initial / 100,
-            discountPercent: priceData.discount_percent,
             currency: priceData.currency,
+            initial: priceData.initial,
+            final: priceData.final,    
+            discount_percent: priceData.discount_percent,
             formatted: priceData.final_formatted,
-            isFree: false,
+            isFree: response[steamId].data.is_free,
             onSale: priceData.discount_percent > 0,
-            lastUpdated: new Date(),
+            lastUpdated: new Date().toISOString(),
           };
         }
         

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Save, Mail, Bell, Download, Upload, Trash2, Settings } from 'lucide-react';
 import { useAlertStore } from '@/stores/alertStore';
 import { storageService } from '@/services/storageService';
-import { emailService } from '@/services/emailService';
 import Button from '@/components/common/Button';
 
 interface EmailSettings {
@@ -34,7 +33,6 @@ const SettingsPage: React.FC = () => {
     priceDropThreshold: 20,
   });
   const [loading, setLoading] = useState(false);
-  const [testEmailLoading, setTestEmailLoading] = useState(false);
 
   useEffect(() => {
     loadSettings();
@@ -45,11 +43,11 @@ const SettingsPage: React.FC = () => {
       // 从存储中加载设置
       const savedEmailSettings = localStorage.getItem('emailSettings');
       const savedNotificationSettings = localStorage.getItem('notificationSettings');
-      
+
       if (savedEmailSettings) {
         setEmailSettings(JSON.parse(savedEmailSettings));
       }
-      
+
       if (savedNotificationSettings) {
         setNotificationSettings(JSON.parse(savedNotificationSettings));
       }
@@ -62,14 +60,9 @@ const SettingsPage: React.FC = () => {
     setLoading(true);
     try {
       // 保存到本地存储
-      localStorage.setItem('emailSettings', JSON.stringify(emailSettings));
       localStorage.setItem('notificationSettings', JSON.stringify(notificationSettings));
-      
-      // 如果邮件设置已启用，初始化EmailJS
-      if (emailSettings.enabled && emailSettings.serviceId && emailSettings.publicKey) {
-        await emailService.initialize();
-      }
-      
+
+
       alert('设置保存成功！');
     } catch (error) {
       console.error('保存设置失败:', error);
@@ -79,23 +72,7 @@ const SettingsPage: React.FC = () => {
     }
   };
 
-  const testEmail = async () => {
-    if (!emailSettings.enabled || !emailSettings.serviceId) {
-      alert('请先配置并启用邮件设置');
-      return;
-    }
 
-    setTestEmailLoading(true);
-    try {
-      await emailService.sendTestEmail('test@example.com');
-      alert('测试邮件发送成功！请检查您的邮箱');
-    } catch (error) {
-      console.error('发送测试邮件失败:', error);
-      alert('发送测试邮件失败，请检查配置');
-    } finally {
-      setTestEmailLoading(false);
-    }
-  };
 
   const exportData = async () => {
     try {
@@ -182,60 +159,6 @@ const SettingsPage: React.FC = () => {
               启用邮件通知
             </label>
           </div>
-
-          {emailSettings.enabled && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  EmailJS Service ID
-                </label>
-                <input
-                  type="text"
-                  value={emailSettings.serviceId}
-                  onChange={(e) => setEmailSettings(prev => ({ ...prev, serviceId: e.target.value }))}
-                  className="input-field"
-                  placeholder="your_service_id"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Template ID
-                </label>
-                <input
-                  type="text"
-                  value={emailSettings.templateId}
-                  onChange={(e) => setEmailSettings(prev => ({ ...prev, templateId: e.target.value }))}
-                  className="input-field"
-                  placeholder="your_template_id"
-                />
-              </div>
-
-              <div className="md:col-span-2">
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Public Key
-                </label>
-                <input
-                  type="text"
-                  value={emailSettings.publicKey}
-                  onChange={(e) => setEmailSettings(prev => ({ ...prev, publicKey: e.target.value }))}
-                  className="input-field"
-                  placeholder="your_public_key"
-                />
-              </div>
-
-              <div className="md:col-span-2 flex space-x-3">
-                <Button
-                  variant="outline"
-                  onClick={testEmail}
-                  loading={testEmailLoading}
-                  icon={<Mail className="w-4 h-4" />}
-                >
-                  发送测试邮件
-                </Button>
-              </div>
-            </div>
-          )}
         </div>
       </div>
 
@@ -264,31 +187,6 @@ const SettingsPage: React.FC = () => {
               </label>
             </div>
 
-            <div className="flex items-center space-x-3">
-              <input
-                type="checkbox"
-                id="emailNotifications"
-                checked={notificationSettings.emailEnabled}
-                onChange={(e) => setNotificationSettings(prev => ({ ...prev, emailEnabled: e.target.checked }))}
-                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
-              />
-              <label htmlFor="emailNotifications" className="text-sm font-medium text-gray-900 dark:text-white">
-                启用邮件通知
-              </label>
-            </div>
-
-            <div className="flex items-center space-x-3">
-              <input
-                type="checkbox"
-                id="dailySummary"
-                checked={notificationSettings.dailySummary}
-                onChange={(e) => setNotificationSettings(prev => ({ ...prev, dailySummary: e.target.checked }))}
-                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
-              />
-              <label htmlFor="dailySummary" className="text-sm font-medium text-gray-900 dark:text-white">
-                每日价格摘要邮件
-              </label>
-            </div>
           </div>
 
           <div>
@@ -391,4 +289,4 @@ const SettingsPage: React.FC = () => {
   );
 };
 
-export default SettingsPage; 
+export default SettingsPage;

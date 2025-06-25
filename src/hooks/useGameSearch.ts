@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { GameSearchResult } from '@/types/game';
-import { steamService } from '@/services/steamService';
+import { staticDataService } from '@/services/staticDataService.ts';
 import { useDebounce } from './useDebounce';
 
 interface UseGameSearchOptions {
@@ -51,13 +51,13 @@ export function useGameSearch(options: UseGameSearchOptions = {}): UseGameSearch
     }
 
     abortControllerRef.current = new AbortController();
-    
+
     setLoading(true);
     setError(null);
 
     try {
-      const searchResults = await steamService.searchGames(searchQuery);
-      
+      const searchResults = await staticDataService.searchGames(searchQuery);
+
       // 检查请求是否被取消
       if (abortControllerRef.current?.signal.aborted) {
         return;
@@ -116,4 +116,4 @@ export function useGameSearch(options: UseGameSearchOptions = {}): UseGameSearch
     clearError,
     setQuery,
   };
-} 
+}

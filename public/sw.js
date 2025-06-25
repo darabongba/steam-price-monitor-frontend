@@ -256,30 +256,31 @@ async function performPriceCheck() {
 
 async function fetchGamePrice(steamId) {
   try {
-    const response = await fetch(
-      `https://store.steampowered.com/api/appdetails?appids=${steamId}&filters=price_overview&l=schinese&cc=CN`
-    );
+    // 从本地 game-details.json 文件获取价格信息
+    const response = await fetch('/data/game-details.json');
     
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }
     
-    const data = await response.json();
+    const gameDetails = await response.json();
     
-    if (data[steamId] && data[steamId].success && data[steamId].data.price_overview) {
-      const priceData = data[steamId].data.price_overview;
+    // 查找对应的游戏
+    const game = gameDetails.find(game => game.steamId === steamId);
+    
+    if (game && game.price) {
       return {
-        price: priceData.final / 100,
-        originalPrice: priceData.initial / 100,
-        discountPercent: priceData.discount_percent,
-        currency: priceData.currency,
-        formatted: priceData.final_formatted
+        price: game.price.final,
+        originalPrice: game.price.initial,
+        discountPercent: game.price.discount_percent,
+        currency: game.price.currency,
+        formatted: game.price.formatted
       };
     }
     
     return null;
   } catch (error) {
-    console.error('Failed to fetch game price:', error);
+    console.error('Failed to fetch game price from local data:', error);
     return null;
   }
 }
