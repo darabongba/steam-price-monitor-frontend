@@ -39,5 +39,1490 @@
       "zero"
     ],
     "searchText": "counter-strike: condition zero valve valve"
+  },
+  {
+    "steamId": "220",
+    "name": "Half-Life 2",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "tags": [
+      "动作"
+    ],
+    "nameWords": [
+      "half-life",
+      "2"
+    ],
+    "searchText": "half-life 2 valve valve"
+  },
+  {
+    "steamId": "240",
+    "name": "Counter-Strike: Source",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "tags": [
+      "动作"
+    ],
+    "nameWords": [
+      "counter-strike:",
+      "source"
+    ],
+    "searchText": "counter-strike: source valve valve"
+  },
+  {
+    "steamId": "320",
+    "name": "Half-Life 2: Deathmatch",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "tags": [
+      "动作"
+    ],
+    "nameWords": [
+      "half-life",
+      "2:",
+      "deathmatch"
+    ],
+    "searchText": "half-life 2: deathmatch valve valve"
+  },
+  {
+    "steamId": "340",
+    "name": "Half-Life 2: Lost Coast",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "tags": [
+      "动作"
+    ],
+    "nameWords": [
+      "half-life",
+      "2:",
+      "lost",
+      "coast"
+    ],
+    "searchText": "half-life 2: lost coast valve valve"
+  },
+  {
+    "steamId": "400",
+    "name": "Portal",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "tags": [
+      "动作"
+    ],
+    "nameWords": [
+      "portal"
+    ],
+    "searchText": "portal valve valve"
+  },
+  {
+    "steamId": "440",
+    "name": "Team Fortress 2",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "tags": [
+      "动作",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "team",
+      "fortress",
+      "2"
+    ],
+    "searchText": "team fortress 2 valve valve"
+  },
+  {
+    "steamId": "550",
+    "name": "Left 4 Dead 2",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "tags": [
+      "动作"
+    ],
+    "nameWords": [
+      "left",
+      "4",
+      "dead",
+      "2"
+    ],
+    "searchText": "left 4 dead 2 valve valve"
+  },
+  {
+    "steamId": "730",
+    "name": "Counter-Strike 2",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "tags": [
+      "动作",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "counter-strike",
+      "2"
+    ],
+    "searchText": "counter-strike 2 valve valve"
+  },
+  {
+    "steamId": "4000",
+    "name": "Garry's Mod",
+    "developer": "Facepunch Studios",
+    "publisher": "Valve",
+    "tags": [
+      "休闲",
+      "独立",
+      "模拟"
+    ],
+    "nameWords": [
+      "garry's",
+      "mod"
+    ],
+    "searchText": "garry's mod facepunch studios valve"
+  },
+  {
+    "steamId": "8930",
+    "name": "Sid Meier's Civilization® V",
+    "developer": "Firaxis Games",
+    "publisher": "2K",
+    "tags": [
+      "策略"
+    ],
+    "nameWords": [
+      "sid",
+      "meier's",
+      "civilization®",
+      "v"
+    ],
+    "searchText": "sid meier's civilization® v firaxis games 2k"
+  },
+  {
+    "steamId": "49520",
+    "name": "Borderlands 2",
+    "developer": "Gearbox Software",
+    "publisher": "2K",
+    "tags": [
+      "动作",
+      "角色扮演"
+    ],
+    "nameWords": [
+      "borderlands",
+      "2"
+    ],
+    "searchText": "borderlands 2 gearbox software 2k"
+  },
+  {
+    "steamId": "105600",
+    "name": "Terraria",
+    "developer": "Re-Logic",
+    "publisher": "Re-Logic",
+    "tags": [
+      "动作",
+      "冒险",
+      "独立",
+      "角色扮演"
+    ],
+    "nameWords": [
+      "terraria"
+    ],
+    "searchText": "terraria re-logic re-logic"
+  },
+  {
+    "steamId": "107410",
+    "name": "武装突袭3",
+    "developer": "Bohemia Interactive",
+    "publisher": "Bohemia Interactive",
+    "tags": [
+      "动作",
+      "模拟",
+      "策略"
+    ],
+    "nameWords": [
+      "武装突袭3"
+    ],
+    "searchText": "武装突袭3 bohemia interactive bohemia interactive"
+  },
+  {
+    "steamId": "108600",
+    "name": "Project Zomboid",
+    "developer": "The Indie Stone",
+    "publisher": "The Indie Stone",
+    "tags": [
+      "独立",
+      "角色扮演",
+      "模拟",
+      "抢先体验"
+    ],
+    "nameWords": [
+      "project",
+      "zomboid"
+    ],
+    "searchText": "project zomboid the indie stone the indie stone"
+  },
+  {
+    "steamId": "218620",
+    "name": "PAYDAY 2",
+    "developer": "OVERKILL - a Starbreeze Studio.",
+    "publisher": "Starbreeze Publishing AB",
+    "tags": [
+      "动作",
+      "角色扮演"
+    ],
+    "nameWords": [
+      "payday",
+      "2"
+    ],
+    "searchText": "payday 2 overkill - a starbreeze studio. starbreeze publishing ab"
+  },
+  {
+    "steamId": "219990",
+    "name": "Grim Dawn",
+    "developer": "Crate Entertainment",
+    "publisher": "Crate Entertainment",
+    "tags": [
+      "动作",
+      "冒险",
+      "独立",
+      "角色扮演"
+    ],
+    "nameWords": [
+      "grim",
+      "dawn"
+    ],
+    "searchText": "grim dawn crate entertainment crate entertainment"
+  },
+  {
+    "steamId": "221100",
+    "name": "DayZ",
+    "developer": "Bohemia Interactive",
+    "publisher": "Bohemia Interactive",
+    "tags": [
+      "动作",
+      "冒险",
+      "大型多人在线"
+    ],
+    "nameWords": [
+      "dayz"
+    ],
+    "searchText": "dayz bohemia interactive bohemia interactive"
+  },
+  {
+    "steamId": "227300",
+    "name": "Euro Truck Simulator 2",
+    "developer": "SCS Software",
+    "publisher": "SCS Software",
+    "tags": [
+      "独立",
+      "模拟"
+    ],
+    "nameWords": [
+      "euro",
+      "truck",
+      "simulator",
+      "2"
+    ],
+    "searchText": "euro truck simulator 2 scs software scs software"
+  },
+  {
+    "steamId": "227940",
+    "name": "Heroes & Generals",
+    "developer": "TLM Partners",
+    "publisher": "TLM Partners",
+    "tags": [
+      "动作",
+      "免费开玩",
+      "独立",
+      "大型多人在线",
+      "策略"
+    ],
+    "nameWords": [
+      "heroes",
+      "&",
+      "generals"
+    ],
+    "searchText": "heroes & generals tlm partners tlm partners"
+  },
+  {
+    "steamId": "230410",
+    "name": "Warframe",
+    "developer": "Digital Extremes",
+    "publisher": "Digital Extremes",
+    "tags": [
+      "动作",
+      "角色扮演",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "warframe"
+    ],
+    "searchText": "warframe digital extremes digital extremes"
+  },
+  {
+    "steamId": "236390",
+    "name": "War Thunder",
+    "developer": "Gaijin Entertainment",
+    "publisher": "Gaijin Network Ltd",
+    "tags": [
+      "动作",
+      "大型多人在线",
+      "模拟",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "war",
+      "thunder"
+    ],
+    "searchText": "war thunder gaijin entertainment gaijin network ltd"
+  },
+  {
+    "steamId": "239140",
+    "name": "Dying Light",
+    "developer": "Techland",
+    "publisher": "Techland",
+    "tags": [
+      "动作",
+      "角色扮演"
+    ],
+    "nameWords": [
+      "dying",
+      "light"
+    ],
+    "searchText": "dying light techland techland"
+  },
+  {
+    "steamId": "242760",
+    "name": "The Forest",
+    "developer": "Endnight Games Ltd",
+    "publisher": "Endnight Games Ltd",
+    "tags": [
+      "动作",
+      "冒险",
+      "独立",
+      "模拟"
+    ],
+    "nameWords": [
+      "the",
+      "forest"
+    ],
+    "searchText": "the forest endnight games ltd endnight games ltd"
+  },
+  {
+    "steamId": "251570",
+    "name": "7 Days to Die",
+    "developer": "The Fun Pimps",
+    "publisher": "The Fun Pimps Entertainment LLC",
+    "tags": [
+      "动作",
+      "冒险",
+      "独立",
+      "角色扮演",
+      "模拟",
+      "策略"
+    ],
+    "nameWords": [
+      "7",
+      "days",
+      "to",
+      "die"
+    ],
+    "searchText": "7 days to die the fun pimps the fun pimps entertainment llc"
+  },
+  {
+    "steamId": "252490",
+    "name": "Rust",
+    "developer": "Facepunch Studios",
+    "publisher": "Facepunch Studios",
+    "tags": [
+      "动作",
+      "冒险",
+      "独立",
+      "大型多人在线",
+      "角色扮演"
+    ],
+    "nameWords": [
+      "rust"
+    ],
+    "searchText": "rust facepunch studios facepunch studios"
+  },
+  {
+    "steamId": "255710",
+    "name": "Cities: Skylines",
+    "developer": "Colossal Order Ltd.",
+    "publisher": "Paradox Interactive",
+    "tags": [
+      "模拟",
+      "策略"
+    ],
+    "nameWords": [
+      "cities:",
+      "skylines"
+    ],
+    "searchText": "cities: skylines colossal order ltd. paradox interactive"
+  },
+  {
+    "steamId": "261550",
+    "name": "Mount & Blade II: Bannerlord",
+    "developer": "TaleWorlds Entertainment",
+    "publisher": "TaleWorlds Entertainment",
+    "tags": [
+      "动作",
+      "独立",
+      "角色扮演",
+      "模拟",
+      "策略"
+    ],
+    "nameWords": [
+      "mount",
+      "&",
+      "blade",
+      "ii:",
+      "bannerlord"
+    ],
+    "searchText": "mount & blade ii: bannerlord taleworlds entertainment taleworlds entertainment"
+  },
+  {
+    "steamId": "271590",
+    "name": "Grand Theft Auto V 传承版",
+    "developer": "Rockstar North",
+    "publisher": "Rockstar Games",
+    "tags": [
+      "动作",
+      "冒险"
+    ],
+    "nameWords": [
+      "grand",
+      "theft",
+      "auto",
+      "v",
+      "传承版"
+    ],
+    "searchText": "grand theft auto v 传承版 rockstar north rockstar games"
+  },
+  {
+    "steamId": "289070",
+    "name": "Sid Meier’s Civilization® VI",
+    "developer": "Firaxis Games",
+    "publisher": "2K",
+    "tags": [
+      "策略"
+    ],
+    "nameWords": [
+      "sid",
+      "meier’s",
+      "civilization®",
+      "vi"
+    ],
+    "searchText": "sid meier’s civilization® vi firaxis games 2k"
+  },
+  {
+    "steamId": "291480",
+    "name": "Warface: Clutch",
+    "developer": "MY.GAMES",
+    "publisher": "MY.GAMES",
+    "tags": [
+      "动作",
+      "大型多人在线",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "warface:",
+      "clutch"
+    ],
+    "searchText": "warface: clutch my.games my.games"
+  },
+  {
+    "steamId": "291550",
+    "name": "Brawlhalla",
+    "developer": "Blue Mammoth Games",
+    "publisher": "Ubisoft",
+    "tags": [
+      "动作",
+      "独立",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "brawlhalla"
+    ],
+    "searchText": "brawlhalla blue mammoth games ubisoft"
+  },
+  {
+    "steamId": "292030",
+    "name": "巫师 3：狂猎",
+    "developer": "CD PROJEKT RED",
+    "publisher": "CD PROJEKT RED",
+    "tags": [
+      "角色扮演"
+    ],
+    "nameWords": [
+      "巫师",
+      "3：狂猎"
+    ],
+    "searchText": "巫师 3：狂猎 cd projekt red cd projekt red"
+  },
+  {
+    "steamId": "304050",
+    "name": "宝藏世界",
+    "developer": "gamigo US Inc.",
+    "publisher": "gamigo US Inc.",
+    "tags": [
+      "动作",
+      "冒险",
+      "休闲",
+      "大型多人在线",
+      "角色扮演",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "宝藏世界"
+    ],
+    "searchText": "宝藏世界 gamigo us inc. gamigo us inc."
+  },
+  {
+    "steamId": "304930",
+    "name": "Unturned",
+    "developer": "Smartly Dressed Games",
+    "publisher": "Smartly Dressed Games",
+    "tags": [
+      "动作",
+      "冒险",
+      "休闲",
+      "独立",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "unturned"
+    ],
+    "searchText": "unturned smartly dressed games smartly dressed games"
+  },
+  {
+    "steamId": "322330",
+    "name": "饥荒联机版",
+    "developer": "Klei Entertainment",
+    "publisher": "Klei Entertainment",
+    "tags": [
+      "动作",
+      "冒险",
+      "独立",
+      "角色扮演",
+      "模拟",
+      "策略"
+    ],
+    "nameWords": [
+      "饥荒联机版"
+    ],
+    "searchText": "饥荒联机版 klei entertainment klei entertainment"
+  },
+  {
+    "steamId": "346110",
+    "name": "ARK: Survival Evolved",
+    "developer": "Studio Wildcard",
+    "publisher": "Studio Wildcard",
+    "tags": [
+      "动作",
+      "冒险",
+      "独立",
+      "大型多人在线",
+      "角色扮演"
+    ],
+    "nameWords": [
+      "ark:",
+      "survival",
+      "evolved"
+    ],
+    "searchText": "ark: survival evolved studio wildcard studio wildcard"
+  },
+  {
+    "steamId": "359550",
+    "name": "《彩虹六号：围攻X》",
+    "developer": "Ubisoft Montreal",
+    "publisher": "Ubisoft",
+    "tags": [
+      "动作",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "《彩虹六号：围攻x》"
+    ],
+    "searchText": "《彩虹六号：围攻x》 ubisoft montreal ubisoft"
+  },
+  {
+    "steamId": "377160",
+    "name": "Fallout 4",
+    "developer": "Bethesda Game Studios",
+    "publisher": "Bethesda Softworks",
+    "tags": [
+      "角色扮演"
+    ],
+    "nameWords": [
+      "fallout",
+      "4"
+    ],
+    "searchText": "fallout 4 bethesda game studios bethesda softworks"
+  },
+  {
+    "steamId": "381210",
+    "name": "黎明杀机",
+    "developer": "Behaviour Interactive Inc.",
+    "publisher": "Behaviour Interactive Inc.",
+    "tags": [
+      "动作"
+    ],
+    "nameWords": [
+      "黎明杀机"
+    ],
+    "searchText": "黎明杀机 behaviour interactive inc. behaviour interactive inc."
+  },
+  {
+    "steamId": "386360",
+    "name": "SMITE®",
+    "developer": "Titan Forge Games",
+    "publisher": "Hi-Rez Studios",
+    "tags": [
+      "动作",
+      "冒险",
+      "休闲",
+      "大型多人在线",
+      "角色扮演",
+      "策略",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "smite®"
+    ],
+    "searchText": "smite® titan forge games hi-rez studios"
+  },
+  {
+    "steamId": "413150",
+    "name": "Stardew Valley",
+    "developer": "ConcernedApe",
+    "publisher": "ConcernedApe",
+    "tags": [
+      "独立",
+      "角色扮演",
+      "模拟"
+    ],
+    "nameWords": [
+      "stardew",
+      "valley"
+    ],
+    "searchText": "stardew valley concernedape concernedape"
+  },
+  {
+    "steamId": "417910",
+    "name": "Street Warriors Online",
+    "developer": "Crazy Rocks Studios",
+    "publisher": "Crazy Rocks Studios",
+    "tags": [
+      "动作",
+      "大型多人在线",
+      "模拟",
+      "体育"
+    ],
+    "nameWords": [
+      "street",
+      "warriors",
+      "online"
+    ],
+    "searchText": "street warriors online crazy rocks studios crazy rocks studios"
+  },
+  {
+    "steamId": "431960",
+    "name": "Wallpaper Engine：壁纸引擎",
+    "developer": "Wallpaper Engine Team",
+    "publisher": "Wallpaper Engine Team",
+    "tags": [
+      "休闲",
+      "独立",
+      "动画制作和建模",
+      "设计和插画",
+      "照片编辑",
+      "实用工具"
+    ],
+    "nameWords": [
+      "wallpaper",
+      "engine：壁纸引擎"
+    ],
+    "searchText": "wallpaper engine：壁纸引擎 wallpaper engine team wallpaper engine team"
+  },
+  {
+    "steamId": "433850",
+    "name": "Z1 Battle Royale",
+    "developer": "Daybreak Game Company",
+    "publisher": "Daybreak Game Company",
+    "tags": [
+      "动作",
+      "冒险",
+      "免费开玩",
+      "大型多人在线"
+    ],
+    "nameWords": [
+      "z1",
+      "battle",
+      "royale"
+    ],
+    "searchText": "z1 battle royale daybreak game company daybreak game company"
+  },
+  {
+    "steamId": "438100",
+    "name": "VRChat",
+    "developer": "VRChat Inc.",
+    "publisher": "VRChat Inc.",
+    "tags": [
+      "冒险",
+      "休闲",
+      "大型多人在线",
+      "模拟",
+      "体育",
+      "免费开玩",
+      "抢先体验"
+    ],
+    "nameWords": [
+      "vrchat"
+    ],
+    "searchText": "vrchat vrchat inc. vrchat inc."
+  },
+  {
+    "steamId": "444200",
+    "name": "坦克世界闪电战",
+    "developer": "Wargaming Group Limited",
+    "publisher": "Wargaming Group Limited",
+    "tags": [
+      "动作",
+      "大型多人在线",
+      "模拟",
+      "策略",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "坦克世界闪电战"
+    ],
+    "searchText": "坦克世界闪电战 wargaming group limited wargaming group limited"
+  },
+  {
+    "steamId": "477160",
+    "name": "人类一败涂地 / Human Fall Flat",
+    "developer": "No Brakes Games",
+    "publisher": "Curve Games",
+    "tags": [
+      "冒险",
+      "休闲",
+      "独立",
+      "模拟"
+    ],
+    "nameWords": [
+      "人类一败涂地",
+      "/",
+      "human",
+      "fall",
+      "flat"
+    ],
+    "searchText": "人类一败涂地 / human fall flat no brakes games curve games"
+  },
+  {
+    "steamId": "526870",
+    "name": "幸福工厂",
+    "developer": "Coffee Stain Studios",
+    "publisher": "Coffee Stain Publishing",
+    "tags": [
+      "冒险",
+      "独立",
+      "模拟",
+      "策略"
+    ],
+    "nameWords": [
+      "幸福工厂"
+    ],
+    "searchText": "幸福工厂 coffee stain studios coffee stain publishing"
+  },
+  {
+    "steamId": "532210",
+    "name": "Life is Strange 2",
+    "developer": "DONTNOD Entertainment",
+    "publisher": "Square Enix",
+    "tags": [
+      "冒险"
+    ],
+    "nameWords": [
+      "life",
+      "is",
+      "strange",
+      "2"
+    ],
+    "searchText": "life is strange 2 dontnod entertainment square enix"
+  },
+  {
+    "steamId": "550650",
+    "name": "Black Squad",
+    "developer": "VALOFE",
+    "publisher": "VALOFE",
+    "tags": [
+      "动作",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "black",
+      "squad"
+    ],
+    "searchText": "black squad valofe valofe"
+  },
+  {
+    "steamId": "552990",
+    "name": "World of Warships",
+    "developer": "Wargaming Group Limited",
+    "publisher": "Wargaming Group Limited",
+    "tags": [
+      "动作",
+      "大型多人在线",
+      "模拟",
+      "策略",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "world",
+      "of",
+      "warships"
+    ],
+    "searchText": "world of warships wargaming group limited wargaming group limited"
+  },
+  {
+    "steamId": "553850",
+    "name": "HELLDIVERS™ 2",
+    "developer": "Arrowhead Game Studios",
+    "publisher": "PlayStation Publishing LLC",
+    "tags": [
+      "动作"
+    ],
+    "nameWords": [
+      "helldivers™",
+      "2"
+    ],
+    "searchText": "helldivers™ 2 arrowhead game studios playstation publishing llc"
+  },
+  {
+    "steamId": "578080",
+    "name": "PUBG: BATTLEGROUNDS",
+    "developer": "PUBG Corporation",
+    "publisher": "KRAFTON, Inc.",
+    "tags": [
+      "动作",
+      "冒险",
+      "大型多人在线",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "pubg:",
+      "battlegrounds"
+    ],
+    "searchText": "pubg: battlegrounds pubg corporation krafton, inc."
+  },
+  {
+    "steamId": "582010",
+    "name": "Monster Hunter: World",
+    "developer": "CAPCOM Co., Ltd.",
+    "publisher": "CAPCOM Co., Ltd.",
+    "tags": [
+      "动作"
+    ],
+    "nameWords": [
+      "monster",
+      "hunter:",
+      "world"
+    ],
+    "searchText": "monster hunter: world capcom co., ltd. capcom co., ltd."
+  },
+  {
+    "steamId": "594650",
+    "name": "猎杀：对决 1896",
+    "developer": "Crytek",
+    "publisher": "Crytek",
+    "tags": [
+      "动作"
+    ],
+    "nameWords": [
+      "猎杀：对决",
+      "1896"
+    ],
+    "searchText": "猎杀：对决 1896 crytek crytek"
+  },
+  {
+    "steamId": "632360",
+    "name": "雨中冒险 2",
+    "developer": "Hopoo Games",
+    "publisher": "Gearbox Publishing",
+    "tags": [
+      "动作",
+      "独立"
+    ],
+    "nameWords": [
+      "雨中冒险",
+      "2"
+    ],
+    "searchText": "雨中冒险 2 hopoo games gearbox publishing"
+  },
+  {
+    "steamId": "648800",
+    "name": "Raft",
+    "developer": "Redbeet Interactive",
+    "publisher": "Axolot Games",
+    "tags": [
+      "冒险",
+      "独立",
+      "模拟"
+    ],
+    "nameWords": [
+      "raft"
+    ],
+    "searchText": "raft redbeet interactive axolot games"
+  },
+  {
+    "steamId": "739630",
+    "name": "Phasmophobia 恐鬼症",
+    "developer": "Kinetic Games",
+    "publisher": "Kinetic Games",
+    "tags": [
+      "动作",
+      "独立",
+      "抢先体验"
+    ],
+    "nameWords": [
+      "phasmophobia",
+      "恐鬼症"
+    ],
+    "searchText": "phasmophobia 恐鬼症 kinetic games kinetic games"
+  },
+  {
+    "steamId": "755790",
+    "name": "无限法则",
+    "developer": "Aurora Studio",
+    "publisher": "TCH Scarlet Limited",
+    "tags": [
+      "动作",
+      "免费开玩",
+      "大型多人在线"
+    ],
+    "nameWords": [
+      "无限法则"
+    ],
+    "searchText": "无限法则 aurora studio tch scarlet limited"
+  },
+  {
+    "steamId": "814380",
+    "name": "Sekiro™: Shadows Die Twice - GOTY Edition",
+    "developer": "FromSoftware, Inc.",
+    "publisher": "Activision (Excluding Japan and Asia)",
+    "tags": [
+      "动作",
+      "冒险"
+    ],
+    "nameWords": [
+      "sekiro™:",
+      "shadows",
+      "die",
+      "twice",
+      "-",
+      "goty",
+      "edition"
+    ],
+    "searchText": "sekiro™: shadows die twice - goty edition fromsoftware, inc. activision (excluding japan and asia)"
+  },
+  {
+    "steamId": "892970",
+    "name": "Valheim: 英灵神殿",
+    "developer": "Iron Gate AB",
+    "publisher": "Coffee Stain Publishing",
+    "tags": [
+      "动作",
+      "冒险",
+      "独立",
+      "角色扮演",
+      "抢先体验"
+    ],
+    "nameWords": [
+      "valheim:",
+      "英灵神殿"
+    ],
+    "searchText": "valheim: 英灵神殿 iron gate ab coffee stain publishing"
+  },
+  {
+    "steamId": "899770",
+    "name": "Last Epoch",
+    "developer": "Eleventh Hour Games",
+    "publisher": "Eleventh Hour Games",
+    "tags": [
+      "动作",
+      "冒险",
+      "独立",
+      "角色扮演"
+    ],
+    "nameWords": [
+      "last",
+      "epoch"
+    ],
+    "searchText": "last epoch eleventh hour games eleventh hour games"
+  },
+  {
+    "steamId": "901583",
+    "name": "Grand Theft Auto IV: Complete Edition",
+    "developer": "Rockstar North",
+    "publisher": "Rockstar Games",
+    "tags": [
+      "动作",
+      "冒险"
+    ],
+    "nameWords": [
+      "grand",
+      "theft",
+      "auto",
+      "iv:",
+      "complete",
+      "edition"
+    ],
+    "searchText": "grand theft auto iv: complete edition rockstar north rockstar games"
+  },
+  {
+    "steamId": "945360",
+    "name": "Among Us",
+    "developer": "Innersloth",
+    "publisher": "Innersloth",
+    "tags": [
+      "休闲"
+    ],
+    "nameWords": [
+      "among",
+      "us"
+    ],
+    "searchText": "among us innersloth innersloth"
+  },
+  {
+    "steamId": "990080",
+    "name": "霍格沃茨之遗",
+    "developer": "Avalanche Software",
+    "publisher": "Warner Bros. Games",
+    "tags": [
+      "动作",
+      "冒险",
+      "角色扮演"
+    ],
+    "nameWords": [
+      "霍格沃茨之遗"
+    ],
+    "searchText": "霍格沃茨之遗 avalanche software warner bros. games"
+  },
+  {
+    "steamId": "1063730",
+    "name": "New World: Aeternum",
+    "developer": "Amazon Games",
+    "publisher": "Amazon Games",
+    "tags": [
+      "动作",
+      "冒险",
+      "大型多人在线",
+      "角色扮演"
+    ],
+    "nameWords": [
+      "new",
+      "world:",
+      "aeternum"
+    ],
+    "searchText": "new world: aeternum amazon games amazon games"
+  },
+  {
+    "steamId": "1085660",
+    "name": "命运2",
+    "developer": "Bungie",
+    "publisher": "Bungie",
+    "tags": [
+      "动作",
+      "冒险",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "命运2"
+    ],
+    "searchText": "命运2 bungie bungie"
+  },
+  {
+    "steamId": "1086940",
+    "name": "Baldur's Gate 3",
+    "developer": "Larian Studios",
+    "publisher": "Larian Studios",
+    "tags": [
+      "冒险",
+      "角色扮演",
+      "策略"
+    ],
+    "nameWords": [
+      "baldur's",
+      "gate",
+      "3"
+    ],
+    "searchText": "baldur's gate 3 larian studios larian studios"
+  },
+  {
+    "steamId": "1089350",
+    "name": "NBA 2K20",
+    "developer": "Visual Concepts",
+    "publisher": "2K",
+    "tags": [
+      "模拟",
+      "体育"
+    ],
+    "nameWords": [
+      "nba",
+      "2k20"
+    ],
+    "searchText": "nba 2k20 visual concepts 2k"
+  },
+  {
+    "steamId": "1091500",
+    "name": "赛博朋克 2077",
+    "developer": "CD PROJEKT RED",
+    "publisher": "CD PROJEKT RED",
+    "tags": [
+      "角色扮演"
+    ],
+    "nameWords": [
+      "赛博朋克",
+      "2077"
+    ],
+    "searchText": "赛博朋克 2077 cd projekt red cd projekt red"
+  },
+  {
+    "steamId": "1097150",
+    "name": "糖豆人",
+    "developer": "Mediatonic",
+    "publisher": "未知发行商",
+    "tags": [
+      "动作",
+      "休闲",
+      "独立",
+      "大型多人在线",
+      "体育"
+    ],
+    "nameWords": [
+      "糖豆人"
+    ],
+    "searchText": "糖豆人 mediatonic 未知发行商"
+  },
+  {
+    "steamId": "1116170",
+    "name": "CyberCorp",
+    "developer": "Megame LLC",
+    "publisher": "Megame LLC",
+    "tags": [
+      "动作",
+      "冒险",
+      "独立",
+      "角色扮演"
+    ],
+    "nameWords": [
+      "cybercorp"
+    ],
+    "searchText": "cybercorp megame llc megame llc"
+  },
+  {
+    "steamId": "1172470",
+    "name": "Apex Legends™",
+    "developer": "Respawn",
+    "publisher": "Electronic Arts",
+    "tags": [
+      "动作",
+      "冒险",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "apex",
+      "legends™"
+    ],
+    "searchText": "apex legends™ respawn electronic arts"
+  },
+  {
+    "steamId": "1174180",
+    "name": "Red Dead Redemption 2",
+    "developer": "Rockstar Games",
+    "publisher": "Rockstar Games",
+    "tags": [
+      "动作",
+      "冒险"
+    ],
+    "nameWords": [
+      "red",
+      "dead",
+      "redemption",
+      "2"
+    ],
+    "searchText": "red dead redemption 2 rockstar games rockstar games"
+  },
+  {
+    "steamId": "1203220",
+    "name": "永劫无间",
+    "developer": "24 Entertainment",
+    "publisher": "NetEase Games Global",
+    "tags": [
+      "动作",
+      "冒险",
+      "大型多人在线"
+    ],
+    "nameWords": [
+      "永劫无间"
+    ],
+    "searchText": "永劫无间 24 entertainment netease games global"
+  },
+  {
+    "steamId": "1222670",
+    "name": "The Sims™ 4",
+    "developer": "Maxis",
+    "publisher": "Electronic Arts",
+    "tags": [
+      "冒险",
+      "休闲",
+      "模拟",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "the",
+      "sims™",
+      "4"
+    ],
+    "searchText": "the sims™ 4 maxis electronic arts"
+  },
+  {
+    "steamId": "1238810",
+    "name": "《战地风云 5》",
+    "developer": "DICE",
+    "publisher": "Electronic Arts",
+    "tags": [
+      "动作"
+    ],
+    "nameWords": [
+      "《战地风云",
+      "5》"
+    ],
+    "searchText": "《战地风云 5》 dice electronic arts"
+  },
+  {
+    "steamId": "1240440",
+    "name": "Halo Infinite",
+    "developer": "343 Industries",
+    "publisher": "Xbox Game Studios",
+    "tags": [
+      "动作",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "halo",
+      "infinite"
+    ],
+    "searchText": "halo infinite 343 industries xbox game studios"
+  },
+  {
+    "steamId": "1245620",
+    "name": "艾尔登法环",
+    "developer": "FromSoftware, Inc.",
+    "publisher": "FromSoftware, Inc.",
+    "tags": [
+      "动作",
+      "角色扮演"
+    ],
+    "nameWords": [
+      "艾尔登法环"
+    ],
+    "searchText": "艾尔登法环 fromsoftware, inc. fromsoftware, inc."
+  },
+  {
+    "steamId": "1326470",
+    "name": "Sons Of The Forest",
+    "developer": "Endnight Games Ltd",
+    "publisher": "Newnight ",
+    "tags": [
+      "动作",
+      "冒险",
+      "独立",
+      "模拟"
+    ],
+    "nameWords": [
+      "sons",
+      "of",
+      "the",
+      "forest"
+    ],
+    "searchText": "sons of the forest endnight games ltd newnight "
+  },
+  {
+    "steamId": "1491000",
+    "name": "War Robots: Frontiers",
+    "developer": "MY.GAMES",
+    "publisher": "MY.GAMES",
+    "tags": [
+      "动作",
+      "模拟",
+      "免费开玩"
+    ],
+    "nameWords": [
+      "war",
+      "robots:",
+      "frontiers"
+    ],
+    "searchText": "war robots: frontiers my.games my.games"
+  },
+  {
+    "steamId": "1517290",
+    "name": "《战地风云™ 2042》",
+    "developer": "DICE",
+    "publisher": "Electronic Arts",
+    "tags": [
+      "动作",
+      "冒险",
+      "休闲"
+    ],
+    "nameWords": [
+      "《战地风云™",
+      "2042》"
+    ],
+    "searchText": "《战地风云™ 2042》 dice electronic arts"
+  },
+  {
+    "steamId": "1623730",
+    "name": "Palworld / 幻兽帕鲁",
+    "developer": "Pocketpair",
+    "publisher": "Pocketpair",
+    "tags": [
+      "动作",
+      "冒险",
+      "独立",
+      "角色扮演",
+      "抢先体验"
+    ],
+    "nameWords": [
+      "palworld",
+      "/",
+      "幻兽帕鲁"
+    ],
+    "searchText": "palworld / 幻兽帕鲁 pocketpair pocketpair"
+  },
+  {
+    "steamId": "1811260",
+    "name": "EA SPORTS™《FIFA 23》",
+    "developer": "EA Canada",
+    "publisher": "Electronic Arts",
+    "tags": [
+      "模拟",
+      "体育"
+    ],
+    "nameWords": [
+      "ea",
+      "sports™《fifa",
+      "23》"
+    ],
+    "searchText": "ea sports™《fifa 23》 ea canada electronic arts"
+  },
+  {
+    "steamId": "1938090",
+    "name": "使命召唤®",
+    "developer": "Treyarch",
+    "publisher": "Activision",
+    "tags": [
+      "动作"
+    ],
+    "nameWords": [
+      "使命召唤®"
+    ],
+    "searchText": "使命召唤® treyarch activision"
+  },
+  {
+    "steamId": "1966720",
+    "name": "Lethal Company",
+    "developer": "Zeekerss",
+    "publisher": "Zeekerss",
+    "tags": [
+      "动作",
+      "冒险",
+      "独立",
+      "抢先体验"
+    ],
+    "nameWords": [
+      "lethal",
+      "company"
+    ],
+    "searchText": "lethal company zeekerss zeekerss"
+  },
+  {
+    "steamId": "2186680",
+    "name": "Warhammer 40,000: Rogue Trader",
+    "developer": "Owlcat Games",
+    "publisher": "Owlcat Games",
+    "tags": [
+      "动作",
+      "冒险",
+      "独立",
+      "角色扮演",
+      "策略"
+    ],
+    "nameWords": [
+      "warhammer",
+      "40,000:",
+      "rogue",
+      "trader"
+    ],
+    "searchText": "warhammer 40,000: rogue trader owlcat games owlcat games"
+  },
+  {
+    "steamId": "2246340",
+    "name": "Monster Hunter Wilds",
+    "developer": "CAPCOM Co., Ltd.",
+    "publisher": "CAPCOM Co., Ltd.",
+    "tags": [
+      "动作",
+      "冒险",
+      "角色扮演"
+    ],
+    "nameWords": [
+      "monster",
+      "hunter",
+      "wilds"
+    ],
+    "searchText": "monster hunter wilds capcom co., ltd. capcom co., ltd."
+  },
+  {
+    "steamId": "2358720",
+    "name": "黑神话：悟空",
+    "developer": "Game Science",
+    "publisher": "Game Science",
+    "tags": [
+      "动作",
+      "冒险",
+      "角色扮演"
+    ],
+    "nameWords": [
+      "黑神话：悟空"
+    ],
+    "searchText": "黑神话：悟空 game science game science"
+  },
+  {
+    "steamId": "3164500",
+    "name": "Schedule I",
+    "developer": "TVGS",
+    "publisher": "TVGS",
+    "tags": [
+      "动作",
+      "独立",
+      "模拟",
+      "策略",
+      "抢先体验"
+    ],
+    "nameWords": [
+      "schedule",
+      "i"
+    ],
+    "searchText": "schedule i tvgs tvgs"
+  },
+  {
+    "steamId": "3241660",
+    "name": "R.E.P.O.",
+    "developer": "semiwork",
+    "publisher": "semiwork",
+    "tags": [
+      "动作",
+      "抢先体验"
+    ],
+    "nameWords": [
+      "r.e.p.o."
+    ],
+    "searchText": "r.e.p.o. semiwork semiwork"
   }
 ]
