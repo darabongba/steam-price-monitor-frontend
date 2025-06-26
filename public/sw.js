@@ -234,7 +234,7 @@ async function performPriceCheck() {
           // 更新提醒状态
           await updateAlertStatus(alert.id, {
             triggered: true,
-            triggeredAt: new Date().toISOString(),
+            triggeredAt: new Date().toLocaleString(),
             lastPrice: currentPrice.price
           });
         } else if (currentPrice) {
@@ -242,7 +242,7 @@ async function performPriceCheck() {
           await updateAlertStatus(alert.id, {
             lastPrice: currentPrice.price,
             checkCount: (alert.checkCount || 0) + 1,
-            nextCheckAt: new Date(Date.now() + 60 * 60 * 1000).toISOString()
+            nextCheckAt: new Date(Date.now() + 60 * 60 * 1000).toLocaleString()
           });
         }
       } catch (error) {
@@ -360,7 +360,7 @@ async function updateAlertStatus(alertId, updates) {
         getRequest.onsuccess = () => {
           const alert = getRequest.result;
           if (alert) {
-            Object.assign(alert, updates, { updatedAt: new Date().toISOString() });
+            Object.assign(alert, updates, { updatedAt: new Date().toLocaleString() });
             const putRequest = store.put(alert);
             
             putRequest.onsuccess = () => resolve(alert);

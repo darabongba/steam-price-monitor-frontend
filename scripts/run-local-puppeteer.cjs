@@ -77,7 +77,7 @@ async function testPuppeteerDataFetching() {
       FileManager.saveJSON(path.join(testDataDir, 'price-history.json'), priceHistory),
       FileManager.saveJSON(path.join(testDataDir, 'search-index.json'), searchIndex),
       FileManager.saveJSON(path.join(testDataDir, 'metadata.json'), {
-        lastUpdated: new Date().toISOString(),
+        lastUpdated: new Date().toLocaleString(),
         gamesCount: gameDetails.length,
         popularGamesCount: popularGames.length,
         priceHistoryCount: Object.keys(priceHistory).length,

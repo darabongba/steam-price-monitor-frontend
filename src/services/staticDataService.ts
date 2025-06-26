@@ -204,7 +204,7 @@ export class StaticDataService {
             achievements: detail?.achievements || 0,
             metacriticScore: detail?.metacriticScore,
             recommendations: detail?.recommendations || 0,
-            lastUpdated: new Date().toISOString(),
+            lastUpdated: new Date().toLocaleString(),
           }
         });
 
@@ -244,7 +244,7 @@ export class StaticDataService {
           formatted: '价格未知',
           isFree: false,
           onSale: false,
-          lastUpdated: new Date().toISOString(),
+          lastUpdated: new Date().toLocaleString(),
         };
       }
 
@@ -260,7 +260,7 @@ export class StaticDataService {
         formatted: `¥${latestPrice.price.toFixed(2)}`,
         isFree: latestPrice.price === 0,
         onSale: latestPrice.discount > 0,
-        lastUpdated: new Date().toISOString(),
+        lastUpdated: new Date().toLocaleString(),
       };
 
     } catch (error) {

@@ -110,7 +110,7 @@ export const useGameStore = create<GameState>()(
             const gameWithId = {
               ...game,
               id: Date.now().toString(),
-              createdAt: new Date().toISOString()
+              createdAt: new Date().toLocaleString()
             };
 
             const gameId = await storageService.addGame(gameWithId);

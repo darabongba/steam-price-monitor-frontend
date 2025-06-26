@@ -107,9 +107,9 @@ export const useAlertStore = create<AlertState>()(
               triggered: false,
               notificationSent: false,
               userEmail: '', // 从用户设置中获取
-              createdAt: new Date().toISOString(),
-              updatedAt: new Date().toISOString(),
-              nextCheckAt: new Date().toISOString(),
+              createdAt: new Date().toLocaleString(),
+              updatedAt: new Date().toLocaleString(),
+              nextCheckAt: new Date().toLocaleString(),
               checkCount: 0,
               lastPrice: alertData.currentPrice,
               checkInterval: 3600000, // 1小时
@@ -147,7 +147,7 @@ export const useAlertStore = create<AlertState>()(
 
             set(state => {
               const newAlerts = state.alerts.map(alert =>
-                alert.id === id ? { ...alert, ...updates, updatedAt: new Date().toISOString() } : alert
+                alert.id === id ? { ...alert, ...updates, updatedAt: new Date().toLocaleString() } : alert
               );
 
               return {
@@ -216,10 +216,10 @@ export const useAlertStore = create<AlertState>()(
                   // 价格达到目标，触发提醒
                   await get().updateAlert(alert.id, {
                     triggered: true,
-                    triggeredAt: new Date().toISOString(),
+                    triggeredAt: new Date().toLocaleString(),
                     lastPrice: currentPrice.final,
                     currentPrice: currentPrice.final,
-                    updatedAt: new Date().toISOString(),
+                    updatedAt: new Date().toLocaleString(),
                   });
 
                   // 创建通知
@@ -234,7 +234,7 @@ export const useAlertStore = create<AlertState>()(
                       currentPrice: currentPrice.final,
                       targetPrice: alert.targetPrice,
                     },
-                    sentAt: new Date().toISOString(),
+                    sentAt: new Date().toLocaleString(),
                     read: false,
                   };
 
@@ -247,8 +247,8 @@ export const useAlertStore = create<AlertState>()(
                   await get().updateAlert(alert.id, {
                     lastPrice: currentPrice?.final || alert.lastPrice,
                     currentPrice: currentPrice.final,
-                                         updatedAt: new Date().toISOString(),
-                     nextCheckAt: new Date(Date.now() + alert.checkInterval).toISOString(),
+                                         updatedAt: new Date().toLocaleString(),
+                     nextCheckAt: new Date(Date.now() + alert.checkInterval).toLocaleString(),
                     checkCount: alert.checkCount + 1,
                   });
                 }

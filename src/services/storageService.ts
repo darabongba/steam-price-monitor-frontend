@@ -50,8 +50,8 @@ export class StorageService {
       const localGame: LocalGame = {
         ...game,
         id: crypto.randomUUID(),
-        createdAt: new Date().toISOString(),
-        lastUpdated: new Date().toISOString(),
+        createdAt: new Date().toLocaleString(),
+        lastUpdated: new Date().toLocaleString(),
       };
       
       const id = await db.games.add(localGame);
@@ -84,7 +84,7 @@ export class StorageService {
     try {
       await db.games.update(id, {
         ...updates,
-        lastUpdated: new Date().toISOString(),
+        lastUpdated: new Date().toLocaleString(),
       });
     } catch (error) {
       console.error('Failed to update game:', error);
@@ -120,9 +120,9 @@ export class StorageService {
       const id = await db.alerts.add({
         ...alert,
         id: crypto.randomUUID(),
-        createdAt: new Date().toISOString(),
-        updatedAt: new Date().toISOString(),
-        nextCheckAt: new Date().toISOString(),
+        createdAt: new Date().toLocaleString(),
+        updatedAt: new Date().toLocaleString(),
+        nextCheckAt: new Date().toLocaleString(),
         checkCount: 0,
       });
       return String(id);
@@ -145,7 +145,7 @@ export class StorageService {
     try {
       await db.alerts.update(id, {
         ...updates,
-        updatedAt: new Date().toISOString(),
+        updatedAt: new Date().toLocaleString(),
       });
     } catch (error) {
       console.error('Failed to update alert:', error);
@@ -290,16 +290,16 @@ export class StorageService {
       if (existing) {
         await db.settings.update(existing.id, {
           ...settings,
-          updatedAt: new Date().toISOString(),
+          updatedAt: new Date().toLocaleString(),
         });
         return existing.id;
       } else {
         const id = await db.settings.add({
           ...settings,
           id: crypto.randomUUID(),
-          createdAt: new Date().toISOString(),
-          updatedAt: new Date().toISOString(),
-          lastLoginAt: new Date().toISOString(),
+          createdAt: new Date().toLocaleString(),
+          updatedAt: new Date().toLocaleString(),
+          lastLoginAt: new Date().toLocaleString(),
         });
         return String(id);
       }
@@ -326,8 +326,8 @@ export class StorageService {
         id: crypto.randomUUID(),
         key,
         data,
-        expiresAt: expiresAt.toISOString(),
-        createdAt: new Date().toISOString(),
+        expiresAt: expiresAt.toLocaleString(),
+        createdAt: new Date().toLocaleString(),
         tags,
       });
     } catch (error) {

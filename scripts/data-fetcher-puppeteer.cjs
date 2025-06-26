@@ -40,7 +40,7 @@ const CONFIG = {
   BATCH_SIZE: 3,               // 批处理大小
   
   // 数据配置
-  POPULAR_GAMES_LIMIT: 30,     // 热门游戏数量（Puppeteer模式下减少）
+  POPULAR_GAMES_LIMIT: 1000,     // 热门游戏数量（Puppeteer模式下减少）
   MAX_GAMES_PER_CATEGORY: 15,  // 每类别游戏数量
 };
 
@@ -305,7 +305,46 @@ class SteamDataFetcherPuppeteer {
           owners: game.owners || '未知',
           averagePlaytime: game.average_forever || 0,
           score: game.score_rank || 0,
-          lastUpdated: new Date().toISOString(),
+          lastUpdated: new Date().toLocaleString(),
+        }));
+
+      console.log(`✅ 成功获取 ${games.length} 个热门游戏`);
+      return games;
+      
+    } catch (error) {
+      console.error('❌ 获取热门游戏失败:', error.message);
+      
+      // 尝试备用方案：通过Steam商店搜索
+      console.log('🔄 尝试备用方案...');
+      return await this.getPopularGamesFromStore();
+    }
+  }
+
+  async getGamesByPage(page) {
+    console.log('🔥 获取热门游戏列表...');
+    
+    try {
+      // 使用SteamSpy API获取热门游戏
+      const url = `${CONFIG.STEAMSPY_API}?request=all&page=${page}`;
+      const data = await this.browser.fetchAPIWithRetry(url);
+      
+      if (!data || typeof data !== 'object') {
+        throw new Error('SteamSpy返回无效数据');
+      }
+
+      const games = Object.entries(data)
+        .slice(0, CONFIG.POPULAR_GAMES_LIMIT)
+        .map(([appid, game]) => ({
+          steamId: appid,
+          name: game.name || `Game ${appid}`,
+          developer: game.developer || '未知开发商',
+          publisher: game.publisher || '未知发行商',
+          tags: game.tags ? Object.keys(game.tags).slice(0, 10) : [],
+          price: game.price || 0,
+          owners: game.owners || '未知',
+          averagePlaytime: game.average_forever || 0,
+          score: game.score_rank || 0,
+          lastUpdated: new Date().toLocaleString(),
         }));
 
       console.log(`✅ 成功获取 ${games.length} 个热门游戏`);
@@ -360,7 +399,7 @@ class SteamDataFetcherPuppeteer {
                 owners: '未知',
                 averagePlaytime: 0,
                 score: 0,
-                lastUpdated: new Date().toISOString(),
+                lastUpdated: new Date().toLocaleString(),
               });
             }
           }
@@ -393,7 +432,7 @@ class SteamDataFetcherPuppeteer {
     console.log(`🎮 获取 ${steamIds.length} 个游戏的详细信息...`);
     
     const results = [];
-    const limitedIds = steamIds.slice(0, 15); // Puppeteer模式下限制更多
+    const limitedIds = steamIds.slice(0, 1000); // Puppeteer模式下限制更多
     
     // 小批次处理
     for (let i = 0; i < limitedIds.length; i += CONFIG.BATCH_SIZE) {
@@ -472,7 +511,7 @@ class SteamDataFetcherPuppeteer {
         achievements: gameData.achievements?.total || 0,
         metacriticScore: gameData.metacritic?.score,
         recommendations: gameData.recommendations?.total || 0,
-        lastUpdated: new Date().toISOString(),
+        lastUpdated: new Date().toLocaleString(),
       };
       
     } catch (error) {
@@ -481,37 +520,7 @@ class SteamDataFetcherPuppeteer {
     }
   }
 
-  // 生成模拟价格历史数据
-  async getPriceHistory(steamIds) {
-    console.log('📈 生成价格历史数据...');
-    
-    const priceHistory = {};
-    const now = new Date();
-    
-    steamIds.slice(0, 10).forEach(steamId => { // Puppeteer模式下进一步限制
-      const history = [];
-      // 生成过去30天的模拟价格数据
-      for (let i = 30; i >= 0; i--) {
-        const date = new Date(now);
-        date.setDate(date.getDate() - i);
-        
-        // 模拟价格波动
-        const basePrice = Math.random() * 150 + 10;
-        const discount = Math.random() > 0.8 ? Math.random() * 0.6 : 0;
-        
-        history.push({
-          date: date.toISOString().split('T')[0],
-          price: Math.round(basePrice * (1 - discount) * 100) / 100,
-          originalPrice: Math.round(basePrice * 100) / 100,
-          discount: Math.round(discount * 100),
-        });
-      }
-      
-      priceHistory[steamId] = history;
-    });
-    
-    return priceHistory;
-  }
+ 
 
   // 获取游戏搜索索引
   async getSearchIndex(games) {
@@ -592,7 +601,7 @@ class GitManager {
 async function main() {
   const startTime = Date.now();
   console.log('🚀 开始拉取Steam数据（Puppeteer + 代理版本）...');
-  console.log('时间:', new Date().toISOString());
+  console.log('时间:', new Date().toLocaleString());
   
   let fetcher;
   
@@ -617,8 +626,6 @@ async function main() {
     const steamIds = popularGames.map(game => game.steamId);
     const gameDetails = await fetcher.getGameDetails(steamIds);
     
-    // 3. 获取价格历史（模拟数据）
-    const priceHistory = await fetcher.getPriceHistory(steamIds);
     
     // 4. 生成搜索索引
     const searchIndex = await fetcher.getSearchIndex(gameDetails);
@@ -630,13 +637,11 @@ async function main() {
     await Promise.all([
       FileManager.saveJSON(path.join(dataDir, 'popular-games.json'), popularGames),
       FileManager.saveJSON(path.join(dataDir, 'game-details.json'), gameDetails),
-      FileManager.saveJSON(path.join(dataDir, 'price-history.json'), priceHistory),
       FileManager.saveJSON(path.join(dataDir, 'search-index.json'), searchIndex),
       FileManager.saveJSON(path.join(dataDir, 'metadata.json'), {
-        lastUpdated: new Date().toISOString(),
+        lastUpdated: new Date().toLocaleString(),
         gamesCount: gameDetails.length,
         popularGamesCount: popularGames.length,
-        priceHistoryCount: Object.keys(priceHistory).length,
         version: '2.0.0',
         dataSource: 'SteamSpy + Steam Store (Puppeteer + Proxy)',
         mode: 'puppeteer',

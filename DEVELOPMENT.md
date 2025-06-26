@@ -390,7 +390,7 @@ export const logger = winston.createLogger({
 router.get('/health', async (req, res) => {
   const health = {
     status: 'ok',
-    timestamp: new Date().toISOString(),
+    timestamp: new Date().toLocaleString(),
     uptime: process.uptime(),
     database: await checkDatabaseConnection(),
     redis: await checkRedisConnection()
