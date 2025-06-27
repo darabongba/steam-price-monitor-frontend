@@ -7,9 +7,11 @@
     "tags": [],
     "price": "999",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 11525,
+    "averagePlaytime": 12605,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "70",
@@ -17,11 +19,13 @@
     "developer": "Valve",
     "publisher": "Valve",
     "tags": [],
-    "price": "999",
+    "price": "199",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 833,
+    "averagePlaytime": 1370,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "100",
@@ -31,9 +35,11 @@
     "tags": [],
     "price": "999",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 319,
+    "averagePlaytime": 363,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "220",
@@ -43,9 +49,11 @@
     "tags": [],
     "price": "999",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 829,
+    "averagePlaytime": 784,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "240",
@@ -53,11 +61,13 @@
     "developer": "Valve",
     "publisher": "Valve",
     "tags": [],
-    "price": "999",
+    "price": "199",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 7959,
+    "averagePlaytime": 6486,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "320",
@@ -67,9 +77,11 @@
     "tags": [],
     "price": "1999",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 782,
+    "averagePlaytime": 591,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "340",
@@ -81,7 +93,9 @@
     "owners": "20,000,000 .. 50,000,000",
     "averagePlaytime": 0,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "400",
@@ -91,9 +105,11 @@
     "tags": [],
     "price": "999",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 457,
+    "averagePlaytime": 339,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "440",
@@ -103,9 +119,11 @@
     "tags": [],
     "price": "0",
     "owners": "50,000,000 .. 100,000,000",
-    "averagePlaytime": 9174,
+    "averagePlaytime": 9002,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "550",
@@ -115,9 +133,11 @@
     "tags": [],
     "price": "999",
     "owners": "50,000,000 .. 100,000,000",
-    "averagePlaytime": 2799,
+    "averagePlaytime": 2282,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "730",
@@ -127,9 +147,11 @@
     "tags": [],
     "price": "0",
     "owners": "100,000,000 .. 200,000,000",
-    "averagePlaytime": 30276,
+    "averagePlaytime": 30808,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "4000",
@@ -139,9 +161,11 @@
     "tags": [],
     "price": "999",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 10987,
+    "averagePlaytime": 9638,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "8930",
@@ -151,9 +175,11 @@
     "tags": [],
     "price": "749",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 7551,
+    "averagePlaytime": 8290,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "49520",
@@ -161,11 +187,13 @@
     "developer": "Gearbox Software, Aspyr (Mac), Aspyr (Linux)",
     "publisher": "2K, Aspyr (Mac), Aspyr (Linux)",
     "tags": [],
-    "price": "1999",
+    "price": "499",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 3301,
+    "averagePlaytime": 3274,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "105600",
@@ -173,11 +201,13 @@
     "developer": "Re-Logic",
     "publisher": "Re-Logic",
     "tags": [],
-    "price": "999",
+    "price": "499",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 7714,
+    "averagePlaytime": 7570,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "107410",
@@ -187,9 +217,11 @@
     "tags": [],
     "price": "2999",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 13299,
+    "averagePlaytime": 13327,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "108600",
@@ -197,11 +229,13 @@
     "developer": "The Indie Stone",
     "publisher": "The Indie Stone",
     "tags": [],
-    "price": "1999",
+    "price": "1339",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 3845,
+    "averagePlaytime": 4129,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "218620",
@@ -209,11 +243,13 @@
     "developer": "OVERKILL - a Starbreeze Studio.",
     "publisher": "Starbreeze Publishing AB",
     "tags": [],
-    "price": "999",
+    "price": "329",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 6982,
+    "averagePlaytime": 7570,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "219990",
@@ -221,11 +257,13 @@
     "developer": "Crate Entertainment",
     "publisher": "Crate Entertainment",
     "tags": [],
-    "price": "2499",
+    "price": "499",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 3983,
+    "averagePlaytime": 3982,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "221100",
@@ -233,11 +271,13 @@
     "developer": "Bohemia Interactive",
     "publisher": "Bohemia Interactive",
     "tags": [],
-    "price": "4999",
+    "price": "2499",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 14756,
+    "averagePlaytime": 11759,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "227300",
@@ -245,11 +285,13 @@
     "developer": "SCS Software",
     "publisher": "SCS Software",
     "tags": [],
-    "price": "1999",
+    "price": "499",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 7366,
+    "averagePlaytime": 7311,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "227940",
@@ -259,9 +301,11 @@
     "tags": [],
     "price": "0",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 1186,
+    "averagePlaytime": 1084,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "230410",
@@ -271,9 +315,11 @@
     "tags": [],
     "price": "0",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 11890,
+    "averagePlaytime": 11286,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "236390",
@@ -283,9 +329,11 @@
     "tags": [],
     "price": "0",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 9995,
+    "averagePlaytime": 9364,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "238960",
@@ -295,9 +343,11 @@
     "tags": [],
     "price": "0",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 11702,
+    "averagePlaytime": 10994,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "239140",
@@ -305,11 +355,13 @@
     "developer": "Techland",
     "publisher": "Techland",
     "tags": [],
-    "price": "1999",
+    "price": "499",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 2170,
+    "averagePlaytime": 2057,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "242760",
@@ -317,11 +369,13 @@
     "developer": "Endnight Games Ltd",
     "publisher": "Endnight Games Ltd",
     "tags": [],
-    "price": "1999",
+    "price": "399",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 1495,
+    "averagePlaytime": 1496,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "251570",
@@ -331,9 +385,11 @@
     "tags": [],
     "price": "4499",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 6963,
+    "averagePlaytime": 6837,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "252490",
@@ -341,11 +397,13 @@
     "developer": "Facepunch Studios",
     "publisher": "Facepunch Studios",
     "tags": [],
-    "price": "3999",
+    "price": "2399",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 22270,
+    "averagePlaytime": 20973,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "252950",
@@ -355,9 +413,11 @@
     "tags": [],
     "price": "0",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 18445,
+    "averagePlaytime": 17522,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "255710",
@@ -367,9 +427,11 @@
     "tags": [],
     "price": "2999",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 3877,
+    "averagePlaytime": 3161,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "261550",
@@ -379,9 +441,11 @@
     "tags": [],
     "price": "2499",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 9121,
+    "averagePlaytime": 8571,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "271590",
@@ -391,9 +455,11 @@
     "tags": [],
     "price": "0",
     "owners": "50,000,000 .. 100,000,000",
-    "averagePlaytime": 14421,
+    "averagePlaytime": 13986,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "289070",
@@ -403,9 +469,11 @@
     "tags": [],
     "price": "299",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 5411,
+    "averagePlaytime": 5584,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "291480",
@@ -415,9 +483,11 @@
     "tags": [],
     "price": "0",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 1783,
+    "averagePlaytime": 1747,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "291550",
@@ -427,9 +497,11 @@
     "tags": [],
     "price": "0",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 2597,
+    "averagePlaytime": 2870,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "292030",
@@ -437,11 +509,13 @@
     "developer": "CD PROJEKT RED",
     "publisher": "CD PROJEKT RED",
     "tags": [],
-    "price": "3999",
+    "price": "799",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 3346,
+    "averagePlaytime": 3687,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "304050",
@@ -451,9 +525,11 @@
     "tags": [],
     "price": "0",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 2897,
+    "averagePlaytime": 3572,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "304930",
@@ -463,9 +539,11 @@
     "tags": [],
     "price": "0",
     "owners": "50,000,000 .. 100,000,000",
-    "averagePlaytime": 7833,
+    "averagePlaytime": 8003,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "322330",
@@ -475,9 +553,11 @@
     "tags": [],
     "price": "509",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 3021,
+    "averagePlaytime": 3024,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "346110",
@@ -487,9 +567,11 @@
     "tags": [],
     "price": "1499",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 11190,
+    "averagePlaytime": 12028,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "359550",
@@ -499,9 +581,11 @@
     "tags": [],
     "price": "1999",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 14534,
+    "averagePlaytime": 14819,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "377160",
@@ -511,9 +595,11 @@
     "tags": [],
     "price": "1999",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 5685,
+    "averagePlaytime": 6113,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "381210",
@@ -523,9 +609,11 @@
     "tags": [],
     "price": "799",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 10371,
+    "averagePlaytime": 10748,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "386360",
@@ -535,9 +623,11 @@
     "tags": [],
     "price": "0",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 4424,
+    "averagePlaytime": 6072,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "413150",
@@ -545,11 +635,13 @@
     "developer": "ConcernedApe",
     "publisher": "ConcernedApe",
     "tags": [],
-    "price": "1499",
+    "price": "749",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 4549,
+    "averagePlaytime": 4431,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "417910",
@@ -559,9 +651,11 @@
     "tags": [],
     "price": "199",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 115,
+    "averagePlaytime": 88,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "431960",
@@ -569,11 +663,13 @@
     "developer": "Wallpaper Engine Team",
     "publisher": "Wallpaper Engine Team",
     "tags": [],
-    "price": "499",
+    "price": "399",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 4738,
+    "averagePlaytime": 4758,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "433850",
@@ -583,9 +679,11 @@
     "tags": [],
     "price": "0",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 3082,
+    "averagePlaytime": 2967,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "438100",
@@ -595,9 +693,11 @@
     "tags": [],
     "price": "0",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 4866,
+    "averagePlaytime": 5534,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "444090",
@@ -607,9 +707,11 @@
     "tags": [],
     "price": "0",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 3342,
+    "averagePlaytime": 3611,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "444200",
@@ -619,9 +721,11 @@
     "tags": [],
     "price": "0",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 6688,
+    "averagePlaytime": 8367,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "477160",
@@ -631,9 +735,11 @@
     "tags": [],
     "price": "599",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 737,
+    "averagePlaytime": 778,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "526870",
@@ -643,9 +749,11 @@
     "tags": [],
     "price": "3999",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 5679,
+    "averagePlaytime": 6280,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "532210",
@@ -655,9 +763,11 @@
     "tags": [],
     "price": "3196",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 398,
+    "averagePlaytime": 424,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "550650",
@@ -667,9 +777,11 @@
     "tags": [],
     "price": "0",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 1843,
+    "averagePlaytime": 1982,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "552990",
@@ -679,9 +791,11 @@
     "tags": [],
     "price": "0",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 3775,
+    "averagePlaytime": 4093,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "553850",
@@ -689,11 +803,13 @@
     "developer": "Arrowhead Game Studios",
     "publisher": "PlayStation Publishing LLC",
     "tags": [],
-    "price": "3999",
+    "price": "3199",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 4399,
+    "averagePlaytime": 4237,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "578080",
@@ -703,9 +819,11 @@
     "tags": [],
     "price": "0",
     "owners": "100,000,000 .. 200,000,000",
-    "averagePlaytime": 22591,
+    "averagePlaytime": 23275,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "582010",
@@ -715,9 +833,11 @@
     "tags": [],
     "price": "2999",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 8905,
+    "averagePlaytime": 8590,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "594650",
@@ -727,9 +847,11 @@
     "tags": [],
     "price": "1499",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 9153,
+    "averagePlaytime": 8751,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "632360",
@@ -739,9 +861,11 @@
     "tags": [],
     "price": "2499",
     "owners": "5,000,000 .. 10,000,000",
-    "averagePlaytime": 3744,
+    "averagePlaytime": 3335,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "648800",
@@ -751,9 +875,11 @@
     "tags": [],
     "price": "1999",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 1654,
+    "averagePlaytime": 1624,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "739630",
@@ -761,11 +887,13 @@
     "developer": "Kinetic Games",
     "publisher": "Kinetic Games",
     "tags": [],
-    "price": "1999",
+    "price": "1499",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 2245,
+    "averagePlaytime": 2268,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "755790",
@@ -775,9 +903,11 @@
     "tags": [],
     "price": "0",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 1096,
+    "averagePlaytime": 1147,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "814380",
@@ -787,9 +917,11 @@
     "tags": [],
     "price": "5999",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 2589,
+    "averagePlaytime": 2586,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "892970",
@@ -799,9 +931,11 @@
     "tags": [],
     "price": "1999",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 4169,
+    "averagePlaytime": 4154,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "899770",
@@ -809,11 +943,13 @@
     "developer": "Eleventh Hour Games",
     "publisher": "Eleventh Hour Games",
     "tags": [],
-    "price": "3499",
+    "price": "2799",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 4915,
+    "averagePlaytime": 5146,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "901583",
@@ -825,7 +961,9 @@
     "owners": "20,000,000 .. 50,000,000",
     "averagePlaytime": 0,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "945360",
@@ -835,9 +973,11 @@
     "tags": [],
     "price": "499",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 1338,
+    "averagePlaytime": 1418,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "990080",
@@ -847,9 +987,11 @@
     "tags": [],
     "price": "5999",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 2209,
+    "averagePlaytime": 2273,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1063730",
@@ -859,9 +1001,11 @@
     "tags": [],
     "price": "5999",
     "owners": "50,000,000 .. 100,000,000",
-    "averagePlaytime": 11401,
+    "averagePlaytime": 10927,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1085660",
@@ -871,9 +1015,11 @@
     "tags": [],
     "price": "0",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 10536,
+    "averagePlaytime": 11282,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1086940",
@@ -881,11 +1027,13 @@
     "developer": "Larian Studios",
     "publisher": "Larian Studios",
     "tags": [],
-    "price": "5999",
+    "price": "4799",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 7236,
+    "averagePlaytime": 7158,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1089350",
@@ -895,9 +1043,11 @@
     "tags": [],
     "price": "0",
     "owners": "5,000,000 .. 10,000,000",
-    "averagePlaytime": 8718,
+    "averagePlaytime": 7438,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1091500",
@@ -905,11 +1055,13 @@
     "developer": "CD PROJEKT RED",
     "publisher": "CD PROJEKT RED",
     "tags": [],
-    "price": "5999",
+    "price": "2099",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 4815,
+    "averagePlaytime": 4894,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1097150",
@@ -919,9 +1071,11 @@
     "tags": [],
     "price": "0",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 1257,
+    "averagePlaytime": 1309,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1116170",
@@ -931,9 +1085,11 @@
     "tags": [],
     "price": "1199",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 516,
+    "averagePlaytime": 443,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1172470",
@@ -943,9 +1099,11 @@
     "tags": [],
     "price": "0",
     "owners": "100,000,000 .. 200,000,000",
-    "averagePlaytime": 9498,
+    "averagePlaytime": 9217,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1174180",
@@ -953,11 +1111,13 @@
     "developer": "Rockstar Games",
     "publisher": "Rockstar Games",
     "tags": [],
-    "price": "5999",
+    "price": "1499",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 4222,
+    "averagePlaytime": 4299,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1203220",
@@ -967,9 +1127,11 @@
     "tags": [],
     "price": "0",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 8141,
+    "averagePlaytime": 8480,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1222670",
@@ -979,9 +1141,11 @@
     "tags": [],
     "price": "0",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 1828,
+    "averagePlaytime": 1524,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1238810",
@@ -991,9 +1155,11 @@
     "tags": [],
     "price": "249",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 2270,
+    "averagePlaytime": 2193,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1240440",
@@ -1003,9 +1169,11 @@
     "tags": [],
     "price": "0",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 1426,
+    "averagePlaytime": 1402,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1245620",
@@ -1013,11 +1181,13 @@
     "developer": "FromSoftware, Inc.",
     "publisher": "FromSoftware, Inc., Bandai Namco Entertainment",
     "tags": [],
-    "price": "5999",
+    "price": "3599",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 7946,
+    "averagePlaytime": 7910,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1326470",
@@ -1025,11 +1195,13 @@
     "developer": "Endnight Games Ltd",
     "publisher": "Newnight ",
     "tags": [],
-    "price": "2999",
+    "price": "1019",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 1450,
+    "averagePlaytime": 1333,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1491000",
@@ -1039,9 +1211,11 @@
     "tags": [],
     "price": "0",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 617,
+    "averagePlaytime": 670,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1517290",
@@ -1051,9 +1225,11 @@
     "tags": [],
     "price": "299",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 2606,
+    "averagePlaytime": 2871,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1599340",
@@ -1063,9 +1239,11 @@
     "tags": [],
     "price": "0",
     "owners": "50,000,000 .. 100,000,000",
-    "averagePlaytime": 5676,
+    "averagePlaytime": 5135,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1623730",
@@ -1075,9 +1253,11 @@
     "tags": [],
     "price": "2249",
     "owners": "50,000,000 .. 100,000,000",
-    "averagePlaytime": 3714,
+    "averagePlaytime": 3526,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1665460",
@@ -1087,9 +1267,11 @@
     "tags": [],
     "price": "0",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 2384,
+    "averagePlaytime": 2633,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1811260",
@@ -1099,9 +1281,11 @@
     "tags": [],
     "price": "0",
     "owners": "5,000,000 .. 10,000,000",
-    "averagePlaytime": 9394,
+    "averagePlaytime": 8629,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1938090",
@@ -1111,9 +1295,11 @@
     "tags": [],
     "price": "3849",
     "owners": "50,000,000 .. 100,000,000",
-    "averagePlaytime": 5038,
+    "averagePlaytime": 4524,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "1966720",
@@ -1121,11 +1307,13 @@
     "developer": "Zeekerss",
     "publisher": "Zeekerss",
     "tags": [],
-    "price": "999",
+    "price": "799",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 1369,
+    "averagePlaytime": 1368,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "2186680",
@@ -1133,11 +1321,13 @@
     "developer": "Owlcat Games",
     "publisher": "Owlcat Games",
     "tags": [],
-    "price": "4999",
+    "price": "2499",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 3177,
+    "averagePlaytime": 2629,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "2246340",
@@ -1145,11 +1335,13 @@
     "developer": "CAPCOM Co., Ltd.",
     "publisher": "CAPCOM Co., Ltd.",
     "tags": [],
-    "price": "6999",
+    "price": "5599",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 3742,
+    "averagePlaytime": 3786,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "2358720",
@@ -1159,9 +1351,11 @@
     "tags": [],
     "price": "4799",
     "owners": "50,000,000 .. 100,000,000",
-    "averagePlaytime": 3148,
+    "averagePlaytime": 3241,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "2694490",
@@ -1171,9 +1365,11 @@
     "tags": [],
     "price": "2999",
     "owners": "20,000,000 .. 50,000,000",
-    "averagePlaytime": 6326,
+    "averagePlaytime": 6119,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "3164500",
@@ -1181,11 +1377,13 @@
     "developer": "TVGS",
     "publisher": "TVGS",
     "tags": [],
-    "price": "1999",
+    "price": "1399",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 1508,
+    "averagePlaytime": 1476,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   },
   {
     "steamId": "3241660",
@@ -1193,10 +1391,12 @@
     "developer": "semiwork",
     "publisher": "semiwork",
     "tags": [],
-    "price": "999",
+    "price": "799",
     "owners": "10,000,000 .. 20,000,000",
-    "averagePlaytime": 973,
+    "averagePlaytime": 923,
     "score": 0,
-    "lastUpdated": "2025-06-26T02:34:42.826Z"
+    "isHistorical": false,
+    "dataSource": "current",
+    "lastUpdated": "2025/6/27 15:12:54"
   }
 ]

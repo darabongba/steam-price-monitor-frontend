@@ -37,16 +37,16 @@
     "price": {
       "currency": "CNY",
       "initial": 37,
-      "final": 37,
-      "discount_percent": 0,
-      "formatted": "¥ 37.00"
+      "final": 7.4,
+      "discount_percent": 80,
+      "formatted": "¥ 7.40"
     },
     "isFree": false,
     "dlc": [],
     "achievements": 0,
     "metacriticScore": 88,
-    "recommendations": 160523,
-    "lastUpdated": "2025-06-26T02:34:47.909Z"
+    "recommendations": 160552,
+    "lastUpdated": "2025/6/27 15:12:58"
   },
   {
     "steamId": "70",
@@ -86,9 +86,9 @@
     "price": {
       "currency": "CNY",
       "initial": 37,
-      "final": 37,
-      "discount_percent": 0,
-      "formatted": "¥ 37.00"
+      "final": 7.4,
+      "discount_percent": 80,
+      "formatted": "¥ 7.40"
     },
     "isFree": false,
     "dlc": [
@@ -96,8 +96,8 @@
     ],
     "achievements": 0,
     "metacriticScore": 96,
-    "recommendations": 105373,
-    "lastUpdated": "2025-06-26T02:34:52.476Z"
+    "recommendations": 105398,
+    "lastUpdated": "2025/6/27 15:13:03"
   },
   {
     "steamId": "100",
@@ -137,16 +137,16 @@
     "price": {
       "currency": "CNY",
       "initial": 37,
-      "final": 37,
-      "discount_percent": 0,
-      "formatted": "¥ 37.00"
+      "final": 7.4,
+      "discount_percent": 80,
+      "formatted": "¥ 7.40"
     },
     "isFree": false,
     "dlc": [],
     "achievements": 0,
     "metacriticScore": 65,
-    "recommendations": 19842,
-    "lastUpdated": "2025-06-26T02:34:56.475Z"
+    "recommendations": 19848,
+    "lastUpdated": "2025/6/27 15:13:06"
   },
   {
     "steamId": "220",
@@ -199,9 +199,9 @@
     "price": {
       "currency": "CNY",
       "initial": 42,
-      "final": 42,
-      "discount_percent": 0,
-      "formatted": "¥ 42.00"
+      "final": 8.4,
+      "discount_percent": 80,
+      "formatted": "¥ 8.40"
     },
     "isFree": false,
     "dlc": [
@@ -209,8 +209,8 @@
     ],
     "achievements": 69,
     "metacriticScore": 96,
-    "recommendations": 181570,
-    "lastUpdated": "2025-06-26T02:35:04.661Z"
+    "recommendations": 181633,
+    "lastUpdated": "2025/6/27 15:13:17"
   },
   {
     "steamId": "240",
@@ -250,16 +250,16 @@
     "price": {
       "currency": "CNY",
       "initial": 42,
-      "final": 42,
-      "discount_percent": 0,
-      "formatted": "¥ 42.00"
+      "final": 8.4,
+      "discount_percent": 80,
+      "formatted": "¥ 8.40"
     },
     "isFree": false,
     "dlc": [],
     "achievements": 147,
     "metacriticScore": 88,
-    "recommendations": 126571,
-    "lastUpdated": "2025-06-26T02:35:08.525Z"
+    "recommendations": 126602,
+    "lastUpdated": "2025/6/27 15:13:22"
   },
   {
     "steamId": "320",
@@ -300,8 +300,8 @@
     "isFree": false,
     "dlc": [],
     "achievements": 0,
-    "recommendations": 9593,
-    "lastUpdated": "2025-06-26T02:35:12.978Z"
+    "recommendations": 9595,
+    "lastUpdated": "2025/6/27 15:13:26"
   },
   {
     "steamId": "340",
@@ -342,8 +342,8 @@
     "isFree": false,
     "dlc": [],
     "achievements": 0,
-    "recommendations": 10661,
-    "lastUpdated": "2025-06-26T02:35:23.168Z"
+    "recommendations": 10659,
+    "lastUpdated": "2025/6/27 15:13:36"
   },
   {
     "steamId": "400",
@@ -390,9 +390,9 @@
     "price": {
       "currency": "CNY",
       "initial": 42,
-      "final": 42,
-      "discount_percent": 0,
-      "formatted": "¥ 42.00"
+      "final": 8.4,
+      "discount_percent": 80,
+      "formatted": "¥ 8.40"
     },
     "isFree": false,
     "dlc": [
@@ -401,8 +401,8 @@
     ],
     "achievements": 15,
     "metacriticScore": 90,
-    "recommendations": 154503,
-    "lastUpdated": "2025-06-26T02:35:27.711Z"
+    "recommendations": 154543,
+    "lastUpdated": "2025/6/27 15:13:40"
   },
   {
     "steamId": "440",
@@ -460,8 +460,8 @@
     ],
     "achievements": 520,
     "metacriticScore": 92,
-    "recommendations": 42877,
-    "lastUpdated": "2025-06-26T02:35:32.408Z"
+    "recommendations": 42895,
+    "lastUpdated": "2025/6/27 15:13:44"
   },
   {
     "steamId": "550",
@@ -508,16 +508,16 @@
     "price": {
       "currency": "CNY",
       "initial": 42,
-      "final": 42,
-      "discount_percent": 0,
-      "formatted": "¥ 42.00"
+      "final": 8.4,
+      "discount_percent": 80,
+      "formatted": "¥ 8.40"
     },
     "isFree": false,
     "dlc": [],
     "achievements": 101,
     "metacriticScore": 89,
-    "recommendations": 739519,
-    "lastUpdated": "2025-06-26T02:35:41.713Z"
+    "recommendations": 739789,
+    "lastUpdated": "2025/6/27 15:13:55"
   },
   {
     "steamId": "730",
@@ -574,8 +574,8 @@
       2678630
     ],
     "achievements": 1,
-    "recommendations": 4556865,
-    "lastUpdated": "2025-06-26T02:35:46.153Z"
+    "recommendations": 4558241,
+    "lastUpdated": "2025/6/27 15:13:59"
   },
   {
     "steamId": "4000",
@@ -617,15 +617,15 @@
     "price": {
       "currency": "CNY",
       "initial": 36,
-      "final": 36,
-      "discount_percent": 0,
-      "formatted": "¥ 36.00"
+      "final": 21.6,
+      "discount_percent": 40,
+      "formatted": "¥ 21.60"
     },
     "isFree": false,
     "dlc": [],
     "achievements": 29,
-    "recommendations": 1001844,
-    "lastUpdated": "2025-06-26T02:35:49.687Z"
+    "recommendations": 1002020,
+    "lastUpdated": "2025/6/27 15:14:03"
   },
   {
     "steamId": "8930",
@@ -691,8 +691,8 @@
     ],
     "achievements": 286,
     "metacriticScore": 90,
-    "recommendations": 124365,
-    "lastUpdated": "2025-06-26T02:35:59.237Z"
+    "recommendations": 124386,
+    "lastUpdated": "2025/6/27 15:14:13"
   },
   {
     "steamId": "49520",
@@ -740,9 +740,9 @@
     "price": {
       "currency": "CNY",
       "initial": 64,
-      "final": 64,
-      "discount_percent": 0,
-      "formatted": "¥ 64.00"
+      "final": 16,
+      "discount_percent": 75,
+      "formatted": "¥ 16.00"
     },
     "isFree": false,
     "dlc": [
@@ -754,8 +754,8 @@
     ],
     "achievements": 75,
     "metacriticScore": 89,
-    "recommendations": 211786,
-    "lastUpdated": "2025-06-26T02:36:04.236Z"
+    "recommendations": 211836,
+    "lastUpdated": "2025/6/27 15:14:18"
   },
   {
     "steamId": "105600",
@@ -811,9 +811,9 @@
     "price": {
       "currency": "CNY",
       "initial": 42,
-      "final": 42,
-      "discount_percent": 0,
-      "formatted": "¥ 42.00"
+      "final": 21,
+      "discount_percent": 50,
+      "formatted": "¥ 21.00"
     },
     "isFree": false,
     "dlc": [
@@ -822,8 +822,8 @@
     ],
     "achievements": 115,
     "metacriticScore": 83,
-    "recommendations": 1126669,
-    "lastUpdated": "2025-06-26T02:36:09.034Z"
+    "recommendations": 1126959,
+    "lastUpdated": "2025/6/27 15:14:22"
   },
   {
     "steamId": "107410",
@@ -878,9 +878,9 @@
     "price": {
       "currency": "CNY",
       "initial": 119,
-      "final": 119,
-      "discount_percent": 0,
-      "formatted": "¥ 119.00"
+      "final": 11.9,
+      "discount_percent": 90,
+      "formatted": "¥ 11.90"
     },
     "isFree": false,
     "dlc": [
@@ -892,8 +892,8 @@
     ],
     "achievements": 123,
     "metacriticScore": 74,
-    "recommendations": 219056,
-    "lastUpdated": "2025-06-26T02:36:16.910Z"
+    "recommendations": 219095,
+    "lastUpdated": "2025/6/27 15:14:33"
   },
   {
     "steamId": "108600",
@@ -943,15 +943,15 @@
     "price": {
       "currency": "CNY",
       "initial": 76,
-      "final": 76,
-      "discount_percent": 0,
-      "formatted": "¥ 76.00"
+      "final": 50.92,
+      "discount_percent": 33,
+      "formatted": "¥ 50.92"
     },
     "isFree": false,
     "dlc": [],
     "achievements": 0,
-    "recommendations": 289499,
-    "lastUpdated": "2025-06-26T02:36:21.826Z"
+    "recommendations": 289654,
+    "lastUpdated": "2025/6/27 15:14:38"
   },
   {
     "steamId": "218620",
@@ -1005,9 +1005,9 @@
     "price": {
       "currency": "CNY",
       "initial": 42,
-      "final": 42,
-      "discount_percent": 0,
-      "formatted": "¥ 42.00"
+      "final": 13.86,
+      "discount_percent": 67,
+      "formatted": "¥ 13.86"
     },
     "isFree": false,
     "dlc": [
@@ -1019,8 +1019,8 @@
     ],
     "achievements": 1328,
     "metacriticScore": 79,
-    "recommendations": 435993,
-    "lastUpdated": "2025-06-26T02:36:26.929Z"
+    "recommendations": 436012,
+    "lastUpdated": "2025/6/27 15:14:43"
   },
   {
     "steamId": "219990",
@@ -1076,9 +1076,9 @@
     "price": {
       "currency": "CNY",
       "initial": 92,
-      "final": 92,
-      "discount_percent": 0,
-      "formatted": "¥ 92.00"
+      "final": 18.4,
+      "discount_percent": 80,
+      "formatted": "¥ 18.40"
     },
     "isFree": false,
     "dlc": [
@@ -1090,8 +1090,8 @@
     ],
     "achievements": 185,
     "metacriticScore": 83,
-    "recommendations": 84089,
-    "lastUpdated": "2025-06-26T02:36:35.321Z"
+    "recommendations": 84113,
+    "lastUpdated": "2025/6/27 15:14:53"
   },
   {
     "steamId": "221100",
@@ -1146,9 +1146,9 @@
     "price": {
       "currency": "CNY",
       "initial": 239,
-      "final": 239,
-      "discount_percent": 0,
-      "formatted": "¥ 239.00"
+      "final": 119.5,
+      "discount_percent": 50,
+      "formatted": "¥ 119.50"
     },
     "isFree": false,
     "dlc": [
@@ -1156,8 +1156,8 @@
       2622430
     ],
     "achievements": 13,
-    "recommendations": 358025,
-    "lastUpdated": "2025-06-26T02:36:39.306Z"
+    "recommendations": 358084,
+    "lastUpdated": "2025/6/27 15:14:58"
   },
   {
     "steamId": "227300",
@@ -1211,9 +1211,9 @@
     "price": {
       "currency": "CNY",
       "initial": 88,
-      "final": 88,
-      "discount_percent": 0,
-      "formatted": "¥ 88.00"
+      "final": 22,
+      "discount_percent": 75,
+      "formatted": "¥ 22.00"
     },
     "isFree": false,
     "dlc": [
@@ -1225,8 +1225,8 @@
     ],
     "achievements": 101,
     "metacriticScore": 79,
-    "recommendations": 689983,
-    "lastUpdated": "2025-06-26T02:36:43.103Z"
+    "recommendations": 690165,
+    "lastUpdated": "2025/6/27 15:15:02"
   },
   {
     "steamId": "227940",
@@ -1279,7 +1279,7 @@
     "dlc": [],
     "achievements": 0,
     "recommendations": 2367,
-    "lastUpdated": "2025-06-26T02:36:51.010Z"
+    "lastUpdated": "2025/6/27 15:15:13"
   },
   {
     "steamId": "230410",
@@ -1343,23 +1343,23 @@
     "achievements": 193,
     "metacriticScore": 69,
     "recommendations": 2891,
-    "lastUpdated": "2025-06-26T02:36:55.877Z"
+    "lastUpdated": "2025/6/27 15:15:17"
   },
   {
     "steamId": "236390",
     "name": "War Thunder",
     "type": "game",
     "description": "War Thunder上最全面的免费、跨平台大型多人在线军事类游戏，专注于二战和冷战时期的航空、装甲车辆和海军舰艇。现在就加入进来参与在地面、天空和海洋进行的主要战事，并和来自全球各地的几百万玩家们在不断变化的环境中战斗。",
-    "fullDescription": "<div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/extras/WT_giff_logo.gif?t=1750845953\" /></div><br><br><strong>War Thunder</strong>是Windows、Linux、Mac、PlayStation®4、PlayStation®5、Xbox One及Xbox Series S|X平台上最全面的免费、跨平台大型和Xbox One平台上最全面的免费、跨平台大型多人在线军事类游戏，专注于二战和冷战时期的航空、装甲车辆和海军舰艇。现在就加入进来参与在地面、天空和海洋进行的主要战事，并和来自全球各地的几百万玩家们在不断变化的环境中战斗。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/extras/WT_giff_1.gif?t=1750845953\" /></div><br><br>在War Thunder中，飞机、武装直升机、地面部队和海军舰艇将会在历史性的战场上协同作战，有超过2500种载具可供选择，其中有不少是独家载具，您可以操纵轰炸机的自卫炮塔内击毁追击您的敌机，驾驶高射炮保护您的队友免遭空袭，使用多种火箭发射器击落敌机，或用驾驶快艇用鱼雷击沉敌人的战舰。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/extras/WT_giff_2.gif?t=1750845953\" /></div><h2 class=\"bb_tag\">游戏特色：</h2><br><ul class=\"bb_ul\"><li>超过2500款细节丰富的飞机、直升机、坦克、军舰和其他载具，均通过历史文献和幸存资料来源精心制作。<br></li><li>100多张表现历史上发生的主要战事的地图。<br></li><li>玩家之间的高强度对抗，在全面的战斗任务中可以设置不同难度以体现多种多样的游戏风格和水平。<br></li><li>丰富的人机对抗内容，其中包括动态的历史战役和个人任务。<br></li><li>定期更新内容，包括新载具、地图、任务和国家。<br></li><li>惊人的画质，真实的音效和优美的背景音乐创造了一个能够让您沉浸其中的世界。<br></li><li>无缝衔接的跨平台游戏体验，Windows，Linux，Max，PlayStation®4, PlayStation®5, Xbox One 和 Xbox Series X|S，所有玩家都能在一个服务器上畅玩。<br></li><li>为War Thunder定制优异的内容并在 War Thunder Live上面分享，并有机会获得现金作为奖励！</li></ul><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/extras/WT_giff_3.gif?t=1750845953\" /></div>",
+    "fullDescription": "<div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/extras/WT_giff_logo.gif?t=1750955981\" /></div><br><br><strong>War Thunder</strong>是Windows、Linux、Mac、PlayStation®4、PlayStation®5、Xbox One及Xbox Series S|X平台上最全面的免费、跨平台大型和Xbox One平台上最全面的免费、跨平台大型多人在线军事类游戏，专注于二战和冷战时期的航空、装甲车辆和海军舰艇。现在就加入进来参与在地面、天空和海洋进行的主要战事，并和来自全球各地的几百万玩家们在不断变化的环境中战斗。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/extras/WT_giff_1.gif?t=1750955981\" /></div><br><br>在War Thunder中，飞机、武装直升机、地面部队和海军舰艇将会在历史性的战场上协同作战，有超过2500种载具可供选择，其中有不少是独家载具，您可以操纵轰炸机的自卫炮塔内击毁追击您的敌机，驾驶高射炮保护您的队友免遭空袭，使用多种火箭发射器击落敌机，或用驾驶快艇用鱼雷击沉敌人的战舰。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/extras/WT_giff_2.gif?t=1750955981\" /></div><h2 class=\"bb_tag\">游戏特色：</h2><br><ul class=\"bb_ul\"><li>超过2500款细节丰富的飞机、直升机、坦克、军舰和其他载具，均通过历史文献和幸存资料来源精心制作。<br></li><li>100多张表现历史上发生的主要战事的地图。<br></li><li>玩家之间的高强度对抗，在全面的战斗任务中可以设置不同难度以体现多种多样的游戏风格和水平。<br></li><li>丰富的人机对抗内容，其中包括动态的历史战役和个人任务。<br></li><li>定期更新内容，包括新载具、地图、任务和国家。<br></li><li>惊人的画质，真实的音效和优美的背景音乐创造了一个能够让您沉浸其中的世界。<br></li><li>无缝衔接的跨平台游戏体验，Windows，Linux，Max，PlayStation®4, PlayStation®5, Xbox One 和 Xbox Series X|S，所有玩家都能在一个服务器上畅玩。<br></li><li>为War Thunder定制优异的内容并在 War Thunder Live上面分享，并有机会获得现金作为奖励！</li></ul><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/extras/WT_giff_3.gif?t=1750955981\" /></div>",
     "developer": "Gaijin Entertainment",
     "publisher": "Gaijin Network Ltd",
     "releaseDate": "2013 年 8 月 15 日",
     "comingSoon": false,
-    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/2138d08fc22dbf6a20ebff4cfa4632b359de8daf/header.jpg?t=1750845953",
+    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/2138d08fc22dbf6a20ebff4cfa4632b359de8daf/header.jpg?t=1750955981",
     "screenshots": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/ss_68bc95495ba9752b44d6655f07cf41a5c26306f6.600x338.jpg?t=1750845953",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/ss_5190ebc65d0fd3628d8f804af52c8b9d0786d183.600x338.jpg?t=1750845953",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/ss_fee9c41789ba7227b3cc66db04d8d8f72b3c15cb.600x338.jpg?t=1750845953"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/ss_68bc95495ba9752b44d6655f07cf41a5c26306f6.600x338.jpg?t=1750955981",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/ss_5190ebc65d0fd3628d8f804af52c8b9d0786d183.600x338.jpg?t=1750955981",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/236390/ss_fee9c41789ba7227b3cc66db04d8d8f72b3c15cb.600x338.jpg?t=1750955981"
     ],
     "movies": [
       {
@@ -1399,32 +1399,32 @@
     "price": null,
     "isFree": true,
     "dlc": [
-      3780140,
-      3780160,
-      3780150,
-      3752060,
-      3752050
+      3386540,
+      3010120,
+      3010110,
+      1947130,
+      1557850
     ],
     "achievements": 90,
     "metacriticScore": 81,
     "recommendations": 1927,
-    "lastUpdated": "2025-06-26T02:37:00.307Z"
+    "lastUpdated": "2025/6/27 15:15:23"
   },
   {
     "steamId": "239140",
     "name": "Dying Light",
     "type": "game",
     "description": "以丧尸横行的末世为背景的开放世界第一人称动作生存游戏。在一个被神秘病毒摧残过后的城市里漫游。收集物资，制作武器并迎战成群的感染者。",
-    "fullDescription": "<h1>DYING LIGHT: THE BEAST</h1><p><p class=\"bb_paragraph\">凯尔·克兰回来了！这位哈兰的英雄已消失了十多年，但他将在《消逝的光芒：困兽》中强势回归！ </p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/extras/KyleCrane.gif?t=1738004178\" /></div> </p><p class=\"bb_paragraph\">《消逝的光芒：困兽》是一款激动人心的独立丧尸冒险，将继续讲述克兰的传奇故事！请查看专属产品页面以了解更多信息，并将游戏加入心愿单以获取最新动态！</p></p><br><h1>各版本比较</h1><p><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/extras/Standard_Comparison.png?t=1738004178\" /></div></p><br><h1>关于游戏</h1><p class=\"bb_paragraph\"><strong>《消逝的光芒》十周年纪念标准版包含：</strong></p><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\">《消逝的光芒》</p></li><li><p class=\"bb_paragraph\">十周年纪念皮肤捆绑包</p></li></ul><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/extras/Steamdeck_schinese.png?t=1738004178\" /></div></p><p class=\"bb_paragraph\">来自《Dead Island》和《Call of Juarez》的创作团队。荣获50多次业界奖项与提名。由于对游戏性的不懈追求，本作品为第一人称丧尸游戏设立了新的标杆。在推出后的七年时间中，我们仍旧在优化内容。今天，它已经成为有史以来最优秀的丧尸题材游戏之一。</p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/extras/New_GIF_Steam_V4_ENG.gif?t=1738004178\" /></div></p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\">在丧尸病毒肆虐的城市里求生！执行秘密任务期间，发现你不得不做出艰难的选择。对上级的忠心能否胜过拯救幸存者的意愿？选择权在你手中……</p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\"><strong>广阔的开放世界</strong></p><p class=\"bb_paragraph\">以前所未有的高自由度在城市里漫游，全面感受其独特的氛围。用跑酷技巧在建筑物间穿行，并到达遥远的区域。</p><p class=\"bb_paragraph\"><strong>新意十足的战斗</strong></p><p class=\"bb_paragraph\">在血腥的战斗中探索对抗敌人的无数种手段。配合环境对各类武器及技能进行搭配，以在战斗时获得优势。</p><p class=\"bb_paragraph\"><strong>日夜更替系统</strong></p><p class=\"bb_paragraph\">体验世界的昼夜剧变——日落之后，你将从猎手变成猎物。要么直面来袭的威胁，要么头也不回地拼命逃跑。</p><p class=\"bb_paragraph\"><strong>4名玩家组队</strong></p><p class=\"bb_paragraph\">在激动人心的合作模式中，与其他玩家携手并战以提高生存几率。组队完成故事战役，检测你们作为一个团队的实力。</p>",
+    "fullDescription": "<h1>DYING LIGHT: THE BEAST</h1><p><p class=\"bb_paragraph\">凯尔·克兰回来了！这位哈兰的英雄已消失了十多年，但他将在《消逝的光芒：困兽》中强势回归！ </p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/extras/KyleCrane.gif?t=1750967496\" /></div> </p><p class=\"bb_paragraph\">《消逝的光芒：困兽》是一款激动人心的独立丧尸冒险，将继续讲述克兰的传奇故事！请查看专属产品页面以了解更多信息，并将游戏加入心愿单以获取最新动态！</p></p><br><h1>各版本比较</h1><p><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/extras/Standard_Comparison.png?t=1750967496\" /></div></p><br><h1>关于游戏</h1><p class=\"bb_paragraph\"><strong>重要：润色更新带来增强画面、重制原声、图形改良——拥有任何版本《消逝的光芒》的玩家都可以免费获得。</strong></p><p class=\"bb_paragraph\"><strong>《消逝的光芒》精要版包含：</strong></p><ul class=\"bb_ul\"><li><p class=\"bb_paragraph\">《消逝的光芒》（原版游戏）</p></li><li><p class=\"bb_paragraph\">波扎克部落DLC</p></li><li><p class=\"bb_paragraph\">餐馆和铁路站DLC</p></li><li><p class=\"bb_paragraph\">终极幸存者礼包</p></li><li><p class=\"bb_paragraph\">5周年礼包</p></li><li><p class=\"bb_paragraph\">10周年礼包</p></li><li><p class=\"bb_paragraph\">哈兰突击队礼包</p></li><li><p class=\"bb_paragraph\">疯狂枪手礼包</p></li><li><p class=\"bb_paragraph\">夜魔猎手礼包</p></li><li><p class=\"bb_paragraph\">复古枪手礼包</p></li><li><p class=\"bb_paragraph\">鼠战士礼包</p></li></ul><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/extras/Steamdeck_schinese.png?t=1750967496\" /></div></p><p class=\"bb_paragraph\">来自《Dead Island》和《Call of Juarez》的创作团队。荣获50多次业界奖项与提名。由于对游戏性的不懈追求，本作品为第一人称丧尸游戏设立了新的标杆。在推出后的七年时间中，我们仍旧在优化内容。今天，它已经成为有史以来最优秀的丧尸题材游戏之一。</p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/extras/New_GIF_Steam_V4_ENG.gif?t=1750967496\" /></div></p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\">在丧尸病毒肆虐的城市里求生！执行秘密任务期间，发现你不得不做出艰难的选择。对上级的忠心能否胜过拯救幸存者的意愿？选择权在你手中……</p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\"><strong>广阔的开放世界</strong></p><p class=\"bb_paragraph\">以前所未有的高自由度在城市里漫游，全面感受其独特的氛围。用跑酷技巧在建筑物间穿行，并到达遥远的区域。</p><p class=\"bb_paragraph\"><strong>新意十足的战斗</strong></p><p class=\"bb_paragraph\">在血腥的战斗中探索对抗敌人的无数种手段。配合环境对各类武器及技能进行搭配，以在战斗时获得优势。</p><p class=\"bb_paragraph\"><strong>日夜更替系统</strong></p><p class=\"bb_paragraph\">体验世界的昼夜剧变——日落之后，你将从猎手变成猎物。要么直面来袭的威胁，要么头也不回地拼命逃跑。</p><p class=\"bb_paragraph\"><strong>4名玩家组队</strong></p><p class=\"bb_paragraph\">在激动人心的合作模式中，与其他玩家携手并战以提高生存几率。组队完成故事战役，检测你们作为一个团队的实力。</p>",
     "developer": "Techland",
     "publisher": "Techland",
-    "releaseDate": "2025 年 1 月 28 日",
+    "releaseDate": "2015 年 1 月 27 日",
     "comingSoon": false,
-    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/header_schinese.jpg?t=1738004178",
+    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/header_schinese.jpg?t=1750967496",
     "screenshots": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/ss_a3771358b8eb4ea4c8f99c5850711f55b87804de.600x338.jpg?t=1738004178",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/ss_1f0dc94f46fa1a953827188188887f6a12911ec2.600x338.jpg?t=1738004178",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/ss_488226f013287012e0feaed2fb7799dbe038fd00.600x338.jpg?t=1738004178"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/ss_a3771358b8eb4ea4c8f99c5850711f55b87804de.600x338.jpg?t=1750967496",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/ss_1f0dc94f46fa1a953827188188887f6a12911ec2.600x338.jpg?t=1750967496",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239140/ss_488226f013287012e0feaed2fb7799dbe038fd00.600x338.jpg?t=1750967496"
     ],
     "movies": [
       {
@@ -1461,10 +1461,10 @@
     },
     "price": {
       "currency": "CNY",
-      "initial": 73,
-      "final": 73,
-      "discount_percent": 0,
-      "formatted": "¥ 73.00"
+      "initial": 98,
+      "final": 19.6,
+      "discount_percent": 80,
+      "formatted": "¥ 19.60"
     },
     "isFree": false,
     "dlc": [
@@ -1476,8 +1476,8 @@
     ],
     "achievements": 78,
     "metacriticScore": 87,
-    "recommendations": 345701,
-    "lastUpdated": "2025-06-26T02:37:13.848Z"
+    "recommendations": 345945,
+    "lastUpdated": "2025/6/27 15:15:38"
   },
   {
     "steamId": "242760",
@@ -1527,16 +1527,16 @@
     "price": {
       "currency": "CNY",
       "initial": 70,
-      "final": 70,
-      "discount_percent": 0,
-      "formatted": "¥ 70.00"
+      "final": 14,
+      "discount_percent": 80,
+      "formatted": "¥ 14.00"
     },
     "isFree": false,
     "dlc": [],
     "achievements": 45,
     "metacriticScore": 83,
-    "recommendations": 535050,
-    "lastUpdated": "2025-06-26T02:37:17.587Z"
+    "recommendations": 535196,
+    "lastUpdated": "2025/6/27 15:15:42"
   },
   {
     "steamId": "251570",
@@ -1594,9 +1594,9 @@
     "price": {
       "currency": "CNY",
       "initial": 152,
-      "final": 152,
-      "discount_percent": 0,
-      "formatted": "¥ 152.00"
+      "final": 91.2,
+      "discount_percent": 40,
+      "formatted": "¥ 91.20"
     },
     "isFree": false,
     "dlc": [
@@ -1606,8 +1606,8 @@
       3635260
     ],
     "achievements": 43,
-    "recommendations": 254159,
-    "lastUpdated": "2025-06-26T02:37:27.596Z"
+    "recommendations": 254241,
+    "lastUpdated": "2025/6/27 15:15:53"
   },
   {
     "steamId": "252490",
@@ -1664,9 +1664,9 @@
     "price": {
       "currency": "CNY",
       "initial": 138,
-      "final": 138,
-      "discount_percent": 0,
-      "formatted": "¥ 138.00"
+      "final": 82.8,
+      "discount_percent": 40,
+      "formatted": "¥ 82.80"
     },
     "isFree": false,
     "dlc": [
@@ -1677,8 +1677,8 @@
     ],
     "achievements": 92,
     "metacriticScore": 69,
-    "recommendations": 1024396,
-    "lastUpdated": "2025-06-26T02:37:31.275Z"
+    "recommendations": 1024648,
+    "lastUpdated": "2025/6/27 15:15:57"
   },
   {
     "steamId": "255710",
@@ -1726,9 +1726,9 @@
     "price": {
       "currency": "CNY",
       "initial": 138,
-      "final": 138,
-      "discount_percent": 0,
-      "formatted": "¥ 138.00"
+      "final": 41.4,
+      "discount_percent": 70,
+      "formatted": "¥ 41.40"
     },
     "isFree": false,
     "dlc": [
@@ -1740,8 +1740,8 @@
     ],
     "achievements": 127,
     "metacriticScore": 85,
-    "recommendations": 207148,
-    "lastUpdated": "2025-06-26T02:37:44.259Z"
+    "recommendations": 207187,
+    "lastUpdated": "2025/6/27 15:16:12"
   },
   {
     "steamId": "261550",
@@ -1809,8 +1809,8 @@
     ],
     "achievements": 50,
     "metacriticScore": 77,
-    "recommendations": 205956,
-    "lastUpdated": "2025-06-26T02:37:49.081Z"
+    "recommendations": 206032,
+    "lastUpdated": "2025/6/27 15:16:15"
   },
   {
     "steamId": "271590",
@@ -1866,8 +1866,8 @@
     "dlc": [],
     "achievements": 77,
     "metacriticScore": 96,
-    "recommendations": 1825505,
-    "lastUpdated": "2025-06-26T02:37:52.555Z"
+    "recommendations": 1825717,
+    "lastUpdated": "2025/6/27 15:16:20"
   },
   {
     "steamId": "289070",
@@ -1928,8 +1928,8 @@
     ],
     "achievements": 320,
     "metacriticScore": 88,
-    "recommendations": 257835,
-    "lastUpdated": "2025-06-26T02:38:03.022Z"
+    "recommendations": 257968,
+    "lastUpdated": "2025/6/27 15:16:31"
   },
   {
     "steamId": "291480",
@@ -1986,7 +1986,7 @@
     ],
     "achievements": 67,
     "recommendations": 918,
-    "lastUpdated": "2025-06-26T02:38:07.393Z"
+    "lastUpdated": "2025/6/27 15:16:35"
   },
   {
     "steamId": "291550",
@@ -2047,7 +2047,7 @@
     ],
     "achievements": 65,
     "recommendations": 2889,
-    "lastUpdated": "2025-06-26T02:38:11.139Z"
+    "lastUpdated": "2025/6/27 15:16:40"
   },
   {
     "steamId": "292030",
@@ -2100,9 +2100,9 @@
     "price": {
       "currency": "CNY",
       "initial": 149,
-      "final": 149,
-      "discount_percent": 0,
-      "formatted": "¥ 149.00"
+      "final": 29.8,
+      "discount_percent": 80,
+      "formatted": "¥ 29.80"
     },
     "isFree": false,
     "dlc": [
@@ -2114,8 +2114,8 @@
     ],
     "achievements": 78,
     "metacriticScore": 93,
-    "recommendations": 776166,
-    "lastUpdated": "2025-06-26T02:38:22.508Z"
+    "recommendations": 776309,
+    "lastUpdated": "2025/6/27 15:16:50"
   },
   {
     "steamId": "304050",
@@ -2181,7 +2181,7 @@
     ],
     "achievements": 19,
     "recommendations": 971,
-    "lastUpdated": "2025-06-26T02:38:26.020Z"
+    "lastUpdated": "2025/6/27 15:16:55"
   },
   {
     "steamId": "304930",
@@ -2242,7 +2242,7 @@
     ],
     "achievements": 83,
     "recommendations": 7572,
-    "lastUpdated": "2025-06-26T02:38:30.432Z"
+    "lastUpdated": "2025/6/27 15:16:59"
   },
   {
     "steamId": "322330",
@@ -2314,8 +2314,8 @@
     ],
     "achievements": 0,
     "metacriticScore": 83,
-    "recommendations": 343696,
-    "lastUpdated": "2025-06-26T02:38:38.321Z"
+    "recommendations": 343836,
+    "lastUpdated": "2025/6/27 15:17:09"
   },
   {
     "steamId": "346110",
@@ -2386,24 +2386,24 @@
     ],
     "achievements": 32,
     "metacriticScore": 70,
-    "recommendations": 552197,
-    "lastUpdated": "2025-06-26T02:38:42.120Z"
+    "recommendations": 552336,
+    "lastUpdated": "2025/6/27 15:17:13"
   },
   {
     "steamId": "359550",
     "name": "《彩虹六号：围攻X》",
     "type": "game",
     "description": "《彩虹六号：围攻X》是战术团队射击游戏中的典范，明智的策略和行动力是制胜关键。 免费体验快速对战、非排名战和双重战线游戏模式，同时解锁精选特勤干员。",
-    "fullDescription": "<h1>Edition Comparison</h1><p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/extras/R6X_COMP_GRID_MOCKUP_1920x1080_SCH.jpg?t=1750780212\" /></div></p></p><br><h1>免费版</h1><p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/extras/R6X_FREE_ACCESS_MOCKUP_1920x1080_SCH.jpg?t=1750780212\" /></div></p></p><br><h1>精英版</h1><p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/extras/R6X_ELITE_EDITION_MOCKUP_1920x1080_SCH.jpg?t=1750780212\" /></div></p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\">精英版包含：</p><p class=\"bb_paragraph\">- 快速对战、非排名战和双重战线游戏模式，以及精选特勤干员</p><p class=\"bb_paragraph\">- 排名战对战列表和围攻杯</p><p class=\"bb_paragraph\">- 立即额外解锁16名特勤干员</p></p><br><h1>终极版</h1><p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/extras/R6X_ULTIMATE_EDITION_MOCKUP_1920x1080_SCH.jpg?t=1750780212\" /></div></p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\">终极版包含：</p><p class=\"bb_paragraph\">- 快速对战、非排名战和双重战线游戏模式，以及精选特勤干员</p><p class=\"bb_paragraph\">- 排名战对战列表和围攻杯</p><p class=\"bb_paragraph\">- 立即额外解锁52名特勤干员</p><p class=\"bb_paragraph\">- “破坏之王”补给包，内含四名特勤干员的装饰物品同捆：Nøkk、Warden、Frost和Maverick</p></p><br><h1>关于游戏</h1>《彩虹六号：围攻X》是战术团队射击游戏中无可争议的典范，明智的策略和行动力是制胜关键。<br>免费体验快速对战、非排名战和双重战线游戏模式，同时解锁精选特勤干员。<br><br>排名战对战列表、围攻杯、额外特勤干员和装饰物品等特定内容和功能需要付费解锁。<br><br>《彩虹六号：围攻X》是本游戏史上最大规模的变革，带来改进的视觉效果、增强的玩家体验以及提升游戏策略深度的玩法变动。<br><br>x<h2 class=\"bb_tag\">高风险5v5对战 进攻方VS防守方</h2><br>攻防交替互换，针对特勤干员和地图调整战术。感受行动的紧张与刺激，充分运用强大的破坏工具和各式设备，用智慧和技巧压制对手，赢得每一局对战。<br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/extras/GIF_BASE_R6X_FU_01.gif?t=1750780212\" /></div><br>- 如果你加入防守方，就将四周环境变成坚不可摧的堡垒。加固墙壁，设置路障，布置陷阱，控制敌人的动向。利用监控工具收集情报，预判敌人的进攻路线。坚守阵地，针对敌方的战术灵活应变，以技巧取胜。<br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/extras/GIF_BASE_R6X_FU_02.gif?t=1750780212\" /></div><br>- 如果你加入进攻方，则要操控观测无人机侦察敌方位置和炸弹点情报。与团队通力合作，突破重重防线，巧妙避开陷阱，出其不意地开辟突破口。通过垂直突袭，从上方或下方攻其不备，或是绳降突入窗户，发起英勇进攻。制定周密的进攻计划，果断执行，化解一切危机。<h2 class=\"bb_tag\">破坏工具</h2><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/extras/GIF_BASE_R6X_FU_03.gif?t=1750780212\" /></div><br>破坏不仅是制造混乱，更是通往胜利的关键武器。巧妙利用周围环境，将厚重的墙壁变成通向机遇的窗口。运用最尖端的技术追踪敌方动向，打破墙壁开拓视野，操控环境，牢牢掌握战术优势。<h2 class=\"bb_tag\">双重战线：动态战术6v6作战</h2><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/extras/GIF_BASE_R6X_FU_04.gif?t=1750780212\" /></div><br>在《彩虹六号：围攻》最大的地图上参与激烈的6v6战斗，争夺敌方队伍领地，同时保卫己方领地。一路闯进敌方基地，夺取胜利。<br><br>从精选的进攻方和防守方阵容中选择干员，与队友并肩作战，解锁全新的战术机遇。在重新部署时，调整特勤干员人选和策略，改变战局的走势，或者前往中立区执行高风险、高回报的分支任务，赢取足以瞬间扭转局势的奖励。<br><br>双重战线是体验《彩虹六号：围攻》战术深度与强度的震撼新方式。<h2 class=\"bb_tag\">从新兵到精英</h2><br>这趟充实的入门之旅专为新玩家量身打造，设有全新的等级路径，帮助你循序渐进地掌握基础操作、提升技巧、建立自信，让你以最佳状态投入紧张刺激的实战。<h2 class=\"bb_tag\">持续扩展</h2><br>每个赛季都带来重大更新，新增内容和功能，为战术和玩法注入新活力。<h2 class=\"bb_tag\">高度竞技性</h2><br>加入超过8,000万玩家的庞大在线社区。观看顶级职业战队在久负盛名的《彩虹六号：围攻》电竞赛事中展开巅峰对决。<br><br><br>免费进入游戏，部分内容和功能（包括竞技游戏模式、特勤干员和装饰物品）需要付费解锁。",
+    "fullDescription": "<h1>Edition Comparison</h1><p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/extras/R6X_COMP_GRID_MOCKUP_1920x1080_SCH.jpg?t=1750957254\" /></div></p></p><br><h1>免费版</h1><p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/extras/R6X_FREE_ACCESS_MOCKUP_1920x1080_SCH.jpg?t=1750957254\" /></div></p></p><br><h1>精英版</h1><p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/extras/R6X_ELITE_EDITION_MOCKUP_1920x1080_SCH.jpg?t=1750957254\" /></div></p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\">精英版包含：</p><p class=\"bb_paragraph\">- 快速对战、非排名战和双重战线游戏模式，以及精选特勤干员</p><p class=\"bb_paragraph\">- 排名战对战列表和围攻杯</p><p class=\"bb_paragraph\">- 立即额外解锁16名特勤干员</p></p><br><h1>终极版</h1><p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/extras/R6X_ULTIMATE_EDITION_MOCKUP_1920x1080_SCH.jpg?t=1750957254\" /></div></p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\">终极版包含：</p><p class=\"bb_paragraph\">- 快速对战、非排名战和双重战线游戏模式，以及精选特勤干员</p><p class=\"bb_paragraph\">- 排名战对战列表和围攻杯</p><p class=\"bb_paragraph\">- 立即额外解锁52名特勤干员</p><p class=\"bb_paragraph\">- “破坏之王”补给包，内含四名特勤干员的装饰物品同捆：Nøkk、Warden、Frost和Maverick</p></p><br><h1>关于游戏</h1>《彩虹六号：围攻X》是战术团队射击游戏中无可争议的典范，明智的策略和行动力是制胜关键。<br>免费体验快速对战、非排名战和双重战线游戏模式，同时解锁精选特勤干员。<br><br>排名战对战列表、围攻杯、额外特勤干员和装饰物品等特定内容和功能需要付费解锁。<br><br>《彩虹六号：围攻X》是本游戏史上最大规模的变革，带来改进的视觉效果、增强的玩家体验以及提升游戏策略深度的玩法变动。<br><br>x<h2 class=\"bb_tag\">高风险5v5对战 进攻方VS防守方</h2><br>攻防交替互换，针对特勤干员和地图调整战术。感受行动的紧张与刺激，充分运用强大的破坏工具和各式设备，用智慧和技巧压制对手，赢得每一局对战。<br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/extras/GIF_BASE_R6X_FU_01.gif?t=1750957254\" /></div><br>- 如果你加入防守方，就将四周环境变成坚不可摧的堡垒。加固墙壁，设置路障，布置陷阱，控制敌人的动向。利用监控工具收集情报，预判敌人的进攻路线。坚守阵地，针对敌方的战术灵活应变，以技巧取胜。<br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/extras/GIF_BASE_R6X_FU_02.gif?t=1750957254\" /></div><br>- 如果你加入进攻方，则要操控观测无人机侦察敌方位置和炸弹点情报。与团队通力合作，突破重重防线，巧妙避开陷阱，出其不意地开辟突破口。通过垂直突袭，从上方或下方攻其不备，或是绳降突入窗户，发起英勇进攻。制定周密的进攻计划，果断执行，化解一切危机。<h2 class=\"bb_tag\">破坏工具</h2><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/extras/GIF_BASE_R6X_FU_03.gif?t=1750957254\" /></div><br>破坏不仅是制造混乱，更是通往胜利的关键武器。巧妙利用周围环境，将厚重的墙壁变成通向机遇的窗口。运用最尖端的技术追踪敌方动向，打破墙壁开拓视野，操控环境，牢牢掌握战术优势。<h2 class=\"bb_tag\">双重战线：动态战术6v6作战</h2><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/extras/GIF_BASE_R6X_FU_04.gif?t=1750957254\" /></div><br>在《彩虹六号：围攻》最大的地图上参与激烈的6v6战斗，争夺敌方队伍领地，同时保卫己方领地。一路闯进敌方基地，夺取胜利。<br><br>从精选的进攻方和防守方阵容中选择干员，与队友并肩作战，解锁全新的战术机遇。在重新部署时，调整特勤干员人选和策略，改变战局的走势，或者前往中立区执行高风险、高回报的分支任务，赢取足以瞬间扭转局势的奖励。<br><br>双重战线是体验《彩虹六号：围攻》战术深度与强度的震撼新方式。<h2 class=\"bb_tag\">从新兵到精英</h2><br>这趟充实的入门之旅专为新玩家量身打造，设有全新的等级路径，帮助你循序渐进地掌握基础操作、提升技巧、建立自信，让你以最佳状态投入紧张刺激的实战。<h2 class=\"bb_tag\">持续扩展</h2><br>每个赛季都带来重大更新，新增内容和功能，为战术和玩法注入新活力。<h2 class=\"bb_tag\">高度竞技性</h2><br>加入超过8,000万玩家的庞大在线社区。观看顶级职业战队在久负盛名的《彩虹六号：围攻》电竞赛事中展开巅峰对决。<br><br><br>免费进入游戏，部分内容和功能（包括竞技游戏模式、特勤干员和装饰物品）需要付费解锁。",
     "developer": "Ubisoft Montreal",
     "publisher": "Ubisoft",
     "releaseDate": "2015 年 12 月 2 日",
     "comingSoon": false,
-    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/e52fa60ef3eb9521d8213fa30ff9965547e268c8/header_schinese.jpg?t=1750780212",
+    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/e52fa60ef3eb9521d8213fa30ff9965547e268c8/header_schinese.jpg?t=1750957254",
     "screenshots": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/a6b972c143e622c4e017765f3702d3c9ae76433e/ss_a6b972c143e622c4e017765f3702d3c9ae76433e.600x338.jpg?t=1750780212",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/ee5b4883d7c2f4d99d1d54367cf6ef10ae091c27/ss_ee5b4883d7c2f4d99d1d54367cf6ef10ae091c27.600x338.jpg?t=1750780212",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/c6b14280f62bd08fdf6ba9dcff30cc84126bec45/ss_c6b14280f62bd08fdf6ba9dcff30cc84126bec45.600x338.jpg?t=1750780212"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/a6b972c143e622c4e017765f3702d3c9ae76433e/ss_a6b972c143e622c4e017765f3702d3c9ae76433e.600x338.jpg?t=1750957254",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/ee5b4883d7c2f4d99d1d54367cf6ef10ae091c27/ss_ee5b4883d7c2f4d99d1d54367cf6ef10ae091c27.600x338.jpg?t=1750957254",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/c6b14280f62bd08fdf6ba9dcff30cc84126bec45/ss_c6b14280f62bd08fdf6ba9dcff30cc84126bec45.600x338.jpg?t=1750957254"
     ],
     "movies": [
       {
@@ -2442,8 +2442,8 @@
       417464
     ],
     "achievements": 0,
-    "recommendations": 1201125,
-    "lastUpdated": "2025-06-26T02:38:45.822Z"
+    "recommendations": 1201576,
+    "lastUpdated": "2025/6/27 15:17:17"
   },
   {
     "steamId": "377160",
@@ -2496,9 +2496,9 @@
     "price": {
       "currency": "CNY",
       "initial": 83,
-      "final": 83,
-      "discount_percent": 0,
-      "formatted": "¥ 83.00"
+      "final": 33.2,
+      "discount_percent": 60,
+      "formatted": "¥ 33.20"
     },
     "isFree": false,
     "dlc": [
@@ -2510,8 +2510,8 @@
     ],
     "achievements": 84,
     "metacriticScore": 84,
-    "recommendations": 262449,
-    "lastUpdated": "2025-06-26T02:38:55.275Z"
+    "recommendations": 262500,
+    "lastUpdated": "2025/6/27 15:17:26"
   },
   {
     "steamId": "381210",
@@ -2577,15 +2577,15 @@
       3103150
     ],
     "achievements": 279,
-    "recommendations": 585130,
-    "lastUpdated": "2025-06-26T02:39:00.045Z"
+    "recommendations": 585818,
+    "lastUpdated": "2025/6/27 15:17:31"
   },
   {
     "steamId": "386360",
     "name": "SMITE®",
     "type": "game",
     "description": "和三千五百多万名玩家一起在众神的战场中战个痛快！挥舞托尔的雷神之锤；以美杜莎之力石化你的敌人；你也可以从超过100位神话人物中选择你想发挥的神圣之力。化身神明并马上开始免费游戏吧！",
-    "fullDescription": "和三千五百多万名玩家一起进入《神之浩劫》，体验世界上最热门的动作多人在线竞技游戏吧。 化身为神话传说，进入众神的战场并立刻开始免费游戏吧！<br><br><strong>超过100位神明</strong><br><br>发挥各个神明的独特战术、传奇武器和毁天灭地的能力。扮演宙斯，以闪电神罚你的敌人；化身暗影中刺杀敌人的洛基；或者像孙悟空那样用七十二变迷惑对手。你将选择哪位神明？<br><br><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/386360/extras/SMITE_-_Unique_Perspectve_-_CH.png?t=1737467023\" /><br><br>不同于其它MOBA类游戏，《神之浩劫》以第三人称视角将你直接置于战场之中。从盲点埋伏到有的放矢，新的战术可能性在等待着你。<br><br><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/386360/extras/BecomeGodlike_CHINESE.png?t=1737467023\" /><br><br>从未玩过战场竞技类游戏？别担心。自动购买、自动升级和死亡竞赛类型的竞技场模式能助你直接投入战场开始竞技。有志成为职业玩家？制霸排行榜，加入强劲队伍，你也有机会站在世界总决赛的舞台。<br><br>Magic: The Gathering, it’s logo, and all characters’ names and distinctive likenesses are property of Wizards of the Coast LLC. ©2022 Wizards. All Rights Reserved.",
+    "fullDescription": "和三千五百多万名玩家一起进入《神之浩劫》，体验世界上最热门的动作多人在线竞技游戏吧。 化身为神话传说，进入众神的战场并立刻开始免费游戏吧！<br><br><strong>超过100位神明</strong><br><br>发挥各个神明的独特战术、传奇武器和毁天灭地的能力。扮演宙斯，以闪电神罚你的敌人；化身暗影中刺杀敌人的洛基；或者像孙悟空那样用七十二变迷惑对手。你将选择哪位神明？<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/386360/extras/SMITE_-_Unique_Perspectve_-_CH.png?t=1737467023\" /></div><br><br>不同于其它MOBA类游戏，《神之浩劫》以第三人称视角将你直接置于战场之中。从盲点埋伏到有的放矢，新的战术可能性在等待着你。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/386360/extras/BecomeGodlike_CHINESE.png?t=1737467023\" /></div><br><br>从未玩过战场竞技类游戏？别担心。自动购买、自动升级和死亡竞赛类型的竞技场模式能助你直接投入战场开始竞技。有志成为职业玩家？制霸排行榜，加入强劲队伍，你也有机会站在世界总决赛的舞台。<br><br>Magic: The Gathering, it’s logo, and all characters’ names and distinctive likenesses are property of Wizards of the Coast LLC. ©2022 Wizards. All Rights Reserved.",
     "developer": "Titan Forge Games",
     "publisher": "Hi-Rez Studios",
     "releaseDate": "2015 年 9 月 8 日",
@@ -2637,7 +2637,7 @@
     "achievements": 319,
     "metacriticScore": 83,
     "recommendations": 1403,
-    "lastUpdated": "2025-06-26T02:39:03.683Z"
+    "lastUpdated": "2025/6/27 15:17:35"
   },
   {
     "steamId": "413150",
@@ -2686,9 +2686,9 @@
     "price": {
       "currency": "CNY",
       "initial": 48,
-      "final": 48,
-      "discount_percent": 0,
-      "formatted": "¥ 48.00"
+      "final": 24,
+      "discount_percent": 50,
+      "formatted": "¥ 24.00"
     },
     "isFree": false,
     "dlc": [
@@ -2696,8 +2696,8 @@
     ],
     "achievements": 49,
     "metacriticScore": 89,
-    "recommendations": 761844,
-    "lastUpdated": "2025-06-26T02:39:12.516Z"
+    "recommendations": 762200,
+    "lastUpdated": "2025/6/27 15:17:45"
   },
   {
     "steamId": "417910",
@@ -2759,14 +2759,14 @@
     ],
     "achievements": 43,
     "recommendations": 321,
-    "lastUpdated": "2025-06-26T02:39:17.354Z"
+    "lastUpdated": "2025/6/27 15:17:50"
   },
   {
     "steamId": "431960",
     "name": "Wallpaper Engine：壁纸引擎",
     "type": "game",
     "description": "您可以在桌面上使用惊艳的动态壁纸。可以将您自己的图片制成动画以创建新壁纸，或导入视频/网站并在 Steam 创意工坊上分享！",
-    "fullDescription": "Wallpaper Engine 使您可在 Windows 桌面上使用动态壁纸。它支持各种类型的动画壁纸，包括 3D 和 2D 动画、网站、视频、乃至某些应用程序。选择现有壁纸，或创建自己的壁纸并在 Steam 创意工坊上分享！此外，您还可以使用适用于 Android 的 Wallpaper Engine 免费伴侣应用程序，将您最喜爱的壁纸传输到 Android 移动设备，并随身携带动态壁纸。<br><br><strong>新功能：</strong>使用免费的 Android 伴侣应用程序，将您最喜爱的壁纸传输到 Android 移动设备。<br><br><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/extras/title_features_schinese.png?t=1739211362\" /><br><br><ul class=\"bb_ul\"><li>通过实时图形、视频、应用程序或网站让您的桌面充满活力。<br></li><li>在您离开计算机时使用动画屏幕保护程序。<br></li><li>用您最喜欢的颜色个性化动画壁纸。<br></li><li>使用可通过鼠标控制的交互式壁纸。<br></li><li>支持多种宽高比和原始分辨率，包括 16:9、21:9、16:10、4:3。<br></li><li>支持多显示器环境。<br></li><li>壁纸将在玩游戏时暂停，以节省性能。<br></li><li>在 Wallpaper Engine 编辑器中创建自己的动画壁纸。<br></li><li>通过基本图片制作新的动态壁纸动画，或为壁纸导入 HTML 或视频文件。<br></li><li>使用 Steam 创意工坊免费分享和下载壁纸。<br></li><li>Wallpaper Engine 可与任何其他 Steam 游戏或应用程序同时使用。<br></li><li>支持的视频格式：mp4、WebM、avi、m4v、mov、wmv（对于本地文件，创意工坊仅支持 mp4）。<br></li><li>使用免费的 Android 伴侣应用程序，随身携带您最喜爱的场景和视频壁纸。<br></li><li>支持 Razer Chroma 和 Corsair iCUE。</li></ul><br><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/extras/partners.png?t=1739211362\" /><br><br><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/extras/title_performance_schinese.png?t=1739211362\" /><h2 class=\"bb_tag\"></h2>Wallpaper Engine 旨在提供有趣的体验，同时尽可能少占用系统资源。您可以选择在使用其他应用程序或全屏播放（包括无边框窗口模式）时自动暂停或完全停止壁纸，以免在玩游戏或工作时分散注意力或受到妨碍。许多微调质量和性能的选项可使 Wallpaper Engine 完美地适合您的计算机。根据一般经验，3D、2D 和基于视频的壁纸表现最佳，而网站和应用程序需要占用您系统中更多的资源。强烈建议您使用专用 GPU，但这不是必要要求。<h2 class=\"bb_tag\"></h2><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/extras/title_workshop_schinese.png?t=1739211362\" /><h2 class=\"bb_tag\"></h2>Steam 创意工坊中提供超过一百万张免费壁纸，而且每天都会上传新壁纸！找不到适合您心情的壁纸？通过使用 Wallpaper Engine 编辑器从图片、视频、网站或应用程序创建自己的动画壁纸，尽情发挥您的想象力。大量的预设和效果可让您为自己的图片制作动画，并在 Steam 创意工坊上分享或仅为己用。",
+    "fullDescription": "Wallpaper Engine 使您可在 Windows 桌面上使用动态壁纸。它支持各种类型的动画壁纸，包括 3D 和 2D 动画、网站、视频、乃至某些应用程序。选择现有壁纸，或创建自己的壁纸并在 Steam 创意工坊上分享！此外，您还可以使用适用于 Android 的 Wallpaper Engine 免费伴侣应用程序，将您最喜爱的壁纸传输到 Android 移动设备，并随身携带动态壁纸。<br><br><strong>新功能：</strong>使用免费的 Android 伴侣应用程序，将您最喜爱的壁纸传输到 Android 移动设备。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/extras/title_features_schinese.png?t=1739211362\" /></div><br><br><ul class=\"bb_ul\"><li>通过实时图形、视频、应用程序或网站让您的桌面充满活力。<br></li><li>在您离开计算机时使用动画屏幕保护程序。<br></li><li>用您最喜欢的颜色个性化动画壁纸。<br></li><li>使用可通过鼠标控制的交互式壁纸。<br></li><li>支持多种宽高比和原始分辨率，包括 16:9、21:9、16:10、4:3。<br></li><li>支持多显示器环境。<br></li><li>壁纸将在玩游戏时暂停，以节省性能。<br></li><li>在 Wallpaper Engine 编辑器中创建自己的动画壁纸。<br></li><li>通过基本图片制作新的动态壁纸动画，或为壁纸导入 HTML 或视频文件。<br></li><li>使用 Steam 创意工坊免费分享和下载壁纸。<br></li><li>Wallpaper Engine 可与任何其他 Steam 游戏或应用程序同时使用。<br></li><li>支持的视频格式：mp4、WebM、avi、m4v、mov、wmv（对于本地文件，创意工坊仅支持 mp4）。<br></li><li>使用免费的 Android 伴侣应用程序，随身携带您最喜爱的场景和视频壁纸。<br></li><li>支持 Razer Chroma 和 Corsair iCUE。</li></ul><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/extras/partners.png?t=1739211362\" /></div><br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/extras/title_performance_schinese.png?t=1739211362\" /></div><h2 class=\"bb_tag\"></h2>Wallpaper Engine 旨在提供有趣的体验，同时尽可能少占用系统资源。您可以选择在使用其他应用程序或全屏播放（包括无边框窗口模式）时自动暂停或完全停止壁纸，以免在玩游戏或工作时分散注意力或受到妨碍。许多微调质量和性能的选项可使 Wallpaper Engine 完美地适合您的计算机。根据一般经验，3D、2D 和基于视频的壁纸表现最佳，而网站和应用程序需要占用您系统中更多的资源。强烈建议您使用专用 GPU，但这不是必要要求。<h2 class=\"bb_tag\"></h2><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/extras/title_workshop_schinese.png?t=1739211362\" /></div><h2 class=\"bb_tag\"></h2>Steam 创意工坊中提供超过一百万张免费壁纸，而且每天都会上传新壁纸！找不到适合您心情的壁纸？通过使用 Wallpaper Engine 编辑器从图片、视频、网站或应用程序创建自己的动画壁纸，尽情发挥您的想象力。大量的预设和效果可让您为自己的图片制作动画，并在 Steam 创意工坊上分享或仅为己用。",
     "developer": "Wallpaper Engine Team",
     "publisher": "Wallpaper Engine Team",
     "releaseDate": "2018 年 11 月 17 日",
@@ -2808,17 +2808,17 @@
     "price": {
       "currency": "CNY",
       "initial": 22.9,
-      "final": 22.9,
-      "discount_percent": 0,
-      "formatted": "¥ 22.90"
+      "final": 18.32,
+      "discount_percent": 20,
+      "formatted": "¥ 18.32"
     },
     "isFree": false,
     "dlc": [
       1790230
     ],
     "achievements": 17,
-    "recommendations": 834235,
-    "lastUpdated": "2025-06-26T02:39:20.731Z"
+    "recommendations": 834534,
+    "lastUpdated": "2025/6/27 15:17:54"
   },
   {
     "steamId": "433850",
@@ -2859,8 +2859,8 @@
     "dlc": [],
     "achievements": 0,
     "metacriticScore": 70,
-    "recommendations": 143912,
-    "lastUpdated": "2025-06-26T02:39:28.879Z"
+    "recommendations": 143909,
+    "lastUpdated": "2025/6/27 15:18:03"
   },
   {
     "steamId": "438100",
@@ -2915,7 +2915,7 @@
     "dlc": [],
     "achievements": 0,
     "recommendations": 149,
-    "lastUpdated": "2025-06-26T02:39:33.234Z"
+    "lastUpdated": "2025/6/27 15:18:07"
   },
   {
     "steamId": "444200",
@@ -2974,7 +2974,7 @@
     ],
     "achievements": 0,
     "recommendations": 925,
-    "lastUpdated": "2025-06-26T02:39:48.903Z"
+    "lastUpdated": "2025/6/27 15:18:20"
   },
   {
     "steamId": "477160",
@@ -3040,8 +3040,8 @@
     ],
     "achievements": 139,
     "metacriticScore": 70,
-    "recommendations": 164519,
-    "lastUpdated": "2025-06-26T02:39:53.441Z"
+    "recommendations": 164559,
+    "lastUpdated": "2025/6/27 15:18:24"
   },
   {
     "steamId": "526870",
@@ -3097,9 +3097,9 @@
     "price": {
       "currency": "CNY",
       "initial": 136,
-      "final": 136,
-      "discount_percent": 0,
-      "formatted": "¥ 136.00"
+      "final": 95.2,
+      "discount_percent": 30,
+      "formatted": "¥ 95.20"
     },
     "isFree": false,
     "dlc": [
@@ -3107,8 +3107,8 @@
     ],
     "achievements": 44,
     "metacriticScore": 91,
-    "recommendations": 198507,
-    "lastUpdated": "2025-06-26T02:39:58.427Z"
+    "recommendations": 198605,
+    "lastUpdated": "2025/6/27 15:18:27"
   },
   {
     "steamId": "532210",
@@ -3168,8 +3168,8 @@
       872080
     ],
     "achievements": 46,
-    "recommendations": 21163,
-    "lastUpdated": "2025-06-26T02:40:07.282Z"
+    "recommendations": 21164,
+    "lastUpdated": "2025/6/27 15:18:38"
   },
   {
     "steamId": "550650",
@@ -3218,7 +3218,7 @@
     ],
     "achievements": 36,
     "recommendations": 0,
-    "lastUpdated": "2025-06-26T02:40:12.427Z"
+    "lastUpdated": "2025/6/27 15:18:42"
   },
   {
     "steamId": "552990",
@@ -3283,24 +3283,24 @@
     ],
     "achievements": 43,
     "metacriticScore": 81,
-    "recommendations": 1983,
-    "lastUpdated": "2025-06-26T02:40:15.838Z"
+    "recommendations": 1982,
+    "lastUpdated": "2025/6/27 15:18:47"
   },
   {
     "steamId": "553850",
     "name": "HELLDIVERS™ 2",
     "type": "game",
     "description": "银河系最后的进攻力量。投入这款紧张刺激且疯狂的第三人称射击游戏，应征成为绝地潜兵，穿越战火肆虐的星系，为自由而战。",
-    "fullDescription": "<h1>数字豪华版</h1><p><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/SCE_1x1_SC_AN.jpg?t=1749837289\" /></div><br><br>版本包括：<br><ul class=\"bb_ul\"><li>“DP-53‘自由救星’”装甲套装。<br></li><li>“人民的意志”披风。<br></li><li>“MP-98‘骑士’”武器。<br></li><li>超级公民身份。<br></li><li>战略配备英雄战舰游戏。<br></li><li>“铁血老兵”尊享战争债券。</li></ul></p><br><h1>关于游戏</h1><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/SuperEarthSTEAM.gif?t=1749837289\" /></div><br>银河系最后的进攻力量。<br><br>投入这款紧张刺激且疯狂的第三人称射击游戏，应征成为绝地潜兵，穿越战火肆虐的星系，为自由而战。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/BugAssaultSTEAM.gif?t=1749837289\" /></div><h2 class=\"bb_tag\">紧急广播 – 超级地球武装力量</h2>自由、和平、民主。<br>这是超级地球公民与生俱来的权利，是我们文明的重要支柱，<br>也是我们存在的基石。<br>但战争愈演愈烈，这一切再次受到威胁。<br>加入银河系有史以来最强大的军事力量，重新恢复这里的安宁与自由。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/StratagemSTEAM.gif?t=1749837289\" /></div><h2 class=\"bb_tag\">创造传奇</h2>您将与最多三名绝地潜兵组建小队，执行战略任务。<br>互相照应 – 虽然友军误伤是战争中难以避免的不幸，但唯有团队合作才能最终获胜。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/EagleExplosionsSTEAM.gif?t=1749837289\" /></div><h2 class=\"bb_tag\">武器配置</h2>呼叫自由炮火从天而降，潜入敌方领地，亦或是咬紧牙关，一马当先，冲锋陷阵。<br>您可以自行选择实现解放大业的方式；各种爆炸性火力、救命盔甲以及扭转战局的战略配备，应有尽有……这是每个绝地潜兵的军械库瑰宝。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/ChargerChargeSTEAM.gif?t=1749837289\" /></div><h2 class=\"bb_tag\">申购点</h2>为了奖励您卓越的战功，超级地球将为您提供宝贵的申购点。利用申购点获取不同的奖励，武装您自身、您的小队和您的驱逐舰，提升己方整体战力。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/StriderSTEAM.gif?t=1749837289\" /></div><h2 class=\"bb_tag\">威胁</h2>每颗外星球上的一切生物都想置您于死地，这就是我们不得不面对的局面。<br>每个敌人都具有独特且难以预测的特征、战术和行为 – 但他们都有共同点：战斗凶狠、无畏无惧、不受任何道德的约束。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/SquadRunningSTEAM.gif?t=1749837289\" /></div><h2 class=\"bb_tag\">星系战争</h2>占领敌方星球，抵御入侵，完成任务，推进整体战局。<br>这场战争的胜负成败取决于每个参与者的每一分努力。<br>如不能共同获胜，就只能一同落败。",
+    "fullDescription": "<h1>数字豪华版</h1><p><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/SCE_1x1_SC_AN.jpg?t=1750952323\" /></div><br><br>版本包括：<br><ul class=\"bb_ul\"><li>“DP-53‘自由救星’”装甲套装。<br></li><li>“人民的意志”披风。<br></li><li>“MP-98‘骑士’”武器。<br></li><li>超级公民身份。<br></li><li>战略配备英雄战舰游戏。<br></li><li>“铁血老兵”尊享战争债券。</li></ul></p><br><h1>关于游戏</h1><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/SuperEarthSTEAM.gif?t=1750952323\" /></div><br>银河系最后的进攻力量。<br><br>投入这款紧张刺激且疯狂的第三人称射击游戏，应征成为绝地潜兵，穿越战火肆虐的星系，为自由而战。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/BugAssaultSTEAM.gif?t=1750952323\" /></div><h2 class=\"bb_tag\">紧急广播 – 超级地球武装力量</h2>自由、和平、民主。<br>这是超级地球公民与生俱来的权利，是我们文明的重要支柱，<br>也是我们存在的基石。<br>但战争愈演愈烈，这一切再次受到威胁。<br>加入银河系有史以来最强大的军事力量，重新恢复这里的安宁与自由。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/StratagemSTEAM.gif?t=1750952323\" /></div><h2 class=\"bb_tag\">创造传奇</h2>您将与最多三名绝地潜兵组建小队，执行战略任务。<br>互相照应 – 虽然友军误伤是战争中难以避免的不幸，但唯有团队合作才能最终获胜。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/EagleExplosionsSTEAM.gif?t=1750952323\" /></div><h2 class=\"bb_tag\">武器配置</h2>呼叫自由炮火从天而降，潜入敌方领地，亦或是咬紧牙关，一马当先，冲锋陷阵。<br>您可以自行选择实现解放大业的方式；各种爆炸性火力、救命盔甲以及扭转战局的战略配备，应有尽有……这是每个绝地潜兵的军械库瑰宝。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/ChargerChargeSTEAM.gif?t=1750952323\" /></div><h2 class=\"bb_tag\">申购点</h2>为了奖励您卓越的战功，超级地球将为您提供宝贵的申购点。利用申购点获取不同的奖励，武装您自身、您的小队和您的驱逐舰，提升己方整体战力。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/StriderSTEAM.gif?t=1750952323\" /></div><h2 class=\"bb_tag\">威胁</h2>每颗外星球上的一切生物都想置您于死地，这就是我们不得不面对的局面。<br>每个敌人都具有独特且难以预测的特征、战术和行为 – 但他们都有共同点：战斗凶狠、无畏无惧、不受任何道德的约束。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/extras/SquadRunningSTEAM.gif?t=1750952323\" /></div><h2 class=\"bb_tag\">星系战争</h2>占领敌方星球，抵御入侵，完成任务，推进整体战局。<br>这场战争的胜负成败取决于每个参与者的每一分努力。<br>如不能共同获胜，就只能一同落败。",
     "developer": "Arrowhead Game Studios",
     "publisher": "PlayStation Publishing LLC",
     "releaseDate": "2024 年 2 月 8 日",
     "comingSoon": false,
-    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/9062d4d08a72c24194d02441e469688fd34fd840/header_schinese.jpg?t=1749837289",
+    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/9062d4d08a72c24194d02441e469688fd34fd840/header_schinese.jpg?t=1750952323",
     "screenshots": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_0c79f56fc7be1bd0102f2ca1c92c8f0900daf4fb.600x338.jpg?t=1749837289",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_33e684e9cb2517af1599f0ca2b57d65ee82c2e51.600x338.jpg?t=1749837289",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_8949ed7dd24a02d5ea13b08fc5c04fab400dc4bd.600x338.jpg?t=1749837289"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_0c79f56fc7be1bd0102f2ca1c92c8f0900daf4fb.600x338.jpg?t=1750952323",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_33e684e9cb2517af1599f0ca2b57d65ee82c2e51.600x338.jpg?t=1750952323",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/ss_8949ed7dd24a02d5ea13b08fc5c04fab400dc4bd.600x338.jpg?t=1750952323"
     ],
     "movies": [
       {
@@ -3336,17 +3336,17 @@
     "price": {
       "currency": "CNY",
       "initial": 198,
-      "final": 198,
-      "discount_percent": 0,
-      "formatted": "¥ 198.00"
+      "final": 158.4,
+      "discount_percent": 20,
+      "formatted": "¥ 158.40"
     },
     "isFree": false,
     "dlc": [
       2765950
     ],
     "achievements": 38,
-    "recommendations": 747099,
-    "lastUpdated": "2025-06-26T02:40:25.865Z"
+    "recommendations": 747286,
+    "lastUpdated": "2025/6/27 15:18:56"
   },
   {
     "steamId": "578080",
@@ -3397,8 +3397,8 @@
       3639460
     ],
     "achievements": 37,
-    "recommendations": 1741788,
-    "lastUpdated": "2025-06-26T02:40:29.331Z"
+    "recommendations": 1741858,
+    "lastUpdated": "2025/6/27 15:19:00"
   },
   {
     "steamId": "582010",
@@ -3451,9 +3451,9 @@
     "price": {
       "currency": "CNY",
       "initial": 148,
-      "final": 148,
-      "discount_percent": 0,
-      "formatted": "¥ 148.00"
+      "final": 48.84,
+      "discount_percent": 67,
+      "formatted": "¥ 48.84"
     },
     "isFree": false,
     "dlc": [
@@ -3465,24 +3465,24 @@
     ],
     "achievements": 100,
     "metacriticScore": 88,
-    "recommendations": 302469,
-    "lastUpdated": "2025-06-26T02:40:33.843Z"
+    "recommendations": 302533,
+    "lastUpdated": "2025/6/27 15:19:05"
   },
   {
     "steamId": "594650",
     "name": "猎杀：对决 1896",
     "type": "game",
     "description": "你是猎人，还是猎物？在这片历史中的黑暗隐秘之地，狩猎腐化的邪恶，直面扭曲的怪物，提防无情的同行。无论是单枪匹马还是结伴作战，你将在这款暗黑生存、战术竞技、PVPVE第一人称射击游戏中对抗永恒的邪恶。这里没有所谓的英雄，当猎杀时刻降临，唯有孤身奋战。",
-    "fullDescription": "你是猎人，还是猎物？在这片历史中的黑暗隐秘之地，狩猎腐化的邪恶，直面扭曲的怪物，提防无情的同行。无论是单枪匹马还是结伴作战，你将在这款暗黑生存、战术竞技、PVPVE第一人称射击游戏中对抗永恒的邪恶。这里没有所谓的英雄，当猎杀时刻降临，唯有孤身奋战。<br><br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/extras/Bounty_Hunt_CHI.gif?t=1750775550\" /></div><br><br>消灭拦路之人，夺取丰厚赏金——这是一场你死我亡的战斗。作为猎人，与其他对手互相竞争，猎杀目标，获得赏金，而后杀出重围，顺利撤离。如果你习惯孤身作战，那就单打独斗；如果你希望结伴成行，最多可以组队两名队友。 <br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/extras/Progression_and_Permadeath_CHI.gif?t=1750775550\" /></div><br><br>猎人，你将压上一切赌注，获得黑暗之力与禁忌之财。每一颗子弹都至关重要，每一道伤口都刻骨铭心，每一次死亡都真实永恒——但如果你成功了，那每一次胜利都将难以忘怀。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/extras/Atmosphere___Sound_CHI.gif?t=1750775550\" /></div><br><br>屏息凝神，静候时机，世间万物皆有声息。泥泞中的脚步与远方响起的枪声暴露着敌人的踪迹；嚎叫的狗与嘶哑的乌鸦暗示着敌人的身影；留声机呢喃着鬼魅的旋律……竖起耳朵仔细聆听吧，或许可以择日再死。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/extras/Evolving_Game_CHI.gif?t=1750775550\" /></div><br><br>伴随着猎人们的厮杀对决，1896绝不会是这趟猎杀旅程的终点，游戏将持续保持更新，并带来一系列新游戏内容。持续的更新将带来新活动事件、新枪械刀具与新猎人角色。加入蓬勃发展的猎人社区，时刻保持信息灵通，掌握对抗腐化的先机。",
+    "fullDescription": "你是猎人，还是猎物？在这片历史中的黑暗隐秘之地，狩猎腐化的邪恶，直面扭曲的怪物，提防无情的同行。无论是单枪匹马还是结伴作战，你将在这款暗黑生存、战术竞技、PVPVE第一人称射击游戏中对抗永恒的邪恶。这里没有所谓的英雄，当猎杀时刻降临，唯有孤身奋战。<br><br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/extras/Bounty_Hunt_CHI.gif?t=1750949872\" /></div><br><br>消灭拦路之人，夺取丰厚赏金——这是一场你死我亡的战斗。作为猎人，与其他对手互相竞争，猎杀目标，获得赏金，而后杀出重围，顺利撤离。如果你习惯孤身作战，那就单打独斗；如果你希望结伴成行，最多可以组队两名队友。 <br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/extras/Progression_and_Permadeath_CHI.gif?t=1750949872\" /></div><br><br>猎人，你将压上一切赌注，获得黑暗之力与禁忌之财。每一颗子弹都至关重要，每一道伤口都刻骨铭心，每一次死亡都真实永恒——但如果你成功了，那每一次胜利都将难以忘怀。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/extras/Atmosphere___Sound_CHI.gif?t=1750949872\" /></div><br><br>屏息凝神，静候时机，世间万物皆有声息。泥泞中的脚步与远方响起的枪声暴露着敌人的踪迹；嚎叫的狗与嘶哑的乌鸦暗示着敌人的身影；留声机呢喃着鬼魅的旋律……竖起耳朵仔细聆听吧，或许可以择日再死。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/extras/Evolving_Game_CHI.gif?t=1750949872\" /></div><br><br>伴随着猎人们的厮杀对决，1896绝不会是这趟猎杀旅程的终点，游戏将持续保持更新，并带来一系列新游戏内容。持续的更新将带来新活动事件、新枪械刀具与新猎人角色。加入蓬勃发展的猎人社区，时刻保持信息灵通，掌握对抗腐化的先机。",
     "developer": "Crytek",
     "publisher": "Crytek",
     "releaseDate": "2019 年 8 月 27 日",
     "comingSoon": false,
-    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/c85c6cb550edff2bcaf59748ee6e12c5252ff642/header_alt_assets_21.jpg?t=1750775550",
+    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/c85c6cb550edff2bcaf59748ee6e12c5252ff642/header_alt_assets_21.jpg?t=1750949872",
     "screenshots": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/701e899d7b80d6d52b8f537419f59a0f18d13da1/ss_701e899d7b80d6d52b8f537419f59a0f18d13da1.600x338.jpg?t=1750775550",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/77321e59cbedd4bb9c1bab532a9ca02ddd89eb7a/ss_77321e59cbedd4bb9c1bab532a9ca02ddd89eb7a.600x338.jpg?t=1750775550",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/add488ede5981d263b3b9aabbd9bcd7fd7e11cd5/ss_add488ede5981d263b3b9aabbd9bcd7fd7e11cd5.600x338.jpg?t=1750775550"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/701e899d7b80d6d52b8f537419f59a0f18d13da1/ss_701e899d7b80d6d52b8f537419f59a0f18d13da1.600x338.jpg?t=1750949872",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/77321e59cbedd4bb9c1bab532a9ca02ddd89eb7a/ss_77321e59cbedd4bb9c1bab532a9ca02ddd89eb7a.600x338.jpg?t=1750949872",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/594650/add488ede5981d263b3b9aabbd9bcd7fd7e11cd5/ss_add488ede5981d263b3b9aabbd9bcd7fd7e11cd5.600x338.jpg?t=1750949872"
     ],
     "movies": [
       {
@@ -3533,8 +3533,8 @@
     ],
     "achievements": 36,
     "metacriticScore": 81,
-    "recommendations": 194846,
-    "lastUpdated": "2025-06-26T02:40:43.321Z"
+    "recommendations": 194912,
+    "lastUpdated": "2025/6/27 15:19:16"
   },
   {
     "steamId": "632360",
@@ -3588,9 +3588,9 @@
     "price": {
       "currency": "CNY",
       "initial": 80,
-      "final": 80,
-      "discount_percent": 0,
-      "formatted": "¥ 80.00"
+      "final": 26.4,
+      "discount_percent": 67,
+      "formatted": "¥ 26.40"
     },
     "isFree": false,
     "dlc": [
@@ -3602,8 +3602,8 @@
     ],
     "achievements": 149,
     "metacriticScore": 85,
-    "recommendations": 213469,
-    "lastUpdated": "2025-06-26T02:40:48.575Z"
+    "recommendations": 213519,
+    "lastUpdated": "2025/6/27 15:19:20"
   },
   {
     "steamId": "648800",
@@ -3657,15 +3657,15 @@
     "price": {
       "currency": "CNY",
       "initial": 68,
-      "final": 68,
-      "discount_percent": 0,
-      "formatted": "¥ 68.00"
+      "final": 45.56,
+      "discount_percent": 33,
+      "formatted": "¥ 45.56"
     },
     "isFree": false,
     "dlc": [],
     "achievements": 104,
-    "recommendations": 296556,
-    "lastUpdated": "2025-06-26T02:40:53.183Z"
+    "recommendations": 296645,
+    "lastUpdated": "2025/6/27 15:19:25"
   },
   {
     "steamId": "739630",
@@ -3720,15 +3720,15 @@
     "price": {
       "currency": "CNY",
       "initial": 76,
-      "final": 76,
-      "discount_percent": 0,
-      "formatted": "¥ 76.00"
+      "final": 57,
+      "discount_percent": 25,
+      "formatted": "¥ 57.00"
     },
     "isFree": false,
     "dlc": [],
     "achievements": 54,
-    "recommendations": 629153,
-    "lastUpdated": "2025-06-26T02:41:01.950Z"
+    "recommendations": 629379,
+    "lastUpdated": "2025/6/27 15:19:35"
   },
   {
     "steamId": "755790",
@@ -3775,7 +3775,7 @@
     "dlc": [],
     "achievements": 0,
     "recommendations": 713,
-    "lastUpdated": "2025-06-26T02:41:06.664Z"
+    "lastUpdated": "2025/6/27 15:19:40"
   },
   {
     "steamId": "814380",
@@ -3829,16 +3829,16 @@
     "price": {
       "currency": "CNY",
       "initial": 268,
-      "final": 268,
-      "discount_percent": 0,
-      "formatted": "¥ 268.00"
+      "final": 134,
+      "discount_percent": 50,
+      "formatted": "¥ 134.00"
     },
     "isFree": false,
     "dlc": [],
     "achievements": 34,
     "metacriticScore": 88,
-    "recommendations": 236675,
-    "lastUpdated": "2025-06-26T02:41:10.513Z"
+    "recommendations": 236752,
+    "lastUpdated": "2025/6/27 15:19:44"
   },
   {
     "steamId": "892970",
@@ -3895,17 +3895,17 @@
     "price": {
       "currency": "CNY",
       "initial": 74,
-      "final": 74,
-      "discount_percent": 0,
-      "formatted": "¥ 74.00"
+      "final": 37,
+      "discount_percent": 50,
+      "formatted": "¥ 37.00"
     },
     "isFree": false,
     "dlc": [
       1620250
     ],
     "achievements": 0,
-    "recommendations": 426202,
-    "lastUpdated": "2025-06-26T02:41:21.644Z"
+    "recommendations": 426261,
+    "lastUpdated": "2025/6/27 15:19:55"
   },
   {
     "steamId": "899770",
@@ -3960,9 +3960,9 @@
     "price": {
       "currency": "CNY",
       "initial": 128,
-      "final": 128,
-      "discount_percent": 0,
-      "formatted": "¥ 128.00"
+      "final": 102.4,
+      "discount_percent": 20,
+      "formatted": "¥ 102.40"
     },
     "isFree": false,
     "dlc": [
@@ -3974,8 +3974,8 @@
     ],
     "achievements": 0,
     "metacriticScore": 80,
-    "recommendations": 99757,
-    "lastUpdated": "2025-06-26T02:41:25.907Z"
+    "recommendations": 99768,
+    "lastUpdated": "2025/6/27 15:19:59"
   },
   {
     "steamId": "901583",
@@ -4013,8 +4013,8 @@
     "dlc": [],
     "achievements": 55,
     "metacriticScore": 90,
-    "recommendations": 155043,
-    "lastUpdated": "2025-06-26T02:41:30.935Z"
+    "recommendations": 155145,
+    "lastUpdated": "2025/6/27 15:20:03"
   },
   {
     "steamId": "945360",
@@ -4067,16 +4067,16 @@
     "price": {
       "currency": "CNY",
       "initial": 25,
-      "final": 25,
-      "discount_percent": 0,
-      "formatted": "¥ 25.00"
+      "final": 15,
+      "discount_percent": 40,
+      "formatted": "¥ 15.00"
     },
     "isFree": false,
     "dlc": [],
     "achievements": 33,
     "metacriticScore": 85,
-    "recommendations": 617421,
-    "lastUpdated": "2025-06-26T02:41:41.408Z"
+    "recommendations": 617502,
+    "lastUpdated": "2025/6/27 15:20:12"
   },
   {
     "steamId": "990080",
@@ -4124,9 +4124,9 @@
     "price": {
       "currency": "CNY",
       "initial": 384,
-      "final": 384,
-      "discount_percent": 0,
-      "formatted": "¥ 384.00"
+      "final": 96,
+      "discount_percent": 75,
+      "formatted": "¥ 96.00"
     },
     "isFree": false,
     "dlc": [
@@ -4134,8 +4134,8 @@
     ],
     "achievements": 45,
     "metacriticScore": 83,
-    "recommendations": 233507,
-    "lastUpdated": "2025-06-26T02:41:46.038Z"
+    "recommendations": 233572,
+    "lastUpdated": "2025/6/27 15:20:18"
   },
   {
     "steamId": "1063730",
@@ -4191,17 +4191,17 @@
     "price": {
       "currency": "CNY",
       "initial": 430.99,
-      "final": 430.99,
-      "discount_percent": 0,
-      "formatted": "¥ 430.99"
+      "final": 258.59,
+      "discount_percent": 40,
+      "formatted": "¥ 258.59"
     },
     "isFree": false,
     "dlc": [
       2487480
     ],
     "achievements": 133,
-    "recommendations": 245586,
-    "lastUpdated": "2025-06-26T02:41:50.255Z"
+    "recommendations": 245596,
+    "lastUpdated": "2025/6/27 15:20:22"
   },
   {
     "steamId": "1085660",
@@ -4264,8 +4264,8 @@
     ],
     "achievements": 23,
     "metacriticScore": 83,
-    "recommendations": 128092,
-    "lastUpdated": "2025-06-26T02:41:58.914Z"
+    "recommendations": 128094,
+    "lastUpdated": "2025/6/27 15:20:30"
   },
   {
     "steamId": "1086940",
@@ -4320,9 +4320,9 @@
     "price": {
       "currency": "CNY",
       "initial": 298,
-      "final": 298,
-      "discount_percent": 0,
-      "formatted": "¥ 298.00"
+      "final": 238.4,
+      "discount_percent": 20,
+      "formatted": "¥ 238.40"
     },
     "isFree": false,
     "dlc": [
@@ -4331,8 +4331,8 @@
     ],
     "achievements": 54,
     "metacriticScore": 96,
-    "recommendations": 674504,
-    "lastUpdated": "2025-06-26T02:42:04.029Z"
+    "recommendations": 674720,
+    "lastUpdated": "2025/6/27 15:20:34"
   },
   {
     "steamId": "1089350",
@@ -4389,7 +4389,7 @@
     "achievements": 50,
     "metacriticScore": 74,
     "recommendations": 46773,
-    "lastUpdated": "2025-06-26T02:42:08.681Z"
+    "lastUpdated": "2025/6/27 15:20:40"
   },
   {
     "steamId": "1091500",
@@ -4442,9 +4442,9 @@
     "price": {
       "currency": "CNY",
       "initial": 298,
-      "final": 298,
-      "discount_percent": 0,
-      "formatted": "¥ 298.00"
+      "final": 104.3,
+      "discount_percent": 65,
+      "formatted": "¥ 104.30"
     },
     "isFree": false,
     "dlc": [
@@ -4454,8 +4454,8 @@
     ],
     "achievements": 57,
     "metacriticScore": 86,
-    "recommendations": 760088,
-    "lastUpdated": "2025-06-26T02:42:18.306Z"
+    "recommendations": 760361,
+    "lastUpdated": "2025/6/27 15:20:51"
   },
   {
     "steamId": "1097150",
@@ -4501,8 +4501,8 @@
     "dlc": [],
     "achievements": 34,
     "metacriticScore": 80,
-    "recommendations": 416188,
-    "lastUpdated": "2025-06-26T02:42:23.187Z"
+    "recommendations": 416181,
+    "lastUpdated": "2025/6/27 15:20:56"
   },
   {
     "steamId": "1116170",
@@ -4566,7 +4566,7 @@
     "dlc": [],
     "achievements": 31,
     "recommendations": 256,
-    "lastUpdated": "2025-06-26T02:42:28.078Z"
+    "lastUpdated": "2025/6/27 15:20:59"
   },
   {
     "steamId": "1172470",
@@ -4624,7 +4624,7 @@
     "achievements": 12,
     "metacriticScore": 88,
     "recommendations": 1551,
-    "lastUpdated": "2025-06-26T02:42:36.457Z"
+    "lastUpdated": "2025/6/27 15:21:07"
   },
   {
     "steamId": "1174180",
@@ -4678,16 +4678,16 @@
     "price": {
       "currency": "CNY",
       "initial": 279,
-      "final": 279,
-      "discount_percent": 0,
-      "formatted": "¥ 279.00"
+      "final": 69.75,
+      "discount_percent": 75,
+      "formatted": "¥ 69.75"
     },
     "isFree": false,
     "dlc": [],
     "achievements": 51,
     "metacriticScore": 93,
-    "recommendations": 685744,
-    "lastUpdated": "2025-06-26T02:42:40.498Z"
+    "recommendations": 686103,
+    "lastUpdated": "2025/6/27 15:21:12"
   },
   {
     "steamId": "1203220",
@@ -4745,12 +4745,11 @@
       2731960,
       2731970,
       2731980,
-      2732000,
-      3659650
+      2732000
     ],
     "achievements": 40,
-    "recommendations": 195939,
-    "lastUpdated": "2025-06-26T02:42:44.284Z"
+    "recommendations": 195936,
+    "lastUpdated": "2025/6/27 15:21:17"
   },
   {
     "steamId": "1222670",
@@ -4813,8 +4812,8 @@
       3415980
     ],
     "achievements": 0,
-    "recommendations": 80919,
-    "lastUpdated": "2025-06-26T02:42:52.136Z"
+    "recommendations": 80923,
+    "lastUpdated": "2025/6/27 15:21:25"
   },
   {
     "steamId": "1238810",
@@ -4877,8 +4876,8 @@
       1264171
     ],
     "achievements": 21,
-    "recommendations": 219708,
-    "lastUpdated": "2025-06-26T02:42:57.675Z"
+    "recommendations": 219799,
+    "lastUpdated": "2025/6/27 15:21:31"
   },
   {
     "steamId": "1240440",
@@ -4935,8 +4934,8 @@
       1708091
     ],
     "achievements": 144,
-    "recommendations": 32938,
-    "lastUpdated": "2025-06-26T02:43:02.503Z"
+    "recommendations": 32944,
+    "lastUpdated": "2025/6/27 15:21:36"
   },
   {
     "steamId": "1245620",
@@ -4990,9 +4989,9 @@
     "price": {
       "currency": "CNY",
       "initial": 298,
-      "final": 298,
-      "discount_percent": 0,
-      "formatted": "¥ 298.00"
+      "final": 178.8,
+      "discount_percent": 40,
+      "formatted": "¥ 178.80"
     },
     "isFree": false,
     "dlc": [
@@ -5001,8 +5000,8 @@
     ],
     "achievements": 42,
     "metacriticScore": 94,
-    "recommendations": 769801,
-    "lastUpdated": "2025-06-26T02:43:12.658Z"
+    "recommendations": 770025,
+    "lastUpdated": "2025/6/27 15:21:45"
   },
   {
     "steamId": "1326470",
@@ -5058,15 +5057,15 @@
     "price": {
       "currency": "CNY",
       "initial": 108,
-      "final": 108,
-      "discount_percent": 0,
-      "formatted": "¥ 108.00"
+      "final": 36.72,
+      "discount_percent": 66,
+      "formatted": "¥ 36.72"
     },
     "isFree": false,
     "dlc": [],
     "achievements": 32,
-    "recommendations": 226346,
-    "lastUpdated": "2025-06-26T02:43:17.315Z"
+    "recommendations": 226449,
+    "lastUpdated": "2025/6/27 15:21:50"
   },
   {
     "steamId": "1491000",
@@ -5128,7 +5127,7 @@
     ],
     "achievements": 33,
     "recommendations": 698,
-    "lastUpdated": "2025-06-26T02:43:21.858Z"
+    "lastUpdated": "2025/6/27 15:21:54"
   },
   {
     "steamId": "1517290",
@@ -5187,24 +5186,24 @@
       3269070
     ],
     "achievements": 34,
-    "recommendations": 236546,
-    "lastUpdated": "2025-06-26T02:43:32.009Z"
+    "recommendations": 236700,
+    "lastUpdated": "2025/6/27 15:22:03"
   },
   {
     "steamId": "1623730",
     "name": "Palworld / 幻兽帕鲁",
     "type": "game",
     "description": "在广阔的世界中收集神奇的生物“帕鲁”，派他们进行战斗、建造、做农活，工业生产等，这是一款支持多人游戏模式的全新开放世界生存制作游戏。",
-    "fullDescription": "Q. 这是一款怎样的游戏呢？<br><br>A. 在帕鲁的世界，你可以选择与神奇的生物「帕鲁」一同享受悠闲的生活，也可以投身于与偷猎者进行生死搏斗的冒险。<br><br>帕鲁可以进行战斗、繁殖、协助你做农活，也可以为你在工厂工作。<br>你也可以将它们进行售卖，或肢解后食用。<br><br><br><strong><u>生存</u></strong><br>食物短缺、恶劣的环境……非法的偷猎者。这个世界危机四伏。为了生存你只能不择手段。有时候，你甚至要用帕鲁来充饥……<br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif01_survival.gif?t=1750826685\" /></div><br><br><strong><u>骑乘、探索</u></strong><br>你可以骑着帕鲁去陆地、海洋、天空，在各种不同的场所进行探索。<br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif02_riding.gif?t=1750826685\" /></div><br><br><strong><u>建造</u></strong><br>想建造金字塔吗？这时候就让大量的帕鲁为你做建造的工作吧。帕鲁并不受劳动法规的约束，尽请放心。<br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif03_building.gif?t=1750826685\" /></div><br><br><strong><u>生活</u></strong><br>生火、发电、采掘……。收集各种不同类型的便利帕鲁，来享受舒适的生活吧。<br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif04_life.gif?t=1750826685\" /></div><br><br><strong><u>农业</u></strong><br>不同的帕鲁擅长播种、浇水、收割等各类不同的工作。和帕鲁一起，打造美好的农园吧。<br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif05_farming.gif?t=1750826685\" /></div><br><br><strong><u>工业、自动化</u></strong><br>为了实现自动化，将手工作业交给帕鲁就尤为重要。建造工厂，并安排帕鲁在其中工作吧。只要有足够的食物，帕鲁就可以不断地工作，直到它们生命的尽头。<br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif06_factory.gif?t=1750826685\" /></div><br><br><strong><u>地下城探索</u></strong><br>有帕鲁在，哪怕危险的区域也大可放心。在危机时刻，你可以让帕鲁做你的替身。它们会不惜一切，哪怕舍弃自己的生命也会保护你。<br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif07_dungeon.gif?t=1750826685\" /></div><br><br><strong><u>繁殖、遗传</u></strong><br>繁殖后，帕鲁将会继承父母的特性。将稀有的帕鲁组合在一起，繁育出最强的帕鲁吧！<br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif08_breeding.gif?t=1750826685\" /></div><br><br><strong><u>偷猎、犯罪</u></strong><br>在禁猎区栖息着濒临灭绝的稀有帕鲁。悄悄潜入那里并捕获它们你就能够大赚一笔！只要不被发现，就不算是犯罪。<br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif09_poaching.gif?t=1750826685\" /></div><br><br><strong><u>多人游戏</u></strong><br>支持多人游戏模式。邀请你的朋友一起来冒险吧！当然，你们也可以进行对战以及交易。<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif10_multiplay.gif?t=1750826685\" /></div>",
+    "fullDescription": "<p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/5e261111cb5994052495ec9eab3a2bbe.avif?t=1750906920\" /></div></p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\">Q. 这是一款怎样的游戏呢？</p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\">A. 在帕鲁的世界，你可以选择与神奇的生物「帕鲁」一同享受悠闲的生活，也可以投身于与偷猎者进行生死搏斗的冒险。</p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\">帕鲁可以进行战斗、繁殖、协助你做农活，也可以为你在工厂工作。</p><p class=\"bb_paragraph\">你也可以将它们进行售卖，或肢解后食用。</p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\"><strong><u>生存</u></strong></p><p class=\"bb_paragraph\">食物短缺、恶劣的环境……非法的偷猎者。这个世界危机四伏。为了生存你只能不择手段。有时候，你甚至要用帕鲁来充饥……</p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif01_survival.gif?t=1750906920\" /></div></p><p class=\"bb_paragraph\"><strong><u>骑乘、探索</u></strong></p><p class=\"bb_paragraph\">你可以骑着帕鲁去陆地、海洋、天空，在各种不同的场所进行探索。</p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif02_riding.gif?t=1750906920\" /></div></p><p class=\"bb_paragraph\"><strong><u>建造</u></strong></p><p class=\"bb_paragraph\">想建造金字塔吗？这时候就让大量的帕鲁为你做建造的工作吧。帕鲁并不受劳动法规的约束，尽请放心。</p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif03_building.gif?t=1750906920\" /></div></p><p class=\"bb_paragraph\"><strong><u>生活</u></strong></p><p class=\"bb_paragraph\">生火、发电、采掘……。收集各种不同类型的便利帕鲁，来享受舒适的生活吧。</p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif04_life.gif?t=1750906920\" /></div></p><p class=\"bb_paragraph\"><strong><u>农业</u></strong></p><p class=\"bb_paragraph\">不同的帕鲁擅长播种、浇水、收割等各类不同的工作。和帕鲁一起，打造美好的农园吧。</p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif05_farming.gif?t=1750906920\" /></div></p><p class=\"bb_paragraph\"><strong><u>工业、自动化</u></strong></p><p class=\"bb_paragraph\">为了实现自动化，将手工作业交给帕鲁就尤为重要。建造工厂，并安排帕鲁在其中工作吧。只要有足够的食物，帕鲁就可以不断地工作，直到它们生命的尽头。</p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif06_factory.gif?t=1750906920\" /></div></p><p class=\"bb_paragraph\"><strong><u>地下城探索</u></strong></p><p class=\"bb_paragraph\">有帕鲁在，哪怕危险的区域也大可放心。在危机时刻，你可以让帕鲁做你的替身。它们会不惜一切，哪怕舍弃自己的生命也会保护你。</p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif07_dungeon.gif?t=1750906920\" /></div></p><p class=\"bb_paragraph\"><strong><u>繁殖、遗传</u></strong></p><p class=\"bb_paragraph\">繁殖后，帕鲁将会继承父母的特性。将稀有的帕鲁组合在一起，繁育出最强的帕鲁吧！</p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif08_breeding.gif?t=1750906920\" /></div></p><p class=\"bb_paragraph\"><strong><u>偷猎、犯罪</u></strong></p><p class=\"bb_paragraph\">在禁猎区栖息着濒临灭绝的稀有帕鲁。悄悄潜入那里并捕获它们你就能够大赚一笔！只要不被发现，就不算是犯罪。</p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif09_poaching.gif?t=1750906920\" /></div></p><p class=\"bb_paragraph\"><strong><u>多人游戏</u></strong></p><p class=\"bb_paragraph\">支持多人游戏模式。邀请你的朋友一起来冒险吧！当然，你们也可以进行对战以及交易。</p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/extras/gif10_multiplay.gif?t=1750906920\" /></div></p>",
     "developer": "Pocketpair",
     "publisher": "Pocketpair",
     "releaseDate": "2024 年 1 月 19 日",
     "comingSoon": false,
-    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/498c9a37f13f7074d3cd9f92c661ee385d7951b6/header_alt_assets_1_schinese.jpg?t=1750826685",
+    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/498c9a37f13f7074d3cd9f92c661ee385d7951b6/header_alt_assets_1_schinese.jpg?t=1750906920",
     "screenshots": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/ss_f81b7c4f20be3b99f76a1415c4cdb9b444c99b97.600x338.jpg?t=1750826685",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/ss_a9fa84f0c21bc536f00925ab4586e8c4f587c2b7.600x338.jpg?t=1750826685",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/ss_b3cea7c9f04a67d784d4c6a0c157a11d6268b189.600x338.jpg?t=1750826685"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/ss_f81b7c4f20be3b99f76a1415c4cdb9b444c99b97.600x338.jpg?t=1750906920",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/ss_a9fa84f0c21bc536f00925ab4586e8c4f587c2b7.600x338.jpg?t=1750906920",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/ss_b3cea7c9f04a67d784d4c6a0c157a11d6268b189.600x338.jpg?t=1750906920"
     ],
     "movies": [
       {
@@ -5254,8 +5253,8 @@
       2771110
     ],
     "achievements": 56,
-    "recommendations": 323368,
-    "lastUpdated": "2025-06-26T02:43:40.764Z"
+    "recommendations": 323677,
+    "lastUpdated": "2025/6/27 15:22:10"
   },
   {
     "steamId": "1811260",
@@ -5304,8 +5303,8 @@
     "isFree": false,
     "dlc": [],
     "achievements": 39,
-    "recommendations": 124367,
-    "lastUpdated": "2025-06-26T02:43:53.178Z"
+    "recommendations": 124366,
+    "lastUpdated": "2025/6/27 15:22:24"
   },
   {
     "steamId": "1938090",
@@ -5365,15 +5364,15 @@
       3159190
     ],
     "achievements": 107,
-    "recommendations": 389824,
-    "lastUpdated": "2025-06-26T02:43:57.623Z"
+    "recommendations": 389891,
+    "lastUpdated": "2025/6/27 15:22:28"
   },
   {
     "steamId": "1966720",
     "name": "Lethal Company",
     "type": "game",
     "description": "A co-op horror about scavenging at abandoned moons to sell scrap to the Company.",
-    "fullDescription": "<div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/extras/StorepageHeader1.gif?t=1750273815\" /></div><br>You are a contracted worker for the Company. Your job is to collect scrap from abandoned, industrialized moons to meet the Company's profit quota. You can use the cash you earn to travel to new moons with higher risks and rewards--or you can buy fancy suits and decorations for your ship. Experience nature, scanning any creature you find to add them to your bestiary. Explore the wondrous outdoors and rummage through their derelict, steel and concrete underbellies. Just <i>never</i> miss the quota. <br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/extras/bridgeGif.gif?t=1750273815\" /></div><br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/extras/StorepageHeader2.gif?t=1750273815\" /></div><br>These dangers prey upon the vulnerable and lonesome, and the protection of your crew may be your only hope. You can guide your crewmates from your ship, using the radar to call out traps and using the ship's terminal to access remotely locked doors--or you can all go in together. The Company store has many useful tools for the job, including lights, shovels, walkie talkies, stun grenades, or boomboxes. <br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/extras/shipRadarGif2.gif?t=1750273815\" /></div><br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/extras/StorepageHeader3.gif?t=1750273815\" /></div><br>Things get dangerous at night. Communicate with your crewmates to carry all valuables to the ship before things get too dangerous, and try not to leave anyone behind.",
+    "fullDescription": "<img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/extras/StorepageHeader1.gif?t=1750273815\" /><br>You are a contracted worker for the Company. Your job is to collect scrap from abandoned, industrialized moons to meet the Company's profit quota. You can use the cash you earn to travel to new moons with higher risks and rewards--or you can buy fancy suits and decorations for your ship. Experience nature, scanning any creature you find to add them to your bestiary. Explore the wondrous outdoors and rummage through their derelict, steel and concrete underbellies. Just <i>never</i> miss the quota. <br><br><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/extras/bridgeGif.gif?t=1750273815\" /><br><br><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/extras/StorepageHeader2.gif?t=1750273815\" /><br>These dangers prey upon the vulnerable and lonesome, and the protection of your crew may be your only hope. You can guide your crewmates from your ship, using the radar to call out traps and using the ship's terminal to access remotely locked doors--or you can all go in together. The Company store has many useful tools for the job, including lights, shovels, walkie talkies, stun grenades, or boomboxes. <br><br><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/extras/shipRadarGif2.gif?t=1750273815\" /><br><br><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/extras/StorepageHeader3.gif?t=1750273815\" /><br>Things get dangerous at night. Communicate with your crewmates to carry all valuables to the ship before things get too dangerous, and try not to leave anyone behind.",
     "developer": "Zeekerss",
     "publisher": "Zeekerss",
     "releaseDate": "2023 年 10 月 24 日",
@@ -5414,31 +5413,31 @@
     "price": {
       "currency": "CNY",
       "initial": 42,
-      "final": 42,
-      "discount_percent": 0,
-      "formatted": "¥ 42.00"
+      "final": 33.6,
+      "discount_percent": 20,
+      "formatted": "¥ 33.60"
     },
     "isFree": false,
     "dlc": [],
     "achievements": 0,
-    "recommendations": 394494,
-    "lastUpdated": "2025-06-26T02:44:06.308Z"
+    "recommendations": 394592,
+    "lastUpdated": "2025/6/27 15:22:39"
   },
   {
     "steamId": "2186680",
     "name": "Warhammer 40,000: Rogue Trader",
     "type": "game",
     "description": "以黑暗与危险的公元40000年为背景的角色扮演游戏，立刻开始您的旅程吧。 您将扮演一位胆大包天的行商浪人，某个古老私掠者王朝的后裔。这个王朝支配着自己的商业帝国，在神皇本人的祝福之下。",
-    "fullDescription": "<p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\">欢迎各位船长加入游戏的玩家社区和社群，获得游戏最新资讯，讨论游戏内容以及提交任何反馈：</p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\">战锤40K：行商浪人 </p><p class=\"bb_paragraph\">QQ讨论组：275647627</p><p class=\"bb_paragraph\">bilibili：@OwlcatGames</p><p class=\"bb_paragraph\">小黑盒：@战锤40K-行商浪人</p><p class=\"bb_paragraph\"></p><h2 class=\"bb_tag\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/extras/Title_banner_616x104_Chinese_1.png?t=1750777539\" /></div></h2><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/extras/Explore_the_Koronus_Expanse.gif?t=1750777539\" /></div></p><p class=\"bb_paragraph\">乘坐您巨大的虚空舰，穿梭于广袤的科罗努斯星域，探索无数星系。这片几乎未经探索过的广阔星域充满了危险。尽管在帝国的疆土中，这片星域偏远而落后，但这里有着浩瀚的虚空，充满了探索未知、获取名利的机遇。 </p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/extras/Title_banner_616x104_Chinese_2.png?t=1750777539\" /></div></p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/extras/Gather_your_crew.gif?t=1750777539\" /></div></p><p class=\"bb_paragraph\">行商浪人的旅程从不孤单。集结您的随行人员吧，他们可能包括神圣的战士、诡谲的灵能者，以及背信弃义的异形，所有人都已经准备好跟随您前往星间的黑暗之中。他们会为您提供建言，在战斗中协助您，让您获得更为强大的权力。作为回报，您可以引导他们完成各自的个人旅程，彻底改变他们的命运。</p><p class=\"bb_paragraph\"> <div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/extras/Title_banner_616x104_Chinese_3.png?t=1750777539\" /></div></p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/extras/Your_decisions_matter.gif?t=1750777539\" /></div></p><p class=\"bb_paragraph\">您既可以慈悲为怀，也可以飞扬跋扈；既可以对神皇保持忠诚，也可以与人类的敌人沆瀣一气。行商浪人的决策与行为会在整个星系中激起涟漪，改变游戏中的世界，影响居住在其中的人们。</p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/extras/Title_banner_616x104_Chinese_4.png?t=1750777539\" /></div></p><p class=\"bb_paragraph\"> </p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/extras/Plan_your_actions_carefully.gif?t=1750777539\" /></div></p><p class=\"bb_paragraph\">在精心设计的回合制战斗系统中，将人类之敌消灭殆尽吧。您可以利用掩体与环境，通过谨慎走位来消灭敌人。如果这些还不够的话，您还可以利用同伴的强大能力来扭转战局，在背水一战的处境下反败为胜。我们的游戏基于经典的《行商浪人》规则书进行改编，为您提供了数不胜数的可能性。 </p>",
+    "fullDescription": "<p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\">欢迎各位船长加入游戏的玩家社区和社群，获得游戏最新资讯，讨论游戏内容以及提交任何反馈：</p><p class=\"bb_paragraph\"></p><p class=\"bb_paragraph\">战锤40K：行商浪人 </p><p class=\"bb_paragraph\">QQ讨论组：275647627</p><p class=\"bb_paragraph\">bilibili：@OwlcatGames</p><p class=\"bb_paragraph\">小黑盒：@战锤40K-行商浪人</p><p class=\"bb_paragraph\"></p><h2 class=\"bb_tag\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/extras/Title_banner_616x104_Chinese_1.png?t=1750967565\" /></div></h2><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/extras/Explore_the_Koronus_Expanse.gif?t=1750967565\" /></div></p><p class=\"bb_paragraph\">乘坐您巨大的虚空舰，穿梭于广袤的科罗努斯星域，探索无数星系。这片几乎未经探索过的广阔星域充满了危险。尽管在帝国的疆土中，这片星域偏远而落后，但这里有着浩瀚的虚空，充满了探索未知、获取名利的机遇。 </p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/extras/Title_banner_616x104_Chinese_2.png?t=1750967565\" /></div></p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/extras/Gather_your_crew.gif?t=1750967565\" /></div></p><p class=\"bb_paragraph\">行商浪人的旅程从不孤单。集结您的随行人员吧，他们可能包括神圣的战士、诡谲的灵能者，以及背信弃义的异形，所有人都已经准备好跟随您前往星间的黑暗之中。他们会为您提供建言，在战斗中协助您，让您获得更为强大的权力。作为回报，您可以引导他们完成各自的个人旅程，彻底改变他们的命运。</p><p class=\"bb_paragraph\"> <div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/extras/Title_banner_616x104_Chinese_3.png?t=1750967565\" /></div></p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/extras/Your_decisions_matter.gif?t=1750967565\" /></div></p><p class=\"bb_paragraph\">您既可以慈悲为怀，也可以飞扬跋扈；既可以对神皇保持忠诚，也可以与人类的敌人沆瀣一气。行商浪人的决策与行为会在整个星系中激起涟漪，改变游戏中的世界，影响居住在其中的人们。</p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/extras/Title_banner_616x104_Chinese_4.png?t=1750967565\" /></div></p><p class=\"bb_paragraph\"> </p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/extras/Plan_your_actions_carefully.gif?t=1750967565\" /></div></p><p class=\"bb_paragraph\">在精心设计的回合制战斗系统中，将人类之敌消灭殆尽吧。您可以利用掩体与环境，通过谨慎走位来消灭敌人。如果这些还不够的话，您还可以利用同伴的强大能力来扭转战局，在背水一战的处境下反败为胜。我们的游戏基于经典的《行商浪人》规则书进行改编，为您提供了数不胜数的可能性。 </p>",
     "developer": "Owlcat Games",
     "publisher": "Owlcat Games",
     "releaseDate": "2023 年 12 月 7 日",
     "comingSoon": false,
-    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/c7b0bd6f233f6c03fa68eee2fd1108a183329230/header.jpg?t=1750777539",
+    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/c7b0bd6f233f6c03fa68eee2fd1108a183329230/header.jpg?t=1750967565",
     "screenshots": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/ss_d2ba289a149c9f68f271894a43e2c070b0fac72c.600x338.jpg?t=1750777539",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/ss_2268541cc663cbf2ac495e4776c1b10e996fbd98.600x338.jpg?t=1750777539",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/ss_e08f43fe65e60a0cba4f8d1fef4000f71d58aa68.600x338.jpg?t=1750777539"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/ss_d2ba289a149c9f68f271894a43e2c070b0fac72c.600x338.jpg?t=1750967565",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/ss_2268541cc663cbf2ac495e4776c1b10e996fbd98.600x338.jpg?t=1750967565",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2186680/ss_e08f43fe65e60a0cba4f8d1fef4000f71d58aa68.600x338.jpg?t=1750967565"
     ],
     "movies": [
       {
@@ -5479,9 +5478,9 @@
     "price": {
       "currency": "CNY",
       "initial": 188,
-      "final": 188,
-      "discount_percent": 0,
-      "formatted": "¥ 188.00"
+      "final": 94,
+      "discount_percent": 50,
+      "formatted": "¥ 94.00"
     },
     "isFree": false,
     "dlc": [
@@ -5492,37 +5491,37 @@
       3650800
     ],
     "achievements": 106,
-    "recommendations": 22162,
-    "lastUpdated": "2025-06-26T02:44:11.230Z"
+    "recommendations": 22202,
+    "lastUpdated": "2025/6/27 15:22:43"
   },
   {
     "steamId": "2246340",
     "name": "Monster Hunter Wilds",
     "type": "game",
     "description": "狂野凶猛的大自然，袭来。 时刻都在动态变化的原野。 这是个关于生活在具有两面性的世界中的怪物与人们的故事。 进化的狩猎动作，寻求连续不断的沉浸感，究极的狩猎体验正等待你的到来。",
-    "fullDescription": "<h1>豪华版＆高级豪华版</h1><p><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/extras/Editions_PostLaunch_EN.png?t=1748400511\" /></div><br><br>豪华版＆高级豪华版<br><br>●Monster Hunter Wilds豪华组合包（预定于游戏本篇发售时推出）<br>・猎人外观装备“兵之甲冑”系列、“剑豪独眼罩”、“鬼角假发”<br>・鹭鹰龙装饰“士兵骑装”、“将星骑装”<br>・随从外观装备“足轻猫系列”<br>・饰物【飞鸟风铃】<br>・肢体动作“战吼”、“打磨除油”<br>・发型“豪杰束发”、“高手垂发”<br>・化妆／彩绘“狩猎隈取”、“樱梅桃李”<br>・贴图套装“鸟之队套装”、“沙原怪物套装”<br>・名称牌“特别边框【朝霭与麻叶纹】” ※购买特典<br><br>●高级特典（预定于游戏本篇发售时推出）<br>・猎人外观装备“龙人族之耳”<br>・高级特典猎人资料组合<br>・背景音乐“Proof of a Hero (2025 Recording)”<br><br>※上述特典的内容日后有可能提供其他获取途径。<br><br>●Monster Hunter Wilds装扮DLC组合包1（预定于2025年春季推出）<br>这是一款收录外观装备和饰物等各种装扮物品的划算组合包。<br><br>●Monster Hunter Wilds装扮DLC组合包2（预定于2025年夏季推出）<br>这是一款收录外观装备和饰物等各种装扮物品的划算组合包。<br><br>※本商品的内容亦可单独购买，请注意避免重复购买。<br>※内容的详情及推出日期有可能在无预告的情况下更改。<br>※有可能需先更新至最新版本方可使用。</p><br><h1>关于游戏</h1>狂野凶猛的大自然，袭来。<br><br>时刻都在动态变化的原野。<br>这是个关于生活在具有两面性的世界中的怪物与人们的故事。<br><br>你会化为以狩猎强大怪物为生的“猎人”，使用狩猎获得的素材打造更强的武器防具，并逐渐解明这个世界与人们之间的关联。<br><br>进化的狩猎动作，寻求连续不断的沉浸感，究极的狩猎体验正等待你的到来。<br><br>故事<br>数年前，在公会还没有调查过的未踏足领域“封禁之地”的边境上，一名少年“纳塔”获救。<br>公会根据从神秘怪物袭击中独自逃脱的他所提供的线索，组成调查队。<br>为了调查名为“白色孤影”的怪物并营救遭受袭击的守护者一族，由猎人们组成的“调查队”之旅程就此展开。<br><br>活着的世界<br>原野具有两面性，经历饥肠辘辘的肉食性怪物结群斗争的残酷“荒芜期”与“异常气象”之后，会迎来满溢富饶生机的“丰饶期”，哪怕身处同一个地点，也会在不同的时候展现截然不同的面貌。<br><br>怪物<br>登场的怪物均极具特色。它们会活用各自的特征适应环境。<br>若发生异常气象，控制该生态系统顶点的强大怪物也会现身。<br><br>狩猎<br>丰富多彩的武器与装备，以及新的动作。需看透怪物行动与环境的狩猎实现了新的进化。<br>新动作集中模式可以瞄准要攻击或防御的目标。<br>通过瞄准怪物的要害，还可转变为特殊衍生并造成大量伤害。<br><br>登场人物<br>可靠的搭档与调查队的伙伴等等，<br>为猎人狩猎生活提供帮助的多位角色也会登场。",
+    "fullDescription": "<h1>豪华版＆高级豪华版</h1><p><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/extras/Editions_PostLaunch_EN.png?t=1750999210\" /></div><br><br>豪华版＆高级豪华版<br><br>●Monster Hunter Wilds豪华组合包（预定于游戏本篇发售时推出）<br>・猎人外观装备“兵之甲冑”系列、“剑豪独眼罩”、“鬼角假发”<br>・鹭鹰龙装饰“士兵骑装”、“将星骑装”<br>・随从外观装备“足轻猫系列”<br>・饰物【飞鸟风铃】<br>・肢体动作“战吼”、“打磨除油”<br>・发型“豪杰束发”、“高手垂发”<br>・化妆／彩绘“狩猎隈取”、“樱梅桃李”<br>・贴图套装“鸟之队套装”、“沙原怪物套装”<br>・名称牌“特别边框【朝霭与麻叶纹】” ※购买特典<br><br>●高级特典（预定于游戏本篇发售时推出）<br>・猎人外观装备“龙人族之耳”<br>・高级特典猎人资料组合<br>・背景音乐“Proof of a Hero (2025 Recording)”<br><br>※上述特典的内容日后有可能提供其他获取途径。<br><br>●Monster Hunter Wilds装扮DLC组合包1（预定于2025年春季推出）<br>这是一款收录外观装备和饰物等各种装扮物品的划算组合包。<br><br>●Monster Hunter Wilds装扮DLC组合包2（预定于2025年夏季推出）<br>这是一款收录外观装备和饰物等各种装扮物品的划算组合包。<br><br>※本商品的内容亦可单独购买，请注意避免重复购买。<br>※内容的详情及推出日期有可能在无预告的情况下更改。<br>※有可能需先更新至最新版本方可使用。</p><br><h1>关于游戏</h1>狂野凶猛的大自然，袭来。<br><br>时刻都在动态变化的原野。<br>这是个关于生活在具有两面性的世界中的怪物与人们的故事。<br><br>你会化为以狩猎强大怪物为生的“猎人”，使用狩猎获得的素材打造更强的武器防具，并逐渐解明这个世界与人们之间的关联。<br><br>进化的狩猎动作，寻求连续不断的沉浸感，究极的狩猎体验正等待你的到来。<br><br>故事<br>数年前，在公会还没有调查过的未踏足领域“封禁之地”的边境上，一名少年“纳塔”获救。<br>公会根据从神秘怪物袭击中独自逃脱的他所提供的线索，组成调查队。<br>为了调查名为“白色孤影”的怪物并营救遭受袭击的守护者一族，由猎人们组成的“调查队”之旅程就此展开。<br><br>活着的世界<br>原野具有两面性，经历饥肠辘辘的肉食性怪物结群斗争的残酷“荒芜期”与“异常气象”之后，会迎来满溢富饶生机的“丰饶期”，哪怕身处同一个地点，也会在不同的时候展现截然不同的面貌。<br><br>怪物<br>登场的怪物均极具特色。它们会活用各自的特征适应环境。<br>若发生异常气象，控制该生态系统顶点的强大怪物也会现身。<br><br>狩猎<br>丰富多彩的武器与装备，以及新的动作。需看透怪物行动与环境的狩猎实现了新的进化。<br>新动作集中模式可以瞄准要攻击或防御的目标。<br>通过瞄准怪物的要害，还可转变为特殊衍生并造成大量伤害。<br><br>登场人物<br>可靠的搭档与调查队的伙伴等等，<br>为猎人狩猎生活提供帮助的多位角色也会登场。",
     "developer": "CAPCOM Co., Ltd.",
     "publisher": "CAPCOM Co., Ltd.",
     "releaseDate": "2025 年 2 月 28 日",
     "comingSoon": false,
-    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/header.jpg?t=1748400511",
+    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/header.jpg?t=1750999210",
     "screenshots": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/ss_31b5597fecf2d9a2904bc9bbf8011aacb18143db.600x338.jpg?t=1748400511",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/ss_9245c1ede8c3fc2cd65e4890a74a01ef50b726da.600x338.jpg?t=1748400511",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/ss_c722e74607ffda9a1472093ccc934f1bdde10ab8.600x338.jpg?t=1748400511"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/ss_31b5597fecf2d9a2904bc9bbf8011aacb18143db.600x338.jpg?t=1750999210",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/ss_9245c1ede8c3fc2cd65e4890a74a01ef50b726da.600x338.jpg?t=1750999210",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/ss_c722e74607ffda9a1472093ccc934f1bdde10ab8.600x338.jpg?t=1750999210"
     ],
     "movies": [
+      {
+        "id": 257162149,
+        "name": "04_MHWilds_TU2_Multi_SC_NoRating_1080p",
+        "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257162149/7abdbb66cc73fe48c5d83286a334fb9e83c6bbe5/movie_600x337.jpg?t=1750999193",
+        "webm": "http://video.akamai.steamstatic.com/store_trailers/257162149/movie_max_vp9.webm?t=1750999193"
+      },
       {
         "id": 257118555,
         "name": "04_MHWilds_TU1_Multi_SC_1080p",
         "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257118555/d9f67f524a5de835fc81740acae8e4178c4dc8d9/movie_600x337.jpg?t=1742961808",
         "webm": "http://video.akamai.steamstatic.com/store_trailers/257118555/movie_max_vp9.webm?t=1742961808"
-      },
-      {
-        "id": 257108895,
-        "name": "04_MHWilds_StoryPV_Multi_SC_1080p",
-        "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257108895/b6cc301baf2b1a852fb956fb6ac547046e48b0ce/movie_600x337.jpg?t=1740977490",
-        "webm": "http://video.akamai.steamstatic.com/store_trailers/257108895/movie_max_vp9.webm?t=1740977490"
       }
     ],
     "genres": [
@@ -5561,8 +5560,8 @@
       3410840
     ],
     "achievements": 50,
-    "recommendations": 143804,
-    "lastUpdated": "2025-06-26T02:44:15.215Z"
+    "recommendations": 144874,
+    "lastUpdated": "2025/6/27 15:22:47"
   },
   {
     "steamId": "2358720",
@@ -5627,24 +5626,24 @@
       3288260
     ],
     "achievements": 81,
-    "recommendations": 838542,
-    "lastUpdated": "2025-06-26T02:44:25.193Z"
+    "recommendations": 838831,
+    "lastUpdated": "2025/6/27 15:22:55"
   },
   {
     "steamId": "3164500",
     "name": "Schedule I",
     "type": "game",
     "description": "From small-time dope pusher to kingpin - manufacture and distribute a range of drugs throughout the grungy city of Hyland Point. Expand your empire with properties, businesses, employees and more.",
-    "fullDescription": "<h2 class=\"bb_tag\">Schedule I drugs, substances, or chemicals are defined as drugs with no currently accepted medical use and a high potential for abuse.</h2> - The Drug Enforcement Administration<br><br>You're a small-time drug dealer rolling into a fresh town with no cash, no product and no connections. Build your drug empire from the ground up in the grungy west-coast city of Hyland Point. Contend against intensifying law enforcement and deadly cartel competitors to expand your empire and reach the peak of the underworld.<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/extras/manufacturing-montage-final.gif?t=1749712238\" /></div><br>Produce a range of <strong>drugs </strong>to satisfy your customers, each one with it's own unique production process. Discover <strong>special recipes</strong> to create new drug variants with special properties.<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/extras/distribution-montage-final.gif?t=1749712238\" /></div><br>Walk, skate or drive throughout Hyland Point to get product into the hands of customers. Hire <strong>dealers</strong> to handle distribution for you.<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/extras/expand-montage-final.gif?t=1749712238\" /></div><br>Purchase new <strong>properties</strong> and hire <strong>employees</strong> to expand the scope and scale of your operations. Work with suppliers to build a fully automated production and distribution chain.<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/extras/fight-montage-final.gif?t=1749712238\" /></div><br>This is a dangerous line of work - you'll have to contend with increasing <strong>law enforcement</strong>, as well as deadly cartel competitors. Fight with fists, melee weapons or <strong>firearms</strong>.<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/extras/co-op.gif?t=1749712238\" /></div><br>A growing empire needs skilled management. Reach new heights in <strong>co-op multiplayer</strong>.",
+    "fullDescription": "<h2 class=\"bb_tag\">Schedule I drugs, substances, or chemicals are defined as drugs with no currently accepted medical use and a high potential for abuse.</h2> - The Drug Enforcement Administration<br><br>You're a small-time drug dealer rolling into a fresh town with no cash, no product and no connections. Build your drug empire from the ground up in the grungy west-coast city of Hyland Point. Contend against intensifying law enforcement and deadly cartel competitors to expand your empire and reach the peak of the underworld.<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/extras/manufacturing-montage-final.gif?t=1750922342\" /></div><br>Produce a range of <strong>drugs </strong>to satisfy your customers, each one with it's own unique production process. Discover <strong>special recipes</strong> to create new drug variants with special properties.<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/extras/distribution-montage-final.gif?t=1750922342\" /></div><br>Walk, skate or drive throughout Hyland Point to get product into the hands of customers. Hire <strong>dealers</strong> to handle distribution for you.<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/extras/expand-montage-final.gif?t=1750922342\" /></div><br>Purchase new <strong>properties</strong> and hire <strong>employees</strong> to expand the scope and scale of your operations. Work with suppliers to build a fully automated production and distribution chain.<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/extras/fight-montage-final.gif?t=1750922342\" /></div><br>This is a dangerous line of work - you'll have to contend with increasing <strong>law enforcement</strong>, as well as deadly cartel competitors. Fight with fists, melee weapons or <strong>firearms</strong>.<br><br><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/extras/co-op.gif?t=1750922342\" /></div><br>A growing empire needs skilled management. Reach new heights in <strong>co-op multiplayer</strong>.",
     "developer": "TVGS",
     "publisher": "TVGS",
     "releaseDate": "2025 年 3 月 25 日",
     "comingSoon": false,
-    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/header.jpg?t=1749712238",
+    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/header.jpg?t=1750922342",
     "screenshots": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_74961b6f52d7694b12c272c37d69551fc08a1ccb.600x338.jpg?t=1749712238",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_e4f243245a60f8a65eb82b1288ed67d8d8cf2b4e.600x338.jpg?t=1749712238",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_a73fcfbee67d95dd53858d0f3fb881181e0e9e8e.600x338.jpg?t=1749712238"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_74961b6f52d7694b12c272c37d69551fc08a1ccb.600x338.jpg?t=1750922342",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_e4f243245a60f8a65eb82b1288ed67d8d8cf2b4e.600x338.jpg?t=1750922342",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/ss_a73fcfbee67d95dd53858d0f3fb881181e0e9e8e.600x338.jpg?t=1750922342"
     ],
     "movies": [
       {
@@ -5685,44 +5684,44 @@
     "price": {
       "currency": "CNY",
       "initial": 76,
-      "final": 76,
-      "discount_percent": 0,
-      "formatted": "¥ 76.00"
+      "final": 53.2,
+      "discount_percent": 30,
+      "formatted": "¥ 53.20"
     },
     "isFree": false,
     "dlc": [],
     "achievements": 11,
-    "recommendations": 194696,
-    "lastUpdated": "2025-06-26T02:44:32.808Z"
+    "recommendations": 195042,
+    "lastUpdated": "2025/6/27 15:23:04"
   },
   {
     "steamId": "3241660",
     "name": "R.E.P.O.",
     "type": "game",
     "description": "An online co-op horror game with up to 6 players. Locate valuable, fully physics-based objects and handle them with care as you retrieve and extract to satisfy your creator's desires.",
-    "fullDescription": "<p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/extras/00_title_repo.png?t=1749626961\" /></div><br><br>R.E.P.O. is an online co-op horror game featuring physics, proximity voice chat and scary monsters. You and up to 5 friends can venture into terrifying environments to extract valuable objects using your physics-based grabbing tool.</p><br><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/extras/01_title_physics.png?t=1749626961\" /></div></p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/extras/01_physics.gif?t=1749626961\" /></div></p><p class=\"bb_paragraph\"><strong><i>Even the monsters are affected by Newton's law of gravity!</i></strong><br>Under the employ of a mysterious computer intelligence. It is your job to locate, transport and extract valuable items from the haunted remains of a long lost humanity.</p><br><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/extras/02_title_communication.png?t=1749626961\" /></div></p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/extras/02_communication.gif?t=1749626961\" /></div></p><p class=\"bb_paragraph\"><strong><i>...but know when to stay quiet.</i></strong><br>Transport anything from heavy pianos to fragile ceramics and use teamwork to make sure that the precious cargo will safely reach its destination.</p><br><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/extras/03_title_weapon_upgrades.png?t=1749626961\" /></div></p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/extras/03_weapons.gif?t=1749626961\" /></div></p><p class=\"bb_paragraph\"><strong><i>Robotic enhancements  increase your chances!</i></strong><br>Use your hard earned <span class=\"bb_strike\">cash</span> <strong>[SURPLUS]</strong> to purchase upgrades and weapons from your <span class=\"bb_strike\">heartless</span> <strong>[GENEROUS]</strong> creator.</p><br><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/extras/04_title_outro.png?t=1749626961\" /></div></p>",
+    "fullDescription": "<p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/extras/00_title_repo.png?t=1750949552\" /></div><br><br>R.E.P.O. is an online co-op horror game featuring physics, proximity voice chat and scary monsters. You and up to 5 friends can venture into terrifying environments to extract valuable objects using your physics-based grabbing tool.</p><br><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/extras/01_title_physics.png?t=1750949552\" /></div></p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/extras/01_physics.gif?t=1750949552\" /></div></p><p class=\"bb_paragraph\"><strong><i>Even the monsters are affected by Newton's law of gravity!</i></strong><br>Under the employ of a mysterious computer intelligence. It is your job to locate, transport and extract valuable items from the haunted remains of a long lost humanity.</p><br><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/extras/02_title_communication.png?t=1750949552\" /></div></p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/extras/02_communication.gif?t=1750949552\" /></div></p><p class=\"bb_paragraph\"><strong><i>...but know when to stay quiet.</i></strong><br>Transport anything from heavy pianos to fragile ceramics and use teamwork to make sure that the precious cargo will safely reach its destination.</p><br><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/extras/03_title_weapon_upgrades.png?t=1750949552\" /></div></p><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/extras/03_weapons.gif?t=1750949552\" /></div></p><p class=\"bb_paragraph\"><strong><i>Robotic enhancements  increase your chances!</i></strong><br>Use your hard earned <span class=\"bb_strike\">cash</span> <strong>[SURPLUS]</strong> to purchase upgrades and weapons from your <span class=\"bb_strike\">heartless</span> <strong>[GENEROUS]</strong> creator.</p><br><p class=\"bb_paragraph\"><div class=\"bb_img_ctn\"><img class=\"bb_img\" src=\"https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/extras/04_title_outro.png?t=1750949552\" /></div></p>",
     "developer": "semiwork",
     "publisher": "semiwork",
     "releaseDate": "2025 年 2 月 26 日",
     "comingSoon": false,
-    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/1ea445e044a2d5b09cfa8291350b63ebed6e5741/header.jpg?t=1749626961",
+    "headerImage": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/0d365948da6f70043bfbf4ae222a23bf087b4a72/header_alt_assets_0.jpg?t=1750949552",
     "screenshots": [
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/ss_e6babaab52581f81df91e50768cee6a9334ef6ec.600x338.jpg?t=1749626961",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/ss_af7d8d6302d543d89019bad49ea853a970bb82de.600x338.jpg?t=1749626961",
-      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/ss_a66715d57329c456d91aeb11fbd406e7d8c5dbc7.600x338.jpg?t=1749626961"
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/ss_e6babaab52581f81df91e50768cee6a9334ef6ec.600x338.jpg?t=1750949552",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/ss_af7d8d6302d543d89019bad49ea853a970bb82de.600x338.jpg?t=1750949552",
+      "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/ss_a66715d57329c456d91aeb11fbd406e7d8c5dbc7.600x338.jpg?t=1750949552"
     ],
     "movies": [
       {
-        "id": 257102296,
-        "name": "Release Trailer",
-        "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257102296/6bcb19015c3c9099a3af17e8cbea7866dfc05234/movie_600x337.jpg?t=1740577808",
-        "webm": "http://video.akamai.steamstatic.com/store_trailers/257102296/movie_max_vp9.webm?t=1740577808"
+        "id": 257160735,
+        "name": "Museum Update Trailer",
+        "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257160735/dbe991f3700a237189b08462c00d3bfe01225f29/movie_600x337.jpg?t=1750942486",
+        "webm": "http://video.akamai.steamstatic.com/store_trailers/257160735/movie_max_vp9.webm?t=1750942486"
       },
       {
-        "id": 257093766,
-        "name": "Teaser Trailer",
-        "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257093766/16eec9b01bc5f0f78cdd1173d4a43aaa264789fa/movie_600x337.jpg?t=1743517223",
-        "webm": "http://video.akamai.steamstatic.com/store_trailers/257093766/movie_max_vp9.webm?t=1743517223"
+        "id": 257102296,
+        "name": "Release Trailer",
+        "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257102296/6bcb19015c3c9099a3af17e8cbea7866dfc05234/movie_600x337.jpg?t=1750942483",
+        "webm": "http://video.akamai.steamstatic.com/store_trailers/257102296/movie_max_vp9.webm?t=1750942483"
       }
     ],
     "genres": [
@@ -5747,14 +5746,14 @@
     "price": {
       "currency": "CNY",
       "initial": 42,
-      "final": 42,
-      "discount_percent": 0,
-      "formatted": "¥ 42.00"
+      "final": 33.6,
+      "discount_percent": 20,
+      "formatted": "¥ 33.60"
     },
     "isFree": false,
     "dlc": [],
     "achievements": 0,
-    "recommendations": 163936,
-    "lastUpdated": "2025-06-26T02:44:41.756Z"
+    "recommendations": 164843,
+    "lastUpdated": "2025/6/27 15:23:12"
   }
 ]
