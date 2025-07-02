@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025/7/2 14:29:23",
+  "lastUpdated": "7/2/2025, 5:43:52 PM",
   "gamesCount": 94,
   "popularGamesCount": 100,
   "version": "2.0.0",
@@ -7,9 +7,9 @@
   "mode": "puppeteer",
   "proxyEnabled": true,
   "requestStats": {
-    "requestCount": 102,
-    "failedRequests": 1,
-    "successRate": 0.9901960784313726,
+    "requestCount": 101,
+    "failedRequests": 0,
+    "successRate": 1,
     "cacheSize": 0,
     "mode": "Puppeteer + Proxy"
   }
