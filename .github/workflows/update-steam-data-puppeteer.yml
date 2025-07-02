@@ -66,7 +66,6 @@ jobs:
         sudo apt-get install -y \
           fonts-liberation \
           libappindicator3-1 \
-          libasound2 \
           libatk-bridge2.0-0 \
           libatk1.0-0 \
           libcups2 \
@@ -80,7 +79,6 @@ jobs:
           libxrandr2 \
           xdg-utils \
           libxss1 \
-          libgconf-2-4 \
           libxtst6 \
           libgtk-3-0 \
           libdrm2 \
