@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Star, Plus, Bell, ChevronDown, ChevronUp, Percent } from 'lucide-react';
+import { Star, Plus, Bell, ChevronUp, Percent } from 'lucide-react';
 import { Game } from '@/types/game';
 import { useAlertStore } from '@/stores/alertStore';
 import { formatPrice } from '@/utils/priceUtils';
@@ -18,10 +18,10 @@ const GameCard: React.FC<GameCardProps> = ({ game, compact = false }) => {
   const [useCustomPrice, setUseCustomPrice] = useState(false);
   const [customTargetPrice, setCustomTargetPrice] = useState(0);
   const [pushEnabled, setPushEnabled] = useState(true);
-  
+
   const hasExistingAlert = hasAlert(game.steamId);
   const currentPrice = game.price?.final || 0;
-  
+
   // 计算基于折扣百分比的目标价格
   const discountTargetPrice = currentPrice * (1 - targetDiscountPercent / 100);
   const finalTargetPrice = useCustomPrice ? customTargetPrice : discountTargetPrice;
@@ -56,7 +56,7 @@ const GameCard: React.FC<GameCardProps> = ({ game, compact = false }) => {
         targetDiscountPercent: useCustomPrice ? undefined : targetDiscountPercent,
         pushEnabled,
       });
-      
+
       setShowAlertSetup(false);
     } catch (error) {
       console.error('创建提醒失败:', error);
@@ -93,7 +93,7 @@ const GameCard: React.FC<GameCardProps> = ({ game, compact = false }) => {
             variant={hasExistingAlert ? "outline" : "primary"}
             onClick={handleToggleAlertSetup}
             disabled={hasExistingAlert}
-            icon={hasExistingAlert ? <Bell className="w-4 h-4" /> : 
+            icon={hasExistingAlert ? <Bell className="w-4 h-4" /> :
                   showAlertSetup ? <ChevronUp className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
           >
             {hasExistingAlert ? '已设置' : showAlertSetup ? '收起' : '提醒'}
@@ -106,7 +106,7 @@ const GameCard: React.FC<GameCardProps> = ({ game, compact = false }) => {
             {/* 提醒类型选择 */}
             <div className="space-y-2">
               <h5 className="text-xs font-medium text-gray-700 dark:text-gray-300">提醒类型</h5>
-              
+
               <div className="space-y-1">
                 <label className="flex items-center space-x-2 cursor-pointer p-1.5 rounded hover:bg-white dark:hover:bg-gray-700 transition-colors">
                   <input
@@ -289,7 +289,7 @@ const GameCard: React.FC<GameCardProps> = ({ game, compact = false }) => {
             variant={hasExistingAlert ? "outline" : "primary"}
             onClick={handleToggleAlertSetup}
             disabled={hasExistingAlert}
-            icon={hasExistingAlert ? <Bell className="w-4 h-4" /> : 
+            icon={hasExistingAlert ? <Bell className="w-4 h-4" /> :
                   showAlertSetup ? <ChevronUp className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
           >
             {hasExistingAlert ? '已设置提醒' : showAlertSetup ? '收起设置' : '设置提醒'}
@@ -302,7 +302,7 @@ const GameCard: React.FC<GameCardProps> = ({ game, compact = false }) => {
             {/* 提醒类型选择 */}
             <div className="space-y-3">
               <h5 className="text-sm font-medium text-gray-700 dark:text-gray-300">提醒类型</h5>
-              
+
               <div className="space-y-2">
                 <label className="flex items-center space-x-3 cursor-pointer p-2 rounded-md hover:bg-white dark:hover:bg-gray-700 transition-colors">
                   <input
