@@ -4,7 +4,7 @@ on:
   schedule:
     # 每天北京时间上午9点运行 (UTC+8 = UTC+0-8)
     - cron: '0 1 * * *'
-  
+
   workflow_dispatch:
     inputs:
       mode:
@@ -37,25 +37,25 @@ jobs:
   update-steam-data:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    
+
     steps:
     - name: 📥 检出代码
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.DEPLOY_TOKEN }}
         fetch-depth: 0
-    
+
     - name: 🟢 设置Node.js环境
       uses: actions/setup-node@v4
       with:
         node-version: '18'
         cache: 'npm'
-    
+
     - name: 📦 安装依赖
       run: |
         npm ci
         npm install puppeteer
-        
+
     - name: 🔧 安装Chrome依赖 (Ubuntu)
       run: |
         sudo apt-get update
@@ -82,19 +82,19 @@ jobs:
           libdrm2 \
           libxkbcommon0 \
           libgbm1
-    
+
     - name: 🌍 设置环境变量
       run: |
         echo "TZ=Asia/Shanghai" >> $GITHUB_ENV
         echo "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=false" >> $GITHUB_ENV
         echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome-stable" >> $GITHUB_ENV
-    
+
     - name: 🗂️ 创建必要目录
       run: |
         mkdir -p public/data
         mkdir -p cache
         mkdir -p logs
-    
+
     - name: 📊 运行数据拉取 (Puppeteer模式)
       id: fetch_data
       run: |
@@ -126,7 +126,7 @@ jobs:
         # GitHub Actions环境下禁用代理
         NO_PROXY: true
       continue-on-error: false
-    
+
     - name: 📈 数据统计和验证
       if: steps.fetch_data.outputs.data_generated == 'true'
       run: |
@@ -183,7 +183,7 @@ jobs:
             process.exit(1);
           }
         " | tee -a logs/fetch.log
-    
+
     - name: 🔍 检查数据更改
       id: check_changes
       run: |
@@ -196,7 +196,7 @@ jobs:
           echo "📝 检测到数据变化，准备提交" | tee -a logs/fetch.log
           git diff --cached --stat | tee -a logs/fetch.log
         fi
-    
+
     - name: 📤 提交数据更新
       if: steps.check_changes.outputs.has_changes == 'true'
       run: |
@@ -216,7 +216,7 @@ jobs:
         git push
         
         echo "✅ 数据更新完成" | tee -a logs/fetch.log
-    
+
     - name: 🏗️ 构建前端项目
       if: steps.fetch_data.outputs.data_generated == 'true'
       run: |
@@ -239,7 +239,7 @@ jobs:
         fi
       env:
         NODE_ENV: production
-    
+
     - name: 🚀 部署到GitHub Pages
       if: steps.fetch_data.outputs.data_generated == 'true' && (github.event.inputs.deploy == 'true' || github.event.inputs.deploy == true)
       run: |
@@ -311,15 +311,15 @@ jobs:
         rm -rf pages-repo
       env:
         DEPLOY_TOKEN: ${{  secrets.DEPLOY_TOKEN }}
-    
+
     - name: 📋 上传日志文件
       if: always()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: fetch-logs-${{ github.run_number }}
         path: logs/
         retention-days: 7
-    
+
     - name: 📊 运行结果总结
       if: always()
       run: |
@@ -354,4 +354,4 @@ jobs:
         
         # 显示最后几行日志
         echo "=== 最近的日志 ===" 
-        tail -20 logs/fetch.log 
+        tail -20 logs/fetch.log
