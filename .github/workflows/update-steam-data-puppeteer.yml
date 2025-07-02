@@ -45,16 +45,21 @@ jobs:
         token: ${{ secrets.DEPLOY_TOKEN }}
         fetch-depth: 0
 
+    - name: 📦 安装pnpm
+      uses: pnpm/action-setup@v4
+      with:
+        version: 8
+
     - name: 🟢 设置Node.js环境
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-        cache: 'npm'
+        cache: 'pnpm'
 
     - name: 📦 安装依赖
       run: |
-        npm ci
-        npm install puppeteer
+        pnpm install --frozen-lockfile
+        pnpm add puppeteer
 
     - name: 🔧 安装Chrome依赖 (Ubuntu)
       run: |
