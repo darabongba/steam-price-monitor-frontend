@@ -54,8 +54,6 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-        cache: 'pnpm'
-
 
     - name: 🏗️ 构建前端项目
       if: steps.fetch_data.outputs.data_generated == 'true'
@@ -70,11 +68,11 @@ jobs:
         
         # 检查构建产物
         if [ -d "dist" ]; then
-          echo "✅ 构建成功，产物大小:" | tee -a logs/fetch.log
-          du -sh dist/ | tee -a logs/fetch.log
-          ls -la dist/ | tee -a logs/fetch.log
+          echo "✅ 构建成功，产物大小:" 
+          du -sh dist/ 
+          ls -la dist/ 
         else
-          echo "❌ 构建失败，未找到dist目录" | tee -a logs/fetch.log
+          echo "❌ 构建失败，未找到dist目录" 
           exit 1
         fi
       env:
@@ -83,14 +81,14 @@ jobs:
     - name: 🚀 部署到GitHub Pages
       if: steps.fetch_data.outputs.data_generated == 'true' && (github.event.inputs.deploy == 'true' || github.event.inputs.deploy == true)
       run: |
-        echo "🚀 开始部署到GitHub Pages..." | tee -a logs/fetch.log
+        echo "🚀 开始部署到GitHub Pages..." 
         
         # 检查是否配置了部署密钥
         if [ -z "${{ secrets.DEPLOY_TOKEN }}" ]; then
-          echo "⚠️ 未配置DEPLOY_TOKEN，使用默认DEPLOY_TOKEN（可能权限不足）" | tee -a logs/fetch.log
+          echo "⚠️ 未配置DEPLOY_TOKEN，使用默认DEPLOY_TOKEN（可能权限不足）" 
           DEPLOY_TOKEN="${{ secrets.DEPLOY_TOKEN }}"
         else
-          echo "✅ 使用配置的DEPLOY_TOKEN" | tee -a logs/fetch.log
+          echo "✅ 使用配置的DEPLOY_TOKEN" 
           DEPLOY_TOKEN="${{ secrets.DEPLOY_TOKEN }}"
         fi
         
@@ -163,34 +161,34 @@ jobs:
     - name: 📊 运行结果总结
       if: always()
       run: |
-        echo "=== 🚀 Steam数据更新和部署任务完成 ===" | tee -a logs/fetch.log
-        echo "⏰ 运行时间: $(date)" | tee -a logs/fetch.log
-        echo "🔧 运行模式: ${{ github.event.inputs.mode || 'puppeteer' }}" | tee -a logs/fetch.log
-        echo "📊 任务状态: ${{ job.status }}" | tee -a logs/fetch.log
+        echo "=== 🚀 Steam数据更新和部署任务完成 ===" 
+        echo "⏰ 运行时间: $(date)" 
+        echo "🔧 运行模式: ${{ github.event.inputs.mode || 'puppeteer' }}" 
+        echo "📊 任务状态: ${{ job.status }}" 
         
         if [ "${{ steps.fetch_data.outputs.data_generated }}" = "true" ]; then
-          echo "✅ 数据生成: 成功" | tee -a logs/fetch.log
-          echo "✅ 前端构建: 成功" | tee -a logs/fetch.log
+          echo "✅ 数据生成: 成功" 
+          echo "✅ 前端构建: 成功" 
           
           if [ "${{ github.event.inputs.deploy }}" = "true" ] || [ "${{ github.event.inputs.deploy }}" = "" ]; then
-            echo "✅ GitHub Pages部署: 成功" | tee -a logs/fetch.log
-            echo "🌐 访问地址: https://steammonitor.github.io" | tee -a logs/fetch.log
+            echo "✅ GitHub Pages部署: 成功" 
+            echo "🌐 访问地址: https://steammonitor.github.io" 
           else
-            echo "⏭️ GitHub Pages部署: 跳过（手动禁用）" | tee -a logs/fetch.log
+            echo "⏭️ GitHub Pages部署: 跳过（手动禁用）" 
           fi
         else
-          echo "❌ 数据生成: 失败" | tee -a logs/fetch.log
-          echo "⏭️ 前端构建: 跳过" | tee -a logs/fetch.log
-          echo "⏭️ GitHub Pages部署: 跳过" | tee -a logs/fetch.log
+          echo "❌ 数据生成: 失败" 
+          echo "⏭️ 前端构建: 跳过" 
+          echo "⏭️ GitHub Pages部署: 跳过" 
         fi
         
         if [ "${{ steps.check_changes.outputs.has_changes }}" = "true" ]; then
-          echo "✅ 数据提交: 成功" | tee -a logs/fetch.log
+          echo "✅ 数据提交: 成功" 
         else
-          echo "📝 数据提交: 无变化" | tee -a logs/fetch.log
+          echo "📝 数据提交: 无变化" 
         fi
         
-        echo "📁 日志文件已上传为构建产物" | tee -a logs/fetch.log
+        echo "📁 日志文件已上传为构建产物" 
         
         # 显示最后几行日志
         echo "=== 最近的日志 ===" 
