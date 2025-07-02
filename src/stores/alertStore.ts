@@ -103,6 +103,7 @@ export const useAlertStore = create<AlertState>()(
               originalPrice: alertData.currentPrice,
               currency: 'CNY',
               discountPercent: 0,
+              targetDiscountPercent: alertData.targetDiscountPercent,
               isActive: true,
               triggered: false,
               notificationSent: false,
@@ -212,45 +213,67 @@ export const useAlertStore = create<AlertState>()(
               try {
                 const currentPrice = await staticDataService.getGamePrice(alert.steamId);
 
-                if (currentPrice && currentPrice.final <= alert.targetPrice) {
-                  // 价格达到目标，触发提醒
-                  await get().updateAlert(alert.id, {
-                    triggered: true,
-                    triggeredAt: new Date().toLocaleString(),
-                    lastPrice: currentPrice.final,
-                    currentPrice: currentPrice.final,
-                    updatedAt: new Date().toLocaleString(),
-                  });
+                if (currentPrice) {
+                  let shouldTrigger = false;
+                  let notificationMessage = '';
 
-                  // 创建通知
-                  const notification: Omit<AlertNotification, 'id'> = {
-                    alertId: alert.id,
-                    type: 'price_target_reached',
-                    title: '价格提醒',
-                    message: `${alert.gameName || '游戏'} 已达到目标价格 ¥${alert.targetPrice}`,
-                    data: {
-                      gameId: alert.gameId,
-                      steamId: alert.steamId,
+                  // 检查价格触发条件
+                  if (alert.targetDiscountPercent && alert.targetDiscountPercent > 0) {
+                    // 基于折扣百分比的提醒
+                    const currentDiscount = ((alert.originalPrice - currentPrice.final) / alert.originalPrice) * 100;
+                    if (currentDiscount >= alert.targetDiscountPercent) {
+                      shouldTrigger = true;
+                      notificationMessage = `${alert.gameName || '游戏'} 已达到 ${alert.targetDiscountPercent}% 折扣！现价 ¥${currentPrice.final}`;
+                    }
+                  } else {
+                    // 基于目标价格的提醒
+                    if (currentPrice.final <= alert.targetPrice) {
+                      shouldTrigger = true;
+                      notificationMessage = `${alert.gameName || '游戏'} 已达到目标价格 ¥${alert.targetPrice}`;
+                    }
+                  }
+
+                  if (shouldTrigger) {
+                    // 价格达到目标，触发提醒
+                    await get().updateAlert(alert.id, {
+                      triggered: true,
+                      triggeredAt: new Date().toLocaleString(),
+                      lastPrice: currentPrice.final,
                       currentPrice: currentPrice.final,
-                      targetPrice: alert.targetPrice,
-                    },
-                    sentAt: new Date().toLocaleString(),
-                    read: false,
-                  };
+                      updatedAt: new Date().toLocaleString(),
+                    });
 
-                  await storageService.addNotification(notification);
+                    // 创建通知
+                    const notification: Omit<AlertNotification, 'id'> = {
+                      alertId: alert.id,
+                      type: 'price_target_reached',
+                      title: '价格提醒',
+                      message: notificationMessage,
+                      data: {
+                        gameId: alert.gameId,
+                        steamId: alert.steamId,
+                        currentPrice: currentPrice.final,
+                        targetPrice: alert.targetPrice,
+                        targetDiscountPercent: alert.targetDiscountPercent,
+                      },
+                      sentAt: new Date().toLocaleString(),
+                      read: false,
+                    };
 
-                  // 发送邮件通知（如果配置了）
-                  // 这里可以添加邮件发送逻辑
-                } else if (currentPrice) {
-                  // 仅更新价格信息
-                  await get().updateAlert(alert.id, {
-                    lastPrice: currentPrice?.final || alert.lastPrice,
-                    currentPrice: currentPrice.final,
-                                         updatedAt: new Date().toLocaleString(),
-                     nextCheckAt: new Date(Date.now() + alert.checkInterval).toLocaleString(),
-                    checkCount: alert.checkCount + 1,
-                  });
+                    await storageService.addNotification(notification);
+
+                    // 发送邮件通知（如果配置了）
+                    // 这里可以添加邮件发送逻辑
+                  } else {
+                    // 仅更新价格信息
+                    await get().updateAlert(alert.id, {
+                      lastPrice: currentPrice?.final || alert.lastPrice,
+                      currentPrice: currentPrice.final,
+                      updatedAt: new Date().toLocaleString(),
+                      nextCheckAt: new Date(Date.now() + alert.checkInterval).toLocaleString(),
+                      checkCount: alert.checkCount + 1,
+                    });
+                  }
                 }
               } catch (error) {
                 console.error(`Failed to check price for alert ${alert.id}:`, error);

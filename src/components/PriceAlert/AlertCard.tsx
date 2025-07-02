@@ -24,7 +24,13 @@ const AlertCard: React.FC<AlertCardProps> = ({ alert, compact = false }) => {
     }
   };
 
-  const priceReached = alert.currentPrice <= alert.targetPrice;
+  // 计算实际目标价格（基于折扣的需要换算）
+  const actualTargetPrice = alert.targetDiscountPercent && alert.targetDiscountPercent > 0
+    ? alert.originalPrice * (1 - alert.targetDiscountPercent / 100)
+    : alert.targetPrice;
+
+  // 检查价格是否达到目标
+  const priceReached = alert.currentPrice <= actualTargetPrice;
   const statusColor = alert.isActive 
     ? (priceReached ? 'text-green-600' : 'text-blue-600')
     : 'text-gray-500';
@@ -38,7 +44,7 @@ const AlertCard: React.FC<AlertCardProps> = ({ alert, compact = false }) => {
           </h3>
           <div className="flex items-center space-x-2 mt-1">
             <span className="text-xs text-gray-600 dark:text-gray-400">
-              目标: {formatPrice(alert.targetPrice)}
+              目标: {formatPrice(actualTargetPrice)}
             </span>
             <span className="text-xs text-gray-600 dark:text-gray-400">
               当前: {formatPrice(alert.currentPrice)}
@@ -63,9 +69,16 @@ const AlertCard: React.FC<AlertCardProps> = ({ alert, compact = false }) => {
             
             <div className="grid grid-cols-2 gap-4 mb-4">
               <div>
-                <label className="text-sm text-gray-600 dark:text-gray-400">目标价格</label>
+                <label className="text-sm text-gray-600 dark:text-gray-400">
+                  目标价格
+                  {alert.targetDiscountPercent && (
+                    <span className="ml-1 text-xs text-blue-600 dark:text-blue-400">
+                      ({alert.targetDiscountPercent}% 折扣)
+                    </span>
+                  )}
+                </label>
                 <p className="text-lg font-bold text-green-600 dark:text-green-400">
-                  {formatPrice(alert.targetPrice)}
+                  {formatPrice(actualTargetPrice)}
                 </p>
               </div>
               <div>
@@ -81,6 +94,11 @@ const AlertCard: React.FC<AlertCardProps> = ({ alert, compact = false }) => {
                 <TrendingDown className="w-5 h-5 text-green-600 dark:text-green-400" />
                 <span className="text-sm text-green-700 dark:text-green-300 font-medium">
                   目标价格已达到！
+                  {alert.targetDiscountPercent && (
+                    <span className="ml-1">
+                      (达到 {alert.targetDiscountPercent}% 折扣)
+                    </span>
+                  )}
                 </span>
               </div>
             )}

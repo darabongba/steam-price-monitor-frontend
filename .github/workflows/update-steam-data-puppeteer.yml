@@ -1,4 +1,4 @@
-name: 🤖 更新Steam数据 (Puppeteer版)
+name: 🤖 更新Steam数据并部署 (Puppeteer版)
 
 on:
   schedule:
@@ -20,6 +20,18 @@ on:
         required: false
         default: '30'
         type: string
+      deploy:
+        description: '是否部署到GitHub Pages'
+        required: false
+        default: true
+        type: boolean
+
+# 权限配置
+permissions:
+  contents: write
+  actions: read
+  pages: write
+  id-token: write
 
 jobs:
   update-steam-data:
@@ -30,7 +42,7 @@ jobs:
     - name: 📥 检出代码
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.DEPLOY_TOKEN }}
         fetch-depth: 0
     
     - name: 🟢 设置Node.js环境
@@ -205,6 +217,101 @@ jobs:
         
         echo "✅ 数据更新完成" | tee -a logs/fetch.log
     
+    - name: 🏗️ 构建前端项目
+      if: steps.fetch_data.outputs.data_generated == 'true'
+      run: |
+        echo "🏗️ 开始构建前端项目..." | tee -a logs/fetch.log
+        
+        # 安装前端依赖
+        npm install
+        
+        # 构建项目
+        npm run build
+        
+        # 检查构建产物
+        if [ -d "dist" ]; then
+          echo "✅ 构建成功，产物大小:" | tee -a logs/fetch.log
+          du -sh dist/ | tee -a logs/fetch.log
+          ls -la dist/ | tee -a logs/fetch.log
+        else
+          echo "❌ 构建失败，未找到dist目录" | tee -a logs/fetch.log
+          exit 1
+        fi
+      env:
+        NODE_ENV: production
+    
+    - name: 🚀 部署到GitHub Pages
+      if: steps.fetch_data.outputs.data_generated == 'true' && (github.event.inputs.deploy == 'true' || github.event.inputs.deploy == true)
+      run: |
+        echo "🚀 开始部署到GitHub Pages..." | tee -a logs/fetch.log
+        
+        # 检查是否配置了部署密钥
+        if [ -z "${{ secrets.DEPLOY_TOKEN }}" ]; then
+          echo "⚠️ 未配置DEPLOY_TOKEN，使用默认DEPLOY_TOKEN（可能权限不足）" | tee -a logs/fetch.log
+          DEPLOY_TOKEN="${{ secrets.DEPLOY_TOKEN }}"
+        else
+          echo "✅ 使用配置的DEPLOY_TOKEN" | tee -a logs/fetch.log
+          DEPLOY_TOKEN="${{ secrets.DEPLOY_TOKEN }}"
+        fi
+        
+        # 克隆目标仓库（使用token认证）
+        git clone https://${DEPLOY_TOKEN}@github.com/steamMonitor/steamMonitor.github.io.git pages-repo
+        cd pages-repo
+        
+        # 配置Git用户信息
+        git config user.email "action@github.com"
+        git config user.name "GitHub Action Bot"
+        
+        # 检查当前分支
+        current_branch=$(git branch --show-current)
+        echo "📋 当前分支: $current_branch" | tee -a ../logs/fetch.log
+        
+        # 如果不是main分支，切换到main分支
+        if [ "$current_branch" != "main" ]; then
+          git checkout -b main 2>/dev/null || git checkout main
+        fi
+        
+        # 清空现有内容（保留.git目录和README.md）
+        find . -maxdepth 1 ! -name '.git' ! -name '.' ! -name '..' ! -name 'README.md' -exec rm -rf {} +
+        
+        # 复制构建产物
+        cp -r ../dist/* .
+        
+        # 添加CNAME文件（如果需要自定义域名，请取消注释并修改域名）
+        # echo "steam-monitor.youseeyou1daydayde.uk" > CNAME
+        
+                 # 添加.nojekyll文件以禁用Jekyll处理
+         touch .nojekyll
+         
+         # 添加简单的README文件
+         echo "# Steam Price Monitor" > README.md
+         echo "" >> README.md
+         echo "Steam价格监控应用 - 自动部署于 $(date '+%Y-%m-%d %H:%M:%S UTC')" >> README.md
+         echo "" >> README.md
+         echo "访问: https://steammonitor.github.io" >> README.md
+        
+        # 提交并强制推送
+        git add .
+        
+        if git diff --cached --quiet; then
+          echo "📝 构建产物无变化，跳过部署" | tee -a ../logs/fetch.log
+        else
+          GAMES_COUNT=$(node -e "console.log(JSON.parse(require('fs').readFileSync('../public/data/metadata.json', 'utf8')).gamesCount)" 2>/dev/null || echo "未知")
+          
+          git commit -m "🚀 自动部署Steam价格监控应用 - $(date '+%Y-%m-%d %H:%M') - ${GAMES_COUNT}个游戏 [skip ci]"
+          
+          echo "📤 强制推送到GitHub Pages..." | tee -a ../logs/fetch.log
+          git push --force origin main
+          
+          echo "✅ 部署完成!" | tee -a ../logs/fetch.log
+          echo "🌐 访问地址: https://steammonitor.github.io" | tee -a ../logs/fetch.log
+        fi
+        
+        cd ..
+        rm -rf pages-repo
+      env:
+        DEPLOY_TOKEN: ${{  secrets.DEPLOY_TOKEN }}
+    
     - name: 📋 上传日志文件
       if: always()
       uses: actions/upload-artifact@v3
@@ -216,15 +323,25 @@ jobs:
     - name: 📊 运行结果总结
       if: always()
       run: |
-        echo "=== 🚀 Steam数据更新任务完成 ===" | tee -a logs/fetch.log
+        echo "=== 🚀 Steam数据更新和部署任务完成 ===" | tee -a logs/fetch.log
         echo "⏰ 运行时间: $(date)" | tee -a logs/fetch.log
         echo "🔧 运行模式: ${{ github.event.inputs.mode || 'puppeteer' }}" | tee -a logs/fetch.log
         echo "📊 任务状态: ${{ job.status }}" | tee -a logs/fetch.log
         
         if [ "${{ steps.fetch_data.outputs.data_generated }}" = "true" ]; then
           echo "✅ 数据生成: 成功" | tee -a logs/fetch.log
+          echo "✅ 前端构建: 成功" | tee -a logs/fetch.log
+          
+          if [ "${{ github.event.inputs.deploy }}" = "true" ] || [ "${{ github.event.inputs.deploy }}" = "" ]; then
+            echo "✅ GitHub Pages部署: 成功" | tee -a logs/fetch.log
+            echo "🌐 访问地址: https://steammonitor.github.io" | tee -a logs/fetch.log
+          else
+            echo "⏭️ GitHub Pages部署: 跳过（手动禁用）" | tee -a logs/fetch.log
+          fi
         else
           echo "❌ 数据生成: 失败" | tee -a logs/fetch.log
+          echo "⏭️ 前端构建: 跳过" | tee -a logs/fetch.log
+          echo "⏭️ GitHub Pages部署: 跳过" | tee -a logs/fetch.log
         fi
         
         if [ "${{ steps.check_changes.outputs.has_changes }}" = "true" ]; then

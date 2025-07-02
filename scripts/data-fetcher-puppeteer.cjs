@@ -281,19 +281,81 @@ class SteamDataFetcherPuppeteer {
     await this.browser.navigateToSteam();
   }
 
+  async loadExistingPopularGames() {
+    try {
+      const filePath = path.join(CONFIG.DATA_DIR, 'popular-games.json');
+      const data = await fs.readFile(filePath, 'utf-8');
+      const existingGames = JSON.parse(data);
+      console.log(`📖 加载现有热门游戏数据: ${existingGames.length} 个`);
+      return existingGames;
+    } catch (error) {
+      console.log('📝 未找到现有数据文件，将创建新文件');
+      return [];
+    }
+  }
+
+  mergePopularGames(existingGames, newGames) {
+    console.log('🔄 合并热门游戏数据...');
+    
+    const currentTime = new Date().toLocaleString();
+    const gameMap = new Map();
+    
+    // 先添加现有游戏，标记为历史数据
+    existingGames.forEach(game => {
+      gameMap.set(game.steamId, {
+        ...game,
+        isHistorical: true,
+        dataSource: 'historical'
+      });
+    });
+    
+    // 添加或更新新游戏数据
+    newGames.forEach(game => {
+      gameMap.set(game.steamId, {
+        ...game,
+        isHistorical: false,
+        dataSource: 'current',
+        lastUpdated: currentTime
+      });
+    });
+    
+    const mergedGames = Array.from(gameMap.values());
+    
+    // 按照优先级排序：当前数据优先，然后按score排序
+    mergedGames.sort((a, b) => {
+      if (a.isHistorical !== b.isHistorical) {
+        return a.isHistorical ? 1 : -1; // 当前数据排在前面
+      }
+      return (b.score || 0) - (a.score || 0); // 按分数降序
+    });
+    
+    console.log(`✅ 合并完成: 现有 ${existingGames.length} 个，新增 ${newGames.length} 个，合并后 ${mergedGames.length} 个`);
+    console.log(`   - 当前数据: ${mergedGames.filter(g => !g.isHistorical).length} 个`);
+    console.log(`   - 历史数据: ${mergedGames.filter(g => g.isHistorical).length} 个`);
+    
+    return mergedGames;
+  }
+
   async getPopularGames() {
     console.log('🔥 获取热门游戏列表...');
     
     try {
-      // 使用SteamSpy API获取热门游戏
+      // 1. 加载现有数据
+      const existingGames = await this.loadExistingPopularGames();
+      
+      // 2. 获取最新数据
       const url = `${CONFIG.STEAMSPY_API}?request=top100in2weeks`;
       const data = await this.browser.fetchAPIWithRetry(url);
       
       if (!data || typeof data !== 'object') {
-        throw new Error('SteamSpy返回无效数据');
+        console.warn('⚠️ SteamSpy返回无效数据，使用现有数据');
+        if (existingGames.length > 0) {
+          return existingGames.slice(0, CONFIG.POPULAR_GAMES_LIMIT);
+        }
+        throw new Error('SteamSpy返回无效数据且无现有数据');
       }
 
-      const games = Object.entries(data)
+      const newGames = Object.entries(data)
         .slice(0, CONFIG.POPULAR_GAMES_LIMIT)
         .map(([appid, game]) => ({
           steamId: appid,
@@ -305,18 +367,45 @@ class SteamDataFetcherPuppeteer {
           owners: game.owners || '未知',
           averagePlaytime: game.average_forever || 0,
           score: game.score_rank || 0,
-          lastUpdated: new Date().toLocaleString(),
         }));
 
-      console.log(`✅ 成功获取 ${games.length} 个热门游戏`);
-      return games;
+      console.log(`✅ 成功获取 ${newGames.length} 个最新热门游戏`);
+      
+      // 3. 合并新旧数据求并集
+      const mergedGames = this.mergePopularGames(existingGames, newGames);
+      
+      // 4. 限制最终数量
+      const finalGames = mergedGames.slice(0, CONFIG.POPULAR_GAMES_LIMIT * 2); // 允许保留更多历史数据
+      
+      return finalGames;
       
     } catch (error) {
       console.error('❌ 获取热门游戏失败:', error.message);
       
       // 尝试备用方案：通过Steam商店搜索
       console.log('🔄 尝试备用方案...');
-      return await this.getPopularGamesFromStore();
+      const fallbackGames = await this.getPopularGamesFromStore();
+      
+      // 如果备用方案成功，也尝试与现有数据合并
+      if (fallbackGames.length > 0) {
+        try {
+          const existingGames = await this.loadExistingPopularGames();
+          return this.mergePopularGames(existingGames, fallbackGames);
+        } catch {
+          return fallbackGames;
+        }
+      }
+      
+      // 最后尝试返回现有数据
+      try {
+        const existingGames = await this.loadExistingPopularGames();
+        if (existingGames.length > 0) {
+          console.log('🔄 使用现有数据作为备用');
+          return existingGames;
+        }
+      } catch {}
+      
+      throw error;
     }
   }
 

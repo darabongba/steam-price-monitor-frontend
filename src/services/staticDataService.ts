@@ -230,11 +230,8 @@ export class StaticDataService {
       const gameDetail = await this.getGameDetail(steamId);
       if (!gameDetail) return null;
 
-      // 从游戏详情中提取价格信息（如果有的话）
-      const priceHistory = await this.loadJSON<Record<string, PriceHistoryRecord[]>>('price-history.json');
-      const history = priceHistory[steamId];
-
-      if (!history || history.length === 0) {
+      // 直接从游戏详情中获取价格信息
+      if (!gameDetail.price) {
         return {
           steamId,
           final: 0,
@@ -242,24 +239,21 @@ export class StaticDataService {
           discount_percent: 0,
           currency: 'CNY',
           formatted: '价格未知',
-          isFree: false,
+          isFree: true,
           onSale: false,
           lastUpdated: new Date().toLocaleString(),
         };
       }
 
-      // 获取最新的价格记录
-      const latestPrice = history[history.length - 1];
-
       return {
         steamId,
-        final: latestPrice.price,
-        initial: latestPrice.originalPrice,
-        discount_percent: latestPrice.discount,
-        currency: 'CNY',
-        formatted: `¥${latestPrice.price.toFixed(2)}`,
-        isFree: latestPrice.price === 0,
-        onSale: latestPrice.discount > 0,
+        final: gameDetail.price.final,
+        initial: gameDetail.price.initial,
+        discount_percent: gameDetail.price.discount_percent,
+        currency: gameDetail.price.currency,
+        formatted: gameDetail.price.formatted,
+        isFree: gameDetail.isFree,
+        onSale: gameDetail.price.discount_percent > 0,
         lastUpdated: new Date().toLocaleString(),
       };
 

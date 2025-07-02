@@ -9,6 +9,7 @@ export interface PriceAlert {
   originalPrice: number;
   currency: string;
   discountPercent: number;
+  targetDiscountPercent?: number;
   isActive: boolean;
   triggered: boolean;
   notificationSent: boolean;
@@ -30,6 +31,7 @@ export interface AlertFormData {
   headerImage: string;
   targetPrice: number;
   currentPrice: number;
+  targetDiscountPercent?: number;
   pushEnabled: boolean;
 }
 
