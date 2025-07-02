@@ -58,8 +58,7 @@ jobs:
 
     - name: 📦 安装依赖
       run: |
-        pnpm install --frozen-lockfile
-        pnpm add puppeteer
+        pnpm install --no-frozen-lockfile
 
     - name: 🔧 安装Chrome依赖 (Ubuntu)
       run: |
