@@ -54,6 +54,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: 'pnpm'
 
       - name: 📦 安装依赖
         run: |
@@ -96,7 +97,98 @@ jobs:
           mkdir -p cache
           mkdir -p logs
 
+      - name: 📊 运行数据拉取 (Puppeteer模式)
+        id: fetch_data
+        run: |
+          echo "开始时间: $(date)" | tee logs/fetch.log
+          
+          # 根据输入选择运行模式
+          if [ "${{ github.event.inputs.mode }}" = "standard" ]; then
+            echo "使用标准模式..." | tee -a logs/fetch.log
+            timeout 25m node scripts/data-fetcher.cjs 2>&1 | tee -a logs/fetch.log
+          else
+            echo "使用Puppeteer模式..." | tee -a logs/fetch.log
+            # 注意：GitHub Actions环境下不使用代理
+            timeout 25m node scripts/data-fetcher-puppeteer.cjs 2>&1 | tee -a logs/fetch.log
+          fi
+          
+          echo "结束时间: $(date)" | tee -a logs/fetch.log
+          
+          # 检查是否生成了数据文件
+          if [ -f "public/data/metadata.json" ]; then
+            echo "data_generated=true" >> $GITHUB_OUTPUT
+            echo "✅ 数据生成成功" | tee -a logs/fetch.log
+          else
+            echo "data_generated=false" >> $GITHUB_OUTPUT
+            echo "❌ 数据生成失败" | tee -a logs/fetch.log
+            exit 1
+          fi
+        env:
+          NODE_ENV: production
+          # GitHub Actions环境下禁用代理
+          NO_PROXY: true
+        continue-on-error: false
+
+      - name: 📈 数据统计和验证
+        if: steps.fetch_data.outputs.data_generated == 'true'
+        run: |
+          echo "=== 数据统计报告 ===" | tee -a logs/fetch.log
+          
+          # 检查各个数据文件
+          for file in popular-games.json game-details.json price-history.json search-index.json metadata.json; do
+            if [ -f "public/data/$file" ]; then
+              size=$(stat -f%z "public/data/$file" 2>/dev/null || stat -c%s "public/data/$file" 2>/dev/null || echo "0")
+              echo "📄 $file: ${size} bytes" | tee -a logs/fetch.log
+            else
+              echo "❌ $file: 文件不存在" | tee -a logs/fetch.log
+            fi
+          done
+          
+          # 解析metadata.json获取统计信息
+          if [ -f "public/data/metadata.json" ]; then
+            echo "=== 详细统计 ===" | tee -a logs/fetch.log
+            node -e "
+              const fs = require('fs');
+              const metadata = JSON.parse(fs.readFileSync('public/data/metadata.json', 'utf8'));
+              console.log(\`🎮 游戏总数: \${metadata.gamesCount}\`);
+              console.log(\`🔥 热门游戏: \${metadata.popularGamesCount}\`);
+              console.log(\`📈 价格历史: \${metadata.priceHistoryCount}\`);
+              console.log(\`🔧 数据源: \${metadata.dataSource}\`);
+              console.log(\`⏰ 更新时间: \${metadata.lastUpdated}\`);
+              console.log(\`📊 版本: \${metadata.version}\`);
+              if (metadata.requestStats) {
+                console.log(\`🌐 请求统计: \${JSON.stringify(metadata.requestStats, null, 2)}\`);
+              }
+            " | tee -a logs/fetch.log
+          fi
+          
+          echo "=== 数据质量检查 ===" | tee -a logs/fetch.log
+          node -e "
+            const fs = require('fs');
+            try {
+              const games = JSON.parse(fs.readFileSync('public/data/game-details.json', 'utf8'));
+              const withDesc = games.filter(g => g.description && g.description.length > 10);
+              const withPrice = games.filter(g => g.price);
+              const withImage = games.filter(g => g.headerImage);
+          
+              console.log(\`✅ 数据质量报告:\`);
+              console.log(\`   - 有效描述: \${withDesc.length}/\${games.length} (\${Math.round(withDesc.length/games.length*100)}%)\`);
+              console.log(\`   - 价格信息: \${withPrice.length}/\${games.length} (\${Math.round(withPrice.length/games.length*100)}%)\`);
+              console.log(\`   - 游戏图片: \${withImage.length}/\${games.length} (\${Math.round(withImage.length/games.length*100)}%)\`);
+          
+              if (withDesc.length / games.length < 0.5) {
+                console.log('⚠️ 警告：有效数据比例较低，可能存在质量问题');
+                process.exit(1);
+              }
+            } catch (error) {
+              console.log('❌ 数据质量检查失败:', error.message);
+              process.exit(1);
+            }
+          " | tee -a logs/fetch.log
+
+
       - name: 🏗️ 构建前端项目
+        if: steps.fetch_data.outputs.data_generated == 'true'
         run: |          
           echo "🏗️ 开始构建前端项目..." | tee -a logs/fetch.log
           # 构建项目
@@ -115,6 +207,7 @@ jobs:
           NODE_ENV: production
 
       - name: 🚀 部署到GitHub Pages
+        if: steps.fetch_data.outputs.data_generated == 'true' && (github.event.inputs.deploy == 'true' || github.event.inputs.deploy == true)
         run: |
           echo "🚀 开始部署到GitHub Pages..." | tee -a logs/fetch.log
           
