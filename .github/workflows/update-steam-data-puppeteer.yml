@@ -73,7 +73,7 @@ jobs:
           echo "🏗️ 开始构建前端项目..." | tee -a logs/fetch.log
           
           # 安装前端依赖
-          pnpm install
+          pnpm install --include dev
           
           # 构建项目
           pnpm run build
