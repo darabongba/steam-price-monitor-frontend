@@ -53,34 +53,8 @@ jobs:
       - name: 🟢 设置Node.js环境
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '22'
           cache: 'pnpm'
-
-
-      - name: 🔧 安装Chrome依赖 (Ubuntu)
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-            fonts-liberation \
-            libappindicator3-1 \
-            libatk-bridge2.0-0 \
-            libatk1.0-0 \
-            libcups2 \
-            libdbus-1-3 \
-            libgdk-pixbuf2.0-0 \
-            libnspr4 \
-            libnss3 \
-            libx11-xcb1 \
-            libxcomposite1 \
-            libxdamage1 \
-            libxrandr2 \
-            xdg-utils \
-            libxss1 \
-            libxtst6 \
-            libgtk-3-0 \
-            libdrm2 \
-            libxkbcommon0 \
-            libgbm1
 
       - name: 🌍 设置环境变量
         run: |
