@@ -85,6 +85,17 @@ jobs:
             libxkbcommon0 \
             libgbm1
 
+      - name: 🌍 设置环境变量
+        run: |
+          echo "TZ=Asia/Shanghai" >> $GITHUB_ENV
+          echo "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=false" >> $GITHUB_ENV
+          echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome-stable" >> $GITHUB_ENV
+
+      - name: 🗂️ 创建必要目录
+        run: |
+          mkdir -p public/data
+          mkdir -p cache
+          mkdir -p logs
 
       - name: 🏗️ 构建前端项目
         if: steps.fetch_data.outputs.data_generated == 'true'
