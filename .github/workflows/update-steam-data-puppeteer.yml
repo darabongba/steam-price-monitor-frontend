@@ -71,10 +71,6 @@ jobs:
             libdbus-1-3 \
             libgdk-pixbuf2.0-0 \
             libnspr4 \
-            python3 \
-            build-essential \
-            libgl1 \
-            libx11 \
             libnss3 \
             libx11-xcb1 \
             libxcomposite1 \
