@@ -31,7 +31,7 @@ const AlertCard: React.FC<AlertCardProps> = ({ alert, compact = false }) => {
 
   // 检查价格是否达到目标
   const priceReached = alert.currentPrice <= actualTargetPrice;
-  const statusColor = alert.isActive 
+  const statusColor = alert.isActive
     ? (priceReached ? 'text-green-600' : 'text-blue-600')
     : 'text-gray-500';
 
@@ -44,10 +44,10 @@ const AlertCard: React.FC<AlertCardProps> = ({ alert, compact = false }) => {
           </h3>
           <div className="flex items-center space-x-2 mt-1">
             <span className="text-xs text-gray-600 dark:text-gray-400">
-              目标: {formatPrice(actualTargetPrice)}
+              目标: {formatPrice(actualTargetPrice,{currency:alert.currency})}
             </span>
             <span className="text-xs text-gray-600 dark:text-gray-400">
-              当前: {formatPrice(alert.currentPrice)}
+              当前: {formatPrice(alert.currentPrice,{currency:alert.currency})}
             </span>
           </div>
         </div>
@@ -66,7 +66,7 @@ const AlertCard: React.FC<AlertCardProps> = ({ alert, compact = false }) => {
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
               {alert.gameName}
             </h3>
-            
+
             <div className="grid grid-cols-2 gap-4 mb-4">
               <div>
                 <label className="text-sm text-gray-600 dark:text-gray-400">
@@ -78,13 +78,13 @@ const AlertCard: React.FC<AlertCardProps> = ({ alert, compact = false }) => {
                   )}
                 </label>
                 <p className="text-lg font-bold text-green-600 dark:text-green-400">
-                  {formatPrice(actualTargetPrice)}
+                  {formatPrice(alert.targetPrice,{currency:alert.currency})}
                 </p>
               </div>
               <div>
                 <label className="text-sm text-gray-600 dark:text-gray-400">当前价格</label>
                 <p className={`text-lg font-bold ${priceReached ? 'text-green-600' : 'text-gray-900 dark:text-white'}`}>
-                  {formatPrice(alert.currentPrice)}
+                  {formatPrice(alert.currentPrice,{currency:alert.currency})}
                 </p>
               </div>
             </div>
@@ -106,7 +106,7 @@ const AlertCard: React.FC<AlertCardProps> = ({ alert, compact = false }) => {
             <div className="text-xs text-gray-500 dark:text-gray-400">
               创建于 {getRelativeTime(alert.createdAt)}
             </div>
-            
+
             <div className="flex items-center space-x-2 mt-2">
               <div className="flex items-center space-x-1">
                 <Bell className="w-3 h-3 text-green-500" />
@@ -166,4 +166,4 @@ const AlertCard: React.FC<AlertCardProps> = ({ alert, compact = false }) => {
   );
 };
 
-export default AlertCard; 
+export default AlertCard;
