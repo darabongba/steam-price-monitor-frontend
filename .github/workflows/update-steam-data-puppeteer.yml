@@ -98,7 +98,6 @@ jobs:
           mkdir -p logs
 
       - name: 🏗️ 构建前端项目
-        if: steps.fetch_data.outputs.data_generated == 'true'
         run: |
           echo "🏗️ 开始构建前端项目..." | tee -a logs/fetch.log
           
@@ -121,7 +120,6 @@ jobs:
           NODE_ENV: production
 
       - name: 🚀 部署到GitHub Pages
-        if: steps.fetch_data.outputs.data_generated == 'true' && (github.event.inputs.deploy == 'true' || github.event.inputs.deploy == true)
         run: |
           echo "🚀 开始部署到GitHub Pages..." | tee -a logs/fetch.log
           
