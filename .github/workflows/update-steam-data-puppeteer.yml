@@ -48,13 +48,12 @@ jobs:
       - name: 📦 安装pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 9
 
       - name: 🟢 设置Node.js环境
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          cache: 'pnpm'
 
       - name: 🌍 设置环境变量
         run: |
