@@ -78,7 +78,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/steam-price-monitor-frontend.git"
+    "url": "https://github.com/darabongba/steam-price-monitor-frontend.git"
   },
   "engines": {
     "node": ">=18.0.0",

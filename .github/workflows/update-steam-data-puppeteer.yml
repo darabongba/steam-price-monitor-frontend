@@ -69,11 +69,12 @@ jobs:
 
       - name: 🏗️ 构建前端项目
         run: |
-          echo "🏗️ 开始构建前端项目..." | tee -a logs/fetch.log
+          echo "🏗️ 开始安装前端依赖..." | tee -a logs/fetch.log          
           
           # 安装前端依赖
           pnpm install --include dev
           
+           echo "🏗️ 开始构建前端项目..." | tee -a logs/fetch.log
           # 构建项目
           pnpm run build
           
