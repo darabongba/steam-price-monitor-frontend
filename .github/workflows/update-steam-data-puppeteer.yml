@@ -207,7 +207,7 @@ jobs:
           NODE_ENV: production
 
       - name: 🚀 部署到GitHub Pages
-        if: steps.fetch_data.outputs.data_generated == 'true' && (github.event.inputs.deploy == 'true' || github.event.inputs.deploy == true)
+        if: steps.fetch_data.outputs.data_generated == 'true'
         run: |
           echo "🚀 开始部署到GitHub Pages..." | tee -a logs/fetch.log
           
