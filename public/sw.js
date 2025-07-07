@@ -63,7 +63,7 @@ self.addEventListener('fetch', (event) => {
   }
 
   // 对于API请求，使用网络优先策略
-  if (event.request.url.includes('/api/')) {
+  if (event.request.url.includes('/data/')) {
     event.respondWith(
       fetch(event.request)
         .then((response) => {
