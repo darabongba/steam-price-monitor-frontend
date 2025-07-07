@@ -14,7 +14,7 @@ const CACHE_URLS = [
 // 安装事件
 self.addEventListener('install', (event) => {
   console.log('Service Worker installing...');
-  
+
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then((cache) => {
@@ -31,7 +31,7 @@ self.addEventListener('install', (event) => {
 // 激活事件
 self.addEventListener('activate', (event) => {
   console.log('Service Worker activating...');
-  
+
   event.waitUntil(
     caches.keys()
       .then((cacheNames) => {
@@ -97,7 +97,7 @@ self.addEventListener('fetch', (event) => {
         return fetch(event.request)
           .then((response) => {
             // 只缓存成功的响应
-            if (response.ok) {
+            if (response.ok && !response.url.includes("chrome-extension")) {
               const responseClone = response.clone();
               caches.open(CACHE_NAME)
                 .then((cache) => {
@@ -120,7 +120,7 @@ self.addEventListener('fetch', (event) => {
 // 处理后台同步
 self.addEventListener('sync', (event) => {
   console.log('Background sync:', event.tag);
-  
+
   if (event.tag === 'price-check') {
     event.waitUntil(performPriceCheck());
   } else if (event.tag === 'data-sync') {
@@ -131,7 +131,7 @@ self.addEventListener('sync', (event) => {
 // 处理推送通知
 self.addEventListener('push', (event) => {
   console.log('Push notification received:', event);
-  
+
   const options = {
     body: event.data ? event.data.text() : '您有新的价格提醒',
     icon: '/icons/icon-192x192.png',
@@ -163,7 +163,7 @@ self.addEventListener('push', (event) => {
 // 处理通知点击
 self.addEventListener('notificationclick', (event) => {
   console.log('Notification click received:', event);
-  
+
   event.notification.close();
 
   if (event.action === 'explore') {
@@ -187,7 +187,7 @@ let priceCheckInterval;
 
 function startPriceMonitoring() {
   console.log('Starting price monitoring...');
-  
+
   // 每小时检查一次价格
   priceCheckInterval = setInterval(() => {
     performPriceCheck();
@@ -199,7 +199,7 @@ function startPriceMonitoring() {
 
 function stopPriceMonitoring() {
   console.log('Stopping price monitoring...');
-  
+
   if (priceCheckInterval) {
     clearInterval(priceCheckInterval);
     priceCheckInterval = null;
@@ -209,10 +209,10 @@ function stopPriceMonitoring() {
 async function performPriceCheck() {
   try {
     console.log('Performing price check...');
-    
+
     // 获取本地存储的提醒列表
     const alerts = await getStoredAlerts();
-    
+
     if (!alerts || alerts.length === 0) {
       console.log('No alerts found');
       return;
@@ -226,11 +226,11 @@ async function performPriceCheck() {
       try {
         // 检查价格
         const currentPrice = await fetchGamePrice(alert.steamId);
-        
+
         if (currentPrice && currentPrice.price <= alert.targetPrice) {
           // 价格达到目标，发送通知
           await sendPriceAlert(alert, currentPrice);
-          
+
           // 更新提醒状态
           await updateAlertStatus(alert.id, {
             triggered: true,
@@ -258,16 +258,16 @@ async function fetchGamePrice(steamId) {
   try {
     // 从本地 game-details.json 文件获取价格信息
     const response = await fetch('/data/game-details.json');
-    
+
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }
-    
+
     const gameDetails = await response.json();
-    
+
     // 查找对应的游戏
     const game = gameDetails.find(game => game.steamId === steamId);
-    
+
     if (game && game.price) {
       return {
         price: game.price.final,
@@ -277,7 +277,7 @@ async function fetchGamePrice(steamId) {
         formatted: game.price.formatted
       };
     }
-    
+
     return null;
   } catch (error) {
     console.error('Failed to fetch game price from local data:', error);
@@ -319,19 +319,19 @@ async function getStoredAlerts() {
     // 从IndexedDB获取提醒列表
     return new Promise((resolve, reject) => {
       const request = indexedDB.open('SteamPriceMonitor', 1);
-      
+
       request.onerror = () => reject(request.error);
-      
+
       request.onsuccess = () => {
         const db = request.result;
         const transaction = db.transaction(['alerts'], 'readonly');
         const store = transaction.objectStore('alerts');
         const getAllRequest = store.getAll();
-        
+
         getAllRequest.onsuccess = () => {
           resolve(getAllRequest.result);
         };
-        
+
         getAllRequest.onerror = () => {
           reject(getAllRequest.error);
         };
@@ -347,29 +347,29 @@ async function updateAlertStatus(alertId, updates) {
   try {
     return new Promise((resolve, reject) => {
       const request = indexedDB.open('SteamPriceMonitor', 1);
-      
+
       request.onerror = () => reject(request.error);
-      
+
       request.onsuccess = () => {
         const db = request.result;
         const transaction = db.transaction(['alerts'], 'readwrite');
         const store = transaction.objectStore('alerts');
-        
+
         const getRequest = store.get(alertId);
-        
+
         getRequest.onsuccess = () => {
           const alert = getRequest.result;
           if (alert) {
             Object.assign(alert, updates, { updatedAt: new Date().toLocaleString() });
             const putRequest = store.put(alert);
-            
+
             putRequest.onsuccess = () => resolve(alert);
             putRequest.onerror = () => reject(putRequest.error);
           } else {
             reject(new Error('Alert not found'));
           }
         };
-        
+
         getRequest.onerror = () => reject(getRequest.error);
       };
     });
@@ -388,4 +388,4 @@ async function syncUserData() {
   }
 }
 
-console.log('Service Worker script loaded'); 
+console.log('Service Worker script loaded');
