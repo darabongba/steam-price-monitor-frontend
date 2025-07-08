@@ -16,6 +16,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         return savedMode === 'true';
       }
       // 如果没有保存的设置，使用系统偏好，但优先级低于手动切换
+      console.log('如果没有保存的设置，使用系统偏好，但优先级低于手动切换11333')
       return window.matchMedia('(prefers-color-scheme: dark)').matches;
     }
     return false;
@@ -170,4 +171,4 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   );
 };
 
-export default Layout; 
+export default Layout;

@@ -62,8 +62,8 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 对于API请求，使用网络优先策略
-  if (event.request.url.includes('/data/')) {
+  // 对于API请求和首页请求，使用网络优先策略
+  if (event.request.url.includes('/data/')|| event.request.url.includes('steam.youseeyou1daydayde.uk')) {
     event.respondWith(
       fetch(event.request)
         .then((response) => {
