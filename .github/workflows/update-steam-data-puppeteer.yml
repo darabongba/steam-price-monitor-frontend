@@ -244,7 +244,7 @@ jobs:
           cp -r ../dist/* .
           
           # 添加CNAME文件（如果需要自定义域名，请取消注释并修改域名）
-          # echo "steam-monitor.youseeyou1daydayde.uk" > CNAME
+           echo "steam.youseeyou1daydayde.uk" > CNAME
           
                    # 添加.nojekyll文件以禁用Jekyll处理
            touch .nojekyll
