@@ -182,11 +182,14 @@ body {
   }
 }
 
-/* 深色模式优化 */
-@media (prefers-color-scheme: dark) {
-  .dark-auto {
-    @apply dark:bg-gray-900 dark:text-gray-100;
-  }
+/* 深色模式优化 - 确保手动切换优先级 */
+/* 强制覆盖任何系统偏好设置 */
+html.dark {
+  color-scheme: dark;
+}
+
+html:not(.dark) {
+  color-scheme: light;
 }
 
 /* 响应式设计 */

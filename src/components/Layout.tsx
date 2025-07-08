@@ -10,8 +10,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
   const [darkMode, setDarkMode] = React.useState(() => {
     if (typeof window !== 'undefined') {
-      return localStorage.getItem('darkMode') === 'true' || 
-             (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      const savedMode = localStorage.getItem('darkMode');
+      // 如果有保存的设置，使用保存的设置
+      if (savedMode !== null) {
+        return savedMode === 'true';
+      }
+      // 如果没有保存的设置，使用系统偏好，但优先级低于手动切换
+      return window.matchMedia('(prefers-color-scheme: dark)').matches;
     }
     return false;
   });
