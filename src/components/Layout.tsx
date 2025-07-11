@@ -150,12 +150,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
             <div className="flex space-x-6 mt-2 sm:mt-0">
               <a
-                href="https://github.com"
+                href="https://github.com/darabongba/steam-price-monitor-frontend"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300"
               >
-                GitHub
+                GitHub Repo(star if u like)
               </a>
               <a
                 href="/about"
