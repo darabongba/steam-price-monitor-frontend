@@ -1,3 +1,8 @@
+export interface SimplePriceHistory {
+  price: number;
+  recordedAt: string;
+}
+
 export interface PriceAlert {
   id: string;
   gameId: string;
@@ -22,6 +27,7 @@ export interface PriceAlert {
   lastPrice: number;
   checkInterval: number;
   lastErrorMessage?: string;
+  priceHistory: SimplePriceHistory[];
 }
 
 export interface AlertFormData {

@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { devtools, persist } from 'zustand/middleware';
-import { PriceAlert, AlertFormData, AlertNotification } from '@/types/alert';
+import { PriceAlert, AlertFormData, AlertNotification, SimplePriceHistory } from '@/types/alert';
 import { storageService } from '@/services/storageService';
 import { staticDataService } from '@/services/staticDataService.ts';
 
@@ -57,14 +57,76 @@ export const useAlertStore = create<AlertState>()(
 
           try {
             const alerts = await storageService.getAllAlerts();
+            
+            // 并行获取所有提醒的最新价格并更新历史记录
+            const updatedAlerts = await Promise.allSettled(
+              alerts.map(async (alert) => {
+                try {
+                  // 获取最新价格
+                  const currentPrice = await staticDataService.getGamePrice(alert.steamId);
+                  
+                  if (currentPrice && currentPrice.final !== alert.lastPrice) {
+                    // 价格发生变化，添加到历史记录
+                    const newPriceHistory: SimplePriceHistory = {
+                      price: currentPrice.final,
+                      recordedAt: new Date().toLocaleString(),
+                    };
+                    
+                    // 更新价格历史记录（保持最新100条）
+                    const updatedPriceHistory = [
+                      newPriceHistory,
+                      ...(alert.priceHistory || []),
+                    ].slice(0, 100);
+                    
+                    // 更新提醒信息
+                    const updatedAlert = {
+                      ...alert,
+                      lastPrice: currentPrice.final,
+                      currentPrice: currentPrice.final,
+                      priceHistory: updatedPriceHistory,
+                      updatedAt: new Date().toLocaleString(),
+                    };
+                    
+                    // 保存到数据库
+                    await storageService.updateAlert(alert.id, {
+                      lastPrice: currentPrice.final,
+                      currentPrice: currentPrice.final,
+                      priceHistory: updatedPriceHistory,
+                      updatedAt: new Date().toLocaleString(),
+                    });
+                    
+                    return updatedAlert;
+                  } else {
+                    // 价格没有变化，确保有 priceHistory 字段
+                    return {
+                      ...alert,
+                      priceHistory: alert.priceHistory || [],
+                    };
+                  }
+                } catch (error) {
+                  console.error(`Failed to update price for alert ${alert.id}:`, error);
+                  // 价格获取失败时，确保有 priceHistory 字段
+                  return {
+                    ...alert,
+                    priceHistory: alert.priceHistory || [],
+                  };
+                }
+              })
+            );
+            
+            // 提取成功更新的提醒
+            const finalAlerts = updatedAlerts
+              .filter((result): result is PromiseFulfilledResult<PriceAlert> => result.status === 'fulfilled')
+              .map(result => result.value);
+            
             const stats = {
-              total: alerts.length,
-              active: alerts.filter(alert => alert.isActive && !alert.triggered).length,
-              triggered: alerts.filter(alert => alert.triggered).length,
-              paused: alerts.filter(alert => !alert.isActive).length,
+              total: finalAlerts.length,
+              active: finalAlerts.filter(alert => alert.isActive && !alert.triggered).length,
+              triggered: finalAlerts.filter(alert => alert.triggered).length,
+              paused: finalAlerts.filter(alert => !alert.isActive).length,
             };
 
-            set({ alerts, stats, loading: false });
+            set({ alerts: finalAlerts, stats, loading: false });
           } catch (error) {
             set({
               error: error instanceof Error ? error.message : '加载提醒失败',
@@ -114,6 +176,7 @@ export const useAlertStore = create<AlertState>()(
               checkCount: 0,
               lastPrice: alertData.currentPrice,
               checkInterval: 3600000, // 1小时
+              priceHistory: [], // 初始化为空数组
             };
 
             const alertId = await storageService.addAlert(newAlert);
