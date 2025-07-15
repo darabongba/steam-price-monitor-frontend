@@ -318,7 +318,7 @@ async function getStoredAlerts() {
   try {
     // 从IndexedDB获取提醒列表
     return new Promise((resolve, reject) => {
-      const request = indexedDB.open('SteamPriceMonitor', 1);
+      const request = indexedDB.open('SteamPriceMonitor', 10);
 
       request.onerror = () => reject(request.error);
 
@@ -346,7 +346,7 @@ async function getStoredAlerts() {
 async function updateAlertStatus(alertId, updates) {
   try {
     return new Promise((resolve, reject) => {
-      const request = indexedDB.open('SteamPriceMonitor', 1);
+      const request = indexedDB.open('SteamPriceMonitor', 10);
 
       request.onerror = () => reject(request.error);
 
