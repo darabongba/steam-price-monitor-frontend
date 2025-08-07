@@ -422,7 +422,7 @@ const GameCard: React.FC<GameCardProps> = ({ game, compact = false }) => {
         )}
 
         {game.metacriticScore && (
-          <div className="flex items-center text-xs text-amber-600">
+          <div className="flex items-center text-lg text-amber-600 mt-2 mb-2">
             <Star className="w-3 h-3 mr-1" />
             {game.metacriticScore}
           </div>

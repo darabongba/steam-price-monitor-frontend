@@ -17,6 +17,8 @@
     "deploy": "npm run build && vercel --prod",
     "clean": "rm -rf dist",
     "fetch-data-puppeteer": "node scripts/data-fetcher-puppeteer.cjs",
+    "fetch-steamspy-daily": "node scripts/steamspy-daily-fetcher.cjs",
+    "test-steamspy": "node scripts/test-steamspy-fetcher.cjs",
     "test-fetch-puppeteer": "node scripts/run-local-puppeteer.cjs",
     "prepare-data": "npm run test-fetch && echo 'Data preparation complete'"
   },
