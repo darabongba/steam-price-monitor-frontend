@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import SearchPage from './pages/SearchPage';
 import AlertsPage from './pages/AlertsPage';
 import SettingsPage from './pages/SettingsPage';
+import BilibiliPage from './pages/BilibiliPage';
 
 // 布局组件
 import Layout from './components/Layout';
@@ -155,6 +156,7 @@ const showUpdateAvailable=(registration: ServiceWorkerRegistration)=> {
               <Route path="/search" element={<SearchPage />} />
               <Route path="/alerts" element={<AlertsPage />} />
               <Route path="/settings" element={<SettingsPage />} />
+              <Route path="/bili" element={<BilibiliPage />} />
             </Routes>
           </Layout>
 

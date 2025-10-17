@@ -106,10 +106,12 @@ jobs:
           if [ "${{ github.event.inputs.mode }}" = "standard" ]; then
             echo "使用标准模式..." | tee -a logs/fetch.log
             timeout 25m node scripts/data-fetcher.cjs 2>&1 | tee -a logs/fetch.log
+            timeout 50m node scripts/bili-video-scraper.cjs 2>&1 | tee -a logs/fetch.log
           else
             echo "使用Puppeteer模式..." | tee -a logs/fetch.log
             # 注意：GitHub Actions环境下不使用代理
             timeout 25m node scripts/data-fetcher-puppeteer.cjs 2>&1 | tee -a logs/fetch.log
+            timeout 50m node scripts/bili-video-scraper.cjs 2>&1 | tee -a logs/fetch.log
           fi
           
           echo "结束时间: $(date)" | tee -a logs/fetch.log

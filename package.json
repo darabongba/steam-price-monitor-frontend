@@ -42,7 +42,8 @@
     "date-fns": "^2.30.0",
     "crypto-js": "^4.2.0",
     "workbox-window": "^7.0.0",
-    "lucide-react":"0.517.0"
+    "lucide-react":"0.517.0",
+    "axios": "^1.11.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",

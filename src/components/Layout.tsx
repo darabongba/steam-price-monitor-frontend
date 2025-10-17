@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Search, Bell, Settings, Moon, Sun } from 'lucide-react';
+import { Home, Search, Bell, Settings, Moon, Sun, Video } from 'lucide-react';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -39,6 +39,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     { name: '首页', href: '/', icon: Home },
     { name: '搜索', href: '/search', icon: Search },
     { name: '提醒', href: '/alerts', icon: Bell },
+    { name: 'B站视频', href: '/bili', icon: Video },
     { name: '设置', href: '/settings', icon: Settings },
   ];
 

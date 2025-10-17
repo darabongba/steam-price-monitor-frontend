@@ -657,3 +657,4 @@ if (require.main === module) {
 }
 
 module.exports = { SteamSpyDataFetcher, ProgressManager };
+
