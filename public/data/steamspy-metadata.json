@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2025/8/7 15:05:31",
+  "lastUpdated": "2025/8/7 14:44:56",
   "totalGames": 1000,
-  "totalDetails": 97,
+  "totalDetails": 0,
   "lastPage": 0,
   "lastDetailIndex": 0,
-  "dailyDetailsCount": 97,
+  "dailyDetailsCount": 0,
   "version": "1.0.0",
   "dataSource": "SteamSpy + Steam Store",
   "mode": "daily-incremental"
